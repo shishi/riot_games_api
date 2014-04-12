@@ -25,6 +25,10 @@ module RiotGamesApi
       def champions
         RiotGamesApi::LOL::Resource::Champion.new(connection, @region)
       end
+
+      def games
+        RiotGamesApi::LOL::Resource::Game.new(connection, @region)
+      end
     end
   end
 end
