@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shishi/riot_games_api.svg?branch=master)](https://travis-ci.org/shishi/riot_games_api)
+
 # RiotGamesApi
 
 TODO: Write a gem description
