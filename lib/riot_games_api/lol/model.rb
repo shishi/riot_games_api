@@ -1,4 +1,5 @@
-#require_relative 'resource/champion'
+require_relative 'model/champion'
+require_relative 'model/game'
 
 module RiotGamesApi
   module LOL

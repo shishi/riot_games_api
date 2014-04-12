@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'json'
   spec.add_dependency 'faraday', ['>= 0.7.4', '< 0.9']
   spec.add_dependency 'faraday_middleware', '~> 0.9.0'
-  spec.add_dependency 'hashie', '~> 2.0.0'
   spec.add_dependency 'rash', '~> 0.4.0'
+  spec.add_dependency 'virtus', '~> 1.0.2'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'

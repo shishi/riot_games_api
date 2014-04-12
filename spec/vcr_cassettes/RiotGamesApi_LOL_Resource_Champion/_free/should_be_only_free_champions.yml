@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.9.0
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 12 Apr 2014 14:14:26 GMT
+      - Sat, 12 Apr 2014 21:37:00 GMT
       Server:
       - Jetty(9.1.1.v20140108)
       Vary:
@@ -40,5 +40,5 @@ http_interactions:
       encoding: UTF-8
       string: "{\"champions\":[{\"id\":32,\"active\":true,\"botEnabled\":false,\"freeToPlay\":true,\"botMmEnabled\":true,\"rankedPlayEnabled\":true},{\"id\":34,\"active\":true,\"botEnabled\":false,\"freeToPlay\":true,\"botMmEnabled\":false,\"rankedPlayEnabled\":true},{\"id\":104,\"active\":true,\"botEnabled\":true,\"freeToPlay\":true,\"botMmEnabled\":true,\"rankedPlayEnabled\":true},{\"id\":40,\"active\":true,\"botEnabled\":false,\"freeToPlay\":true,\"botMmEnabled\":false,\"rankedPlayEnabled\":true},{\"id\":127,\"active\":true,\"botEnabled\":false,\"freeToPlay\":true,\"botMmEnabled\":false,\"rankedPlayEnabled\":true},{\"id\":236,\"active\":true,\"botEnabled\":false,\"freeToPlay\":true,\"botMmEnabled\":true,\"rankedPlayEnabled\":true},{\"id\":2,\"active\":true,\"botEnabled\":false,\"freeToPlay\":true,\"botMmEnabled\":false,\"rankedPlayEnabled\":true},{\"id\":92,\"active\":true,\"botEnabled\":false,\"freeToPlay\":true,\"botMmEnabled\":false,\"rankedPlayEnabled\":true},{\"id\":98,\"active\":true,\"botEnabled\":true,\"freeToPlay\":true,\"botMmEnabled\":true,\"rankedPlayEnabled\":true},{\"id\":44,\"active\":true,\"botEnabled\":true,\"freeToPlay\":true,\"botMmEnabled\":true,\"rankedPlayEnabled\":true}]}"
     http_version: 
-  recorded_at: Sat, 12 Apr 2014 14:14:50 GMT
+  recorded_at: Sat, 12 Apr 2014 21:37:25 GMT
 recorded_with: VCR 2.9.0

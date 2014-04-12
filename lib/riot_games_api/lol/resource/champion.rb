@@ -12,11 +12,15 @@ module RiotGamesApi
         end
 
         def all
-          get resource_path, @version
+          get(resource_path, @version).champions.map do |champion|
+            RiotGamesApi::LOL::Model::Champion.new champion
+          end
         end
 
         def free
-          get resource_path, @version, freeToPlay: true
+          get(resource_path, @version, freeToPlay: true).champions.map do |champion|
+            RiotGamesApi::LOL::Model::Champion.new champion
+          end
         end
       end
     end

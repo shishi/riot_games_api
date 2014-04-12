@@ -12,7 +12,9 @@ module RiotGamesApi
         end
 
         def recent(summoner_id)
-          get resource_path(summoner_id), @version
+          get(resource_path(summoner_id), @version).games.map do |game|
+            RiotGamesApi::LOL::Model::Game.new game
+          end
         end
       end
     end
