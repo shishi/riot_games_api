@@ -5,6 +5,7 @@ require_relative 'riot_games_api/lol/model'
 
 require 'json'
 require 'faraday'
+require 'faraday_middleware'
 require 'hashie'
 
 module RiotGamesApi

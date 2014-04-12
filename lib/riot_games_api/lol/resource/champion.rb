@@ -12,11 +12,11 @@ module RiotGamesApi
         end
 
         def all
-          Hashie::Mash.new(get resource_path, @version)
+          get resource_path, @version
         end
 
         def free
-          Hashie::Mash.new(get resource_path, @version, freeToPlay: true)
+          get resource_path, @version, freeToPlay: true
         end
       end
     end

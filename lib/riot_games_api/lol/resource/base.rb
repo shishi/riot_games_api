@@ -8,8 +8,7 @@ module RiotGamesApi
         end
 
         def get(resource_path, version, options = {})
-          response = @connection.get(api_endpoint(resource_path, version), options).body
-          JSON.parse response
+          @connection.get(api_endpoint(resource_path, version), options).body
         end
 
         def api_endpoint(resource_path, api_version)

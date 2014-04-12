@@ -6,7 +6,7 @@ describe 'RiotGamesApi::LoL::Resource::Game', :vcr do
 
   describe '#recent' do
     it 'should champinons is Xin Zhao in first game record' do
-      client.games.recent(summoner_id).games.first.championId.should eq 5
+      client.games.recent(summoner_id).games.first.champion_id.should eq 5
     end
 
     it 'should game records count is 10' do
