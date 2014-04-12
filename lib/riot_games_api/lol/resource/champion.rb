@@ -5,15 +5,18 @@ module RiotGamesApi
         def initialize(connection, region)
           super
           @version = 'v1.2'
-          @resource_path = 'champion'
+        end
+
+        def resource_path
+          'champion'
         end
 
         def all
-          Hashie::Mash.new(get @resource_path, @version)
+          Hashie::Mash.new(get resource_path, @version)
         end
 
         def free
-          Hashie::Mash.new(get @resource_path, @version, freeToPlay: true)
+          Hashie::Mash.new(get resource_path, @version, freeToPlay: true)
         end
       end
     end
