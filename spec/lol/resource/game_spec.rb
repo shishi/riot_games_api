@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'RiotGamesApi::LoL::Resource::Game', vcr: true do
+describe 'RiotGamesApi::LoL::Resource::Game', :vcr do
   let(:client) { RiotGamesApi::LOL::Client.new }
   let(:summoner_id) { 42139310 }
 
