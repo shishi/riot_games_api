@@ -6,4 +6,4 @@ rvm:
   - jruby-head
   - jruby-19mode
 env:
-  - RIOT_GAMES_API_KEY=test_key
+  - RIOT_GAMES_API_KEY=test_key SPEC_OPTS='--color --format documentation'
