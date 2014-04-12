@@ -2,19 +2,20 @@ module RiotGamesApi
   module LOL
     class Client
       def initialize(params = {})
-        #fail ArgumentError, 'you should need :api_key in args at leaet.' unless params.has_key? :api_key
-
+        @base_url = params[:base_url] || 'http://prod.api.pvp.net/'
+        @ssl = params[:ssl] || { verify: true }
         @api_key = params[:api_key] || ENV['RIOT_GAMES_API_KEY']
-        @base_url = params[:base_url] || 'https://prod.api.pvp.net/'
         @region = params[:region] || 'na'
-        @logger = :logger
-#        @logger = params[:debug] ? :logger : :raise_error
+        @adapter = params[:adapter] || Faraday.default_adapter
+        @logger = params[:debug] ? :logger : :raise_error
         @locale = params[:locale] || 'en_US'
+
+        fail ArgumentError, 'you should need :api_key in args at leaet.' unless @api_key
       end
 
       def connection
-        Faraday.new(url: @base_url) do |faraday|
-          faraday.adapter  Faraday.default_adapter
+        Faraday.new(url: @base_url, ssl: @ssl) do |faraday|
+          faraday.adapter  @adapter
           faraday.request  :url_encoded
           faraday.response @logger
           faraday.params[:api_key] = @api_key

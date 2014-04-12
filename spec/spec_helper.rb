@@ -7,4 +7,6 @@ require 'vcr'
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'
   c.hook_into :webmock
+  c.filter_sensitive_data('test_key') { ENV['RIOT_GAMES_API_KEY'] }
+  c.configure_rspec_metadata!
 end
