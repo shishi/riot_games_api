@@ -62,7 +62,7 @@ describe RiotGamesApi::LOL::Resource::League, :vcr do
       player_in_challenger.tier.should eq 'CHALLENGER'
     end
 
-    it 'should queue is raked solo 5v5' do
+    it 'should queue is ranked solo 5v5' do
       player_in_challenger.queue_type.should eq 'RANKED_SOLO_5x5'
     end
   end
@@ -74,7 +74,7 @@ describe RiotGamesApi::LOL::Resource::League, :vcr do
       team_in_challenger.tier.should eq 'CHALLENGER'
     end
 
-    it 'should queue is raked team 5v5' do
+    it 'should queue is ranked team 5v5' do
       team_in_challenger.queue_type.should eq 'RANKED_TEAM_5x5'
     end
   end
@@ -86,7 +86,7 @@ describe RiotGamesApi::LOL::Resource::League, :vcr do
       team_in_challenger.tier.should eq 'CHALLENGER'
     end
 
-    it 'should queue is raked team 3v3' do
+    it 'should queue is ranked team 3v3' do
       team_in_challenger.queue_type.should eq 'RANKED_TEAM_3x3'
     end
   end

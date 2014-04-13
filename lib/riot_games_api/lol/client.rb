@@ -14,11 +14,11 @@ module RiotGamesApi
 
       def connection
         Faraday.new(url: @base_url) do |faraday|
-          faraday.adapter  @adapter
           faraday.request  :url_encoded
           faraday.response :rashify
           faraday.response :json
           faraday.response @logger
+          faraday.adapter  @adapter
           faraday.params[:api_key] = @api_key
           faraday.params[:locale] = @locale
         end

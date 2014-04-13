@@ -27,11 +27,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 13 Apr 2014 15:25:13 GMT
+      - Sun, 13 Apr 2014 20:17:42 GMT
       Server:
       - Jetty(9.1.1.v20140108)
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '671'
       Connection:
       - keep-alive
     body:
@@ -119,5 +119,5 @@ http_interactions:
         cmVzaEJsb29kIjpmYWxzZSwiaXNJbmFjdGl2ZSI6ZmFsc2UsImxhc3RQbGF5
         ZWQiOi0xfV19
     http_version: 
-  recorded_at: Sun, 13 Apr 2014 15:25:39 GMT
+  recorded_at: Sun, 13 Apr 2014 20:18:09 GMT
 recorded_with: VCR 2.9.0

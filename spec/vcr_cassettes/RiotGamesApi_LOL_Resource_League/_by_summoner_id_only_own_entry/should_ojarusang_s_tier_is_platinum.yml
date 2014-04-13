@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 13 Apr 2014 15:16:09 GMT
+      - Sun, 13 Apr 2014 20:17:29 GMT
       Server:
       - Jetty(9.1.1.v20140108)
       Transfer-Encoding:
@@ -39,5 +39,5 @@ http_interactions:
       string: "[{\"playerOrTeamId\":\"34682697\",\"playerOrTeamName\":\"ojarusang\",\"leagueName\":\"Evelynn's
         Butchers\",\"queueType\":\"RANKED_SOLO_5x5\",\"tier\":\"PLATINUM\",\"rank\":\"IV\",\"leaguePoints\":100,\"wins\":9,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"miniSeries\":{\"target\":2,\"wins\":0,\"losses\":0,\"timeLeftToPlayMillis\":-1,\"progress\":\"NNN\"},\"lastPlayed\":-1}]"
     http_version: 
-  recorded_at: Sun, 13 Apr 2014 15:16:35 GMT
+  recorded_at: Sun, 13 Apr 2014 20:17:56 GMT
 recorded_with: VCR 2.9.0
