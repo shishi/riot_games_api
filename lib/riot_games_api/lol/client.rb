@@ -31,6 +31,10 @@ module RiotGamesApi
       def games
         RiotGamesApi::LOL::Resource::Game.new(connection, @region)
       end
+
+      def leagues
+        RiotGamesApi::LOL::Resource::League.new(connection, @region)
+      end
     end
   end
 end

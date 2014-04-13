@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://prod.api.pvp.net/api/lol/na/v2.3/league/challenger?api_key=test_key&locale=en_US&type=RANKED_TEAM_5x5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 13 Apr 2014 15:25:10 GMT
+      Server:
+      - Jetty(9.1.1.v20140108)
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"name\":\"Kayle's Tricksters\",\"tier\":\"CHALLENGER\",\"queue\":\"RANKED_TEAM_5x5\",\"entries\":[{\"playerOrTeamId\":\"TEAM-1991eb20-a33e-11e3-b439-782bcb4d1861\",\"playerOrTeamName\":\"FFGPractice\",\"leagueName\":\"Kayle's
+        Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":185,\"wins\":42,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-3333af10-93ac-11e3-9126-782bcb4d0bb2\",\"playerOrTeamName\":\"is
+        my way\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":25,\"wins\":44,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-5f673670-a959-11e3-a144-782bcb4d1861\",\"playerOrTeamName\":\"WeAreOver\",\"leagueName\":\"Kayle's
+        Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":0,\"wins\":31,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-b973e960-78b2-11e3-9b86-782bcb4d1861\",\"playerOrTeamName\":\"Team
+        Eight\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":189,\"wins\":37,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-4f7a4ae0-fb7b-11e2-a602-782bcb4d1861\",\"playerOrTeamName\":\"Ikdaysak\",\"leagueName\":\"Kayle's
+        Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":39,\"wins\":55,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-7a53b740-7643-11e3-9091-782bcb4d1861\",\"playerOrTeamName\":\"Kings
+        of Tilt\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":86,\"wins\":38,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-552b1d90-a335-11e3-a508-782bcb4d0bb2\",\"playerOrTeamName\":\"x
+        MeM Vexatious x\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":223,\"wins\":52,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-b91d8020-94fa-11e3-8126-782bcb4d1861\",\"playerOrTeamName\":\"ND
+        Gaming\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":303,\"wins\":82,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-6b84ee00-89d5-11e3-9a36-782bcb4d1861\",\"playerOrTeamName\":\"XinNianKuaiLe2014\",\"leagueName\":\"Kayle's
+        Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":0,\"wins\":50,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":true,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-f87c9a70-19fe-11e3-b9be-782bcb4d1861\",\"playerOrTeamName\":\"Kubiko\",\"leagueName\":\"Kayle's
+        Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":3,\"wins\":46,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-853e7720-9778-11e3-b9b9-782bcb4d1861\",\"playerOrTeamName\":\"Hunnies
+        for Monies\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":118,\"wins\":49,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-74518440-a103-11e3-913d-782bcb4d0bb2\",\"playerOrTeamName\":\"IBAWLYR\",\"leagueName\":\"Kayle's
+        Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":0,\"wins\":47,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":true,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-e40cbba0-a97e-11e3-a088-782bcb4d0bb2\",\"playerOrTeamName\":\"Team
+        Green Forest CA\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":80,\"wins\":30,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-a86e3510-66b7-11e3-b69f-782bcb4d0bb2\",\"playerOrTeamName\":\"Area
+        0f Effect\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":131,\"wins\":31,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-2bb9d7e0-9385-11e3-a7fb-782bcb4d1861\",\"playerOrTeamName\":\"Gamester
+        Gear A\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":112,\"wins\":30,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-8c4a4120-8391-11e3-9291-782bcb4d0bb2\",\"playerOrTeamName\":\"Super
+        Team NA\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":11,\"wins\":39,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-0a78b4f0-8879-11e3-bbbc-782bcb4d0bb2\",\"playerOrTeamName\":\"VG
+        Practice\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":145,\"wins\":57,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-36463ca0-7bfa-11e3-a96e-782bcb4d0bb2\",\"playerOrTeamName\":\"SJSU
+        Sergios Dream\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":14,\"wins\":35,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-b9f72bb0-7658-11e3-9091-782bcb4d1861\",\"playerOrTeamName\":\"UNRANKED9
+        GAMING\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":95,\"wins\":71,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1}]}"
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 15:25:36 GMT
+recorded_with: VCR 2.9.0

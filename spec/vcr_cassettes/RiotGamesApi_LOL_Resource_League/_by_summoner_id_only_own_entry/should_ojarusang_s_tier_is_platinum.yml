@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://prod.api.pvp.net/api/lol/na/v2.3/league/by-summoner/34682697/entry?api_key=test_key&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 13 Apr 2014 15:16:09 GMT
+      Server:
+      - Jetty(9.1.1.v20140108)
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[{\"playerOrTeamId\":\"34682697\",\"playerOrTeamName\":\"ojarusang\",\"leagueName\":\"Evelynn's
+        Butchers\",\"queueType\":\"RANKED_SOLO_5x5\",\"tier\":\"PLATINUM\",\"rank\":\"IV\",\"leaguePoints\":100,\"wins\":9,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"miniSeries\":{\"target\":2,\"wins\":0,\"losses\":0,\"timeLeftToPlayMillis\":-1,\"progress\":\"NNN\"},\"lastPlayed\":-1}]"
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 15:16:35 GMT
+recorded_with: VCR 2.9.0
