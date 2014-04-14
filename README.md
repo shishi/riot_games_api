@@ -1,3 +1,7 @@
+[![Build Status](https://drone.io/github.com/shishi/riot_games_api/status.png)](https://drone.io/github.com/shishi/riot_games_api/latest)
+
+[![Build Status](https://travis-ci.org/shishi/riot_games_api.svg?branch=master)](https://travis-ci.org/shishi/riot_games_api)
+
 # RiotGamesApi
 
 TODO: Write a gem description
