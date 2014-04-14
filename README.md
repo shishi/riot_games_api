@@ -1,8 +1,9 @@
-[![Build Status](https://drone.io/github.com/shishi/riot_games_api/status.png)](https://drone.io/github.com/shishi/riot_games_api/latest)
+[![Build Status](https://drone.io/github.com/shishi/riot_games_api/status.png)](https://drone.io/github.com/shishi/riot_games_api/latest) [![Build Status](https://travis-ci.org/shishi/riot_games_api.svg?branch=master)](https://travis-ci.org/shishi/riot_games_api)
 
-[![Build Status](https://travis-ci.org/shishi/riot_games_api.svg?branch=master)](https://travis-ci.org/shishi/riot_games_api)
+[![Code Climate](https://codeclimate.com/github/shishi/riot_games_api.png)](https://codeclimate.com/github/shishi/riot_games_api) [![Code Climate](https://codeclimate.com/github/shishi/riot_games_api/coverage.png
+)](https://codeclimate.com/github/shishi/riot_games_api)
 
-[![Code Climate](https://codeclimate.com/github/shishi/riot_games_api.png)](https://codeclimate.com/github/shishi/riot_games_api)
+[![Dependency Status](https://gemnasium.com/shishi/riot_games_api.png)](https://gemnasium.com/shishi/riot_games_api)
 
 # RiotGamesApi
 

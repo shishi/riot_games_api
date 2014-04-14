@@ -1,3 +1,6 @@
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
 require_relative '../lib/riot_games_api'
 
 require 'rspec/autorun'
