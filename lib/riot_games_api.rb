@@ -9,6 +9,6 @@ require 'json'
 require 'faraday'
 require 'faraday_middleware'
 
-
+# TODO RiotGamesApi::LOL::Model may be just Dto
 module RiotGamesApi
 end
