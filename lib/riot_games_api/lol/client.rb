@@ -2,8 +2,8 @@ module RiotGamesApi
   module LOL
     class Client
       def initialize(params = {})
-        @base_url = params[:use_ssl] ? 'https://prod.api.pvp.net/' : 'http://prod.api.pvp.net/'
         @api_key = params[:api_key] || ENV['RIOT_GAMES_API_KEY']
+        @base_url = params[:use_ssl] ? 'https://prod.api.pvp.net/' : 'http://prod.api.pvp.net/'
         @region = params[:region] || 'na'
         @adapter = params[:adapter] || Faraday.default_adapter
         @logger = params[:debug] ? :logger : :raise_error
@@ -14,11 +14,11 @@ module RiotGamesApi
 
       def connection
         Faraday.new(url: @base_url) do |faraday|
-          faraday.request  :url_encoded
+          faraday.request :url_encoded
           faraday.response :rashify
           faraday.response :json
           faraday.response @logger
-          faraday.adapter  @adapter
+          faraday.adapter @adapter
           faraday.params[:api_key] = @api_key
           faraday.params[:locale] = @locale
         end
