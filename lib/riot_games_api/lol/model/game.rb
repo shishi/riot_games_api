@@ -8,7 +8,7 @@ module RiotGamesApi
 
         attribute :champion_id, Integer
         attribute :create_date, Integer
-        attribute :fellow_players, Array
+        attribute :fellow_players, Array[RiotGamesApi::LOL::Model::Player]
         attribute :game_id, Integer
         attribute :game_mode, String
         attribute :game_type, String
@@ -18,7 +18,7 @@ module RiotGamesApi
         attribute :map_id, Integer
         attribute :spell1, Integer
         attribute :spell2, Integer
-        attribute :stats, Array
+        attribute :stats, RiotGamesApi::LOL::Model::RawStats
         attribute :sub_type, String
         attribute :team_id, Integer
       end
