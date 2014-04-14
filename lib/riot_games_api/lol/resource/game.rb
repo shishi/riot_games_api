@@ -13,7 +13,7 @@ module RiotGamesApi
 
         def recent(summoner_id)
           recent_game = get(resource_path(summoner_id), @version)
-          RiotGamesApi::LOL::Model::RecentGame.new recent_game
+          RiotGamesApi::LOL::Model::Game::RecentGame.new recent_game
         end
       end
     end

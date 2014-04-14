@@ -1,11 +1,7 @@
-require_relative 'model/champion'
-require_relative 'model/player'
-require_relative 'model/raw_stats'
-require_relative 'model/game'
-require_relative 'model/recent_game'
-require_relative 'model/mini_series'
-require_relative 'model/league_item'
-require_relative 'model/league'
+require 'riot_games_api/lol/model/champion'
+require 'riot_games_api/lol/model/game'
+require 'riot_games_api/lol/model/league'
+require 'riot_games_api/lol/model/lol-static-data'
 
 module RiotGamesApi
   module LOL

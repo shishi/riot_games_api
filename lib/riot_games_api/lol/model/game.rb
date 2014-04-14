@@ -1,26 +1,12 @@
-require 'virtus'
+require 'riot_games_api/lol/model/game/player'
+require 'riot_games_api/lol/model/game/raw_stats'
+require 'riot_games_api/lol/model/game/game'
+require 'riot_games_api/lol/model/game/recent_game'
 
 module RiotGamesApi
   module LOL
     module Model
-      class Game
-        include Virtus.model
-
-        attribute :champion_id, Integer
-        attribute :create_date, Integer
-        attribute :fellow_players, Array[RiotGamesApi::LOL::Model::Player]
-        attribute :game_id, Integer
-        attribute :game_mode, String
-        attribute :game_type, String
-        attribute :invalid, Boolean
-        attribute :ip_earned, Integer
-        attribute :level, Integer
-        attribute :map_id, Integer
-        attribute :spell1, Integer
-        attribute :spell2, Integer
-        attribute :stats, RiotGamesApi::LOL::Model::RawStats
-        attribute :sub_type, String
-        attribute :team_id, Integer
+      module Game
       end
     end
   end

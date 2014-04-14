@@ -1,7 +1,7 @@
-require_relative 'riot_games_api/version'
-require_relative 'riot_games_api/lol/client'
-require_relative 'riot_games_api/lol/resource'
-require_relative 'riot_games_api/lol/model'
+require 'riot_games_api/version'
+require 'riot_games_api/lol/client'
+require 'riot_games_api/lol/resource'
+require 'riot_games_api/lol/model'
 
 require 'bundler/setup'
 

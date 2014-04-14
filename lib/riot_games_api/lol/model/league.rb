@@ -1,16 +1,11 @@
-require 'virtus'
+require 'riot_games_api/lol/model/league/mini_series'
+require 'riot_games_api/lol/model/league/league_item'
+require 'riot_games_api/lol/model/league/league'
 
 module RiotGamesApi
   module LOL
     module Model
-      class League
-        include Virtus.model
-
-        attribute :entries, Array[RiotGamesApi::LOL::Model::LeagueItem]
-        attribute :name, String
-        attribute :participant_id, Integer
-        attribute :queue, String
-        attribute :tier, String
+      module League
       end
     end
   end

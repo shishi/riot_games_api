@@ -15,7 +15,7 @@ describe RiotGamesApi::LOL::Resource::League, :vcr do
     end
 
     it 'should have league item entries' do
-      league_first.entries.first.class.should eq RiotGamesApi::LOL::Model::LeagueItem
+      league_first.entries.first.class.should eq RiotGamesApi::LOL::Model::League::LeagueItem
     end
   end
 
@@ -39,7 +39,7 @@ describe RiotGamesApi::LOL::Resource::League, :vcr do
     end
 
     it 'should have league item entries' do
-      league_first.entries.first.class.should eq RiotGamesApi::LOL::Model::LeagueItem
+      league_first.entries.first.class.should eq RiotGamesApi::LOL::Model::League::LeagueItem
     end
   end
 

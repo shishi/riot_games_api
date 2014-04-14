@@ -22,7 +22,7 @@ describe RiotGamesApi::LOL::Resource::Game, :vcr do
     end
 
     it 'should game record have player model' do
-      recent_games.games.first.fellow_players.first.class.should eq RiotGamesApi::LOL::Model::Player
+      recent_games.games.first.fellow_players.first.class.should eq RiotGamesApi::LOL::Model::Game::Player
     end
 
     it "should first fellow player's team is blue" do
@@ -30,7 +30,7 @@ describe RiotGamesApi::LOL::Resource::Game, :vcr do
     end
 
     it 'should game record have raw stats model' do
-      recent_games.games.first.stats.class.should eq RiotGamesApi::LOL::Model::RawStats
+      recent_games.games.first.stats.class.should eq RiotGamesApi::LOL::Model::Game::RawStats
     end
 
     it 'should first game is win' do

@@ -9,19 +9,19 @@ module RiotGamesApi
 
         def all
           get(resource_path, @version).champions.map do |champion|
-            RiotGamesApi::LOL::Model::Champion.new champion
+            RiotGamesApi::LOL::Model::Champion::Champion.new champion
           end
         end
 
         def free
           get(resource_path, @version, freeToPlay: true).champions.map do |champion|
-            RiotGamesApi::LOL::Model::Champion.new champion
+            RiotGamesApi::LOL::Model::Champion::Champion.new champion
           end
         end
 
         def by_champion_id(champion_id)
           champion = get(resource_path_for_champion_id(champion_id), @version)
-          RiotGamesApi::LOL::Model::Champion.new champion
+          RiotGamesApi::LOL::Model::Champion::Champion.new champion
         end
 
         private

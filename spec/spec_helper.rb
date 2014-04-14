@@ -1,7 +1,9 @@
+$LOAD_PATH.unshift File.dirname(__FILE__)
+
 require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
 
-require_relative '../lib/riot_games_api'
+require 'riot_games_api'
 
 require 'rspec/autorun'
 require 'webmock/rspec'

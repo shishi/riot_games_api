@@ -1,4 +1,7 @@
-require_relative 'lib/riot_games_api'
+$LOAD_PATH.unshift File.dirname(__FILE__)
+#$:.unshift File.dirname(__FILE__)
+
+require 'riot_games_api'
 
 SHISHISN = 42139310
 PHANTOM_LOAD = 19347723
