@@ -7,10 +7,6 @@ module RiotGamesApi
           @version = 'v1.2'
         end
 
-        def resource_path
-          'champion'
-        end
-
         def all
           get(resource_path, @version).champions.map do |champion|
             RiotGamesApi::LOL::Model::Champion.new champion
@@ -21,6 +17,21 @@ module RiotGamesApi
           get(resource_path, @version, freeToPlay: true).champions.map do |champion|
             RiotGamesApi::LOL::Model::Champion.new champion
           end
+        end
+
+        def by_champion_id(champion_id)
+          champion = get(resource_path_for_champion_id(champion_id), @version)
+          RiotGamesApi::LOL::Model::Champion.new champion
+        end
+
+        private
+
+        def resource_path
+          'champion'
+        end
+
+        def resource_path_for_champion_id(champion_id)
+          "champion/#{champion_id}"
         end
       end
     end
