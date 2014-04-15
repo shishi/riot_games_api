@@ -1,0 +1,28 @@
+AllCops:
+  Include:
+    - Rakefile
+    - Gemfile
+    - config.ru
+  Exclude:
+    - bin/*
+    - db/schema.rb
+    - db/migrate/*
+  RunRailsCops: true
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Max: 160
+
+MethodLength:
+  Max: 15
+
+ClassAndModuleChildren:
+  Enabled: false
+
+CollectionMethods:
+  Enabled: false
+
+SingleLineBlockParams:
+  Enabled: false
