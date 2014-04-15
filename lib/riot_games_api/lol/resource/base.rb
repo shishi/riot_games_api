@@ -7,6 +7,8 @@ module RiotGamesApi
           @region = region
         end
 
+        private
+
         def get(resource_path, version, options = {})
           @connection.get(api_endpoint(resource_path, version), options).body
         end
