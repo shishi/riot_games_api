@@ -1,7 +1,7 @@
 module RiotGamesApi
   module LOL
     module Resource
-      class LOLStaticData < Base
+      class StaticData < Base
         def initialize(connection, region)
           super
           @version = 'v1.2'
@@ -13,7 +13,7 @@ module RiotGamesApi
                       else
                         get(resource_path_for_champion_all, @version, champData: 'all', dataById: false, version: data_version)
                       end
-          RiotGamesApi::LOL::Model::LOLStaticData::ChampionList.new champions
+          RiotGamesApi::LOL::Model::StaticData::ChampionList.new champions
         end
 
         def champion_by_id(champion_id, key_by_id = false, data_version = nil)
@@ -22,7 +22,7 @@ module RiotGamesApi
                       else
                         get(resource_path_for_champion_by_id(champion_id), @version, champData: 'all', dataById: false, version: data_version)
                       end
-          RiotGamesApi::LOL::Model::LOLStaticData::Champion.new champion
+          RiotGamesApi::LOL::Model::StaticData::Champion.new champion
         end
 
         private

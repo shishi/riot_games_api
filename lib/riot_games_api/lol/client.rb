@@ -37,7 +37,7 @@ module RiotGamesApi
       end
 
       def static_data
-        RiotGamesApi::LOL::Resource::LOLStaticData.new(connection, @region)
+        RiotGamesApi::LOL::Resource::StaticData.new(connection, @region)
       end
     end
   end

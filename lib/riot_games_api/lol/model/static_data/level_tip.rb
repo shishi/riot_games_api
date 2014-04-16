@@ -3,12 +3,12 @@ require 'virtus'
 module RiotGamesApi
   module LOL
     module Model
-      module LOLStaticData
-        class BlockItem
+      module StaticData
+        class LevelTip
           include Virtus.model
 
-          attribute :count, Integer
-          attribute :id, Integer
+          attribute :effect, Array[String]
+          attribute :label, Array[String]
         end
       end
     end

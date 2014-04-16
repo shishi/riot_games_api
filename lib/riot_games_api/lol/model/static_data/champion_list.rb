@@ -3,11 +3,11 @@ require 'virtus'
 module RiotGamesApi
   module LOL
     module Model
-      module LOLStaticData
+      module StaticData
         class ChampionList
           include Virtus.model
 
-          attribute :data, Hash[Symbol => RiotGamesApi::LOL::Model::LOLStaticData::Champion]
+          attribute :data, Hash[Symbol => RiotGamesApi::LOL::Model::StaticData::Champion]
           attribute :format, String
           attribute :keys, Hash[Integer => String]
           attribute :type, String

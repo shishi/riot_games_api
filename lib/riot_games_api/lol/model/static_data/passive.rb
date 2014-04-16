@@ -3,12 +3,12 @@ require 'virtus'
 module RiotGamesApi
   module LOL
     module Model
-      module LOLStaticData
+      module StaticData
         class Passive
           include Virtus.model
 
           attribute :description, String
-          attribute :image, RiotGamesApi::LOL::Model::LOLStaticData::Image
+          attribute :image, RiotGamesApi::LOL::Model::StaticData::Image
           attribute :name, String
           attribute :sanitized_description, String
         end

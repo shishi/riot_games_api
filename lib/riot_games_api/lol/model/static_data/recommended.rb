@@ -3,11 +3,11 @@ require 'virtus'
 module RiotGamesApi
   module LOL
     module Model
-      module LOLStaticData
+      module StaticData
         class Recommended
           include Virtus.model
 
-          attribute :blocks, Array[RiotGamesApi::LOL::Model::LOLStaticData::Block]
+          attribute :blocks, Array[RiotGamesApi::LOL::Model::StaticData::Block]
           attribute :champion, String
           attribute :map, String
           attribute :mode, String

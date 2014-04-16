@@ -3,7 +3,7 @@ require 'virtus'
 module RiotGamesApi
   module LOL
     module Model
-      module LOLStaticData
+      module StaticData
         class Info
           include Virtus.model
 

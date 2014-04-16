@@ -3,7 +3,7 @@ require 'virtus'
 module RiotGamesApi
   module LOL
     module Model
-      module LOLStaticData
+      module StaticData
         class ChampionSpell
           include Virtus.model
 
@@ -15,9 +15,9 @@ module RiotGamesApi
           attribute :description, String
           attribute :effect, Array[Array[Integer]]
           attribute :effect_burn, Array[String]
-          attribute :image, RiotGamesApi::LOL::Model::LOLStaticData::Image
+          attribute :image, RiotGamesApi::LOL::Model::StaticData::Image
           attribute :key, String
-          attribute :leveltip, RiotGamesApi::LOL::Model::LOLStaticData::LevelTip
+          attribute :leveltip, RiotGamesApi::LOL::Model::StaticData::LevelTip
           attribute :maxrank, Integer
           attribute :name, String
           attribute :range, Array # need to check
@@ -26,7 +26,7 @@ module RiotGamesApi
           attribute :sanitized_description, String
           attribute :sanitized_tooltip, String
           attribute :tooltip, String
-          attribute :vars, Array[RiotGamesApi::LOL::Model::LOLStaticData::SpellVars]
+          attribute :vars, Array[RiotGamesApi::LOL::Model::StaticData::SpellVars]
         end
       end
     end

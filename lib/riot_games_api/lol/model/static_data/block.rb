@@ -3,11 +3,11 @@ require 'virtus'
 module RiotGamesApi
   module LOL
     module Model
-      module LOLStaticData
+      module StaticData
         class Block
           include Virtus.model
 
-          attribute :items, Array[RiotGamesApi::LOL::Model::LOLStaticData::BlockItem]
+          attribute :items, Array[RiotGamesApi::LOL::Model::StaticData::BlockItem]
           attribute :type, Integer
         end
       end
