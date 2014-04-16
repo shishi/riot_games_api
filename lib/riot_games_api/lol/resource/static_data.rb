@@ -25,6 +25,16 @@ module RiotGamesApi
           RiotGamesApi::LOL::Model::StaticData::Champion.new champion
         end
 
+        def item_all(data_version = nil)
+          items = get(resource_path_for_item_all, @version, itemListData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::ItemList.new items
+        end
+
+        def item_by_id(item_id, data_version = nil)
+          item = get(resource_path_for_item_by_id(item_id), @version, itemData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::Item.new item
+        end
+
         private
 
         def api_endpoint(resource_path, api_version)
@@ -38,7 +48,15 @@ module RiotGamesApi
         def resource_path_for_champion_by_id(champion_id)
           "champion/#{champion_id}"
         end
-      end
+
+        def resource_path_for_item_all
+          'item'
+        end
+
+        def resource_path_for_item_by_id(item_id)
+          "item/#{item_id}"
+        end
+end
     end
   end
 end
