@@ -8,20 +8,17 @@ module RiotGamesApi
         end
 
         def champion_all(key_by_id = false, data_version = nil)
-          champion_list = if key_by_id
-                        get(resource_path('champion'), @version, champData: 'all', dataById: true, version: data_version)
-                      else
-                        get(resource_path('champion'), @version, champData: 'all', dataById: false, version: data_version)
-                      end
-          RiotGamesApi::LOL::Model::StaticData::ChampionList.new champion_list
+          if key_by_id
+            champion_list = get(resource_path('champion'), @version, champData: 'all', dataById: true, version: data_version)
+            RiotGamesApi::LOL::Model::StaticData::ChampionListDataById.new champion_list
+          else
+            champion_list = get(resource_path('champion'), @version, champData: 'all', dataById: false, version: data_version)
+            RiotGamesApi::LOL::Model::StaticData::ChampionList.new champion_list
+          end
         end
 
-        def champion_by_id(champion_id, key_by_id = false, data_version = nil)
-          champion = if key_by_id
-                       get(resource_path_by_id('champion', champion_id), @version, champData: 'all', dataById: true, version: data_version)
-                     else
-                       get(resource_path_by_id('champion', champion_id), @version, champData: 'all', dataById: false, version: data_version)
-                     end
+        def champion_by_id(champion_id, data_version = nil)
+          champion = get(resource_path_by_id('champion', champion_id), @version, champData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::Champion.new champion
         end
 

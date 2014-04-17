@@ -11,6 +11,7 @@ require 'riot_games_api/lol/model/static_data/info'
 require 'riot_games_api/lol/model/static_data/champion_spell'
 require 'riot_games_api/lol/model/static_data/champion'
 require 'riot_games_api/lol/model/static_data/champion_list'
+require 'riot_games_api/lol/model/static_data/champion_list_data_by_id'
 
 require 'riot_games_api/lol/model/static_data/meta_data'
 require 'riot_games_api/lol/model/static_data/gold'

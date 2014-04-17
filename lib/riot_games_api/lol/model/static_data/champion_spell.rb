@@ -20,7 +20,7 @@ module RiotGamesApi
           attribute :leveltip, RiotGamesApi::LOL::Model::StaticData::LevelTip
           attribute :maxrank, Integer
           attribute :name, String
-          attribute :range, Array # need to check
+          attribute :range, Array # array of integer or string
           attribute :range_burn, String
           attribute :resource, String
           attribute :sanitized_description, String
