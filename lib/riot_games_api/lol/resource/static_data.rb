@@ -35,6 +35,16 @@ module RiotGamesApi
           RiotGamesApi::LOL::Model::StaticData::Item.new item
         end
 
+        def mastery_all(data_version = nil)
+          masteries = get(resource_path_all('mastery'), @version, masteryListData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::MasteryList.new masteries
+        end
+
+        def mastery_by_id(mastery_id, data_version = nil)
+          mastery = get(resource_path_by_id('mastery', mastery_id), @version, masteryData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::Mastery.new mastery
+        end
+
         private
 
         def api_endpoint(resource_path, api_version)
@@ -49,12 +59,12 @@ module RiotGamesApi
           "champion/#{champion_id}"
         end
 
-        def resource_path_for_item_all
-          'item'
+        def resource_path_all(path)
+          "#{path}"
         end
 
-        def resource_path_for_item_by_id(item_id)
-          "item/#{item_id}"
+        def resource_path_by_id(path, target_id)
+          "#{path}/#{target_id}"
         end
 end
     end
