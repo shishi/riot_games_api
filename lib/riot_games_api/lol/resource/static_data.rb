@@ -60,6 +60,21 @@ module RiotGamesApi
           RiotGamesApi::LOL::Model::StaticData::Rune.new rune
         end
 
+        def summoner_spell_all(key_by_id = false, data_version = nil)
+          if key_by_id
+            summoner_spell_list = get(resource_path('summoner-spell'), @version, spellData: 'all', dataById: true, version: data_version)
+            RiotGamesApi::LOL::Model::StaticData::SummonerSpellListDataById.new summoner_spell_list
+          else
+            summoner_spell_list = get(resource_path('summoner-spell'), @version, spellData: 'all', dataById: false, version: data_version)
+            RiotGamesApi::LOL::Model::StaticData::SummonerSpellList.new summoner_spell_list
+          end
+        end
+
+        def summoner_spell_by_id(summoner_spell_id, data_version = nil)
+          summoner_spell = get(resource_path_by_id('summoner-spell', summoner_spell_id), @version, spellData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::SummonerSpell.new summoner_spell
+        end
+
         private
 
         def api_endpoint(resource_path, api_version)

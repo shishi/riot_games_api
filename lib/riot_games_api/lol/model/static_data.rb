@@ -31,6 +31,10 @@ require 'riot_games_api/lol/model/static_data/realm'
 require 'riot_games_api/lol/model/static_data/rune'
 require 'riot_games_api/lol/model/static_data/rune_list'
 
+require 'riot_games_api/lol/model/static_data/summoner_spell'
+require 'riot_games_api/lol/model/static_data/summoner_spell_list'
+require 'riot_games_api/lol/model/static_data/summoner_spell_list_data_by_id'
+
 module RiotGamesApi
   module LOL
     module Model
