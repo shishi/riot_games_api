@@ -26,6 +26,8 @@ require 'riot_games_api/lol/model/static_data/mastery_tree'
 require 'riot_games_api/lol/model/static_data/mastery'
 require 'riot_games_api/lol/model/static_data/mastery_list'
 
+require 'riot_games_api/lol/model/static_data/realm'
+
 module RiotGamesApi
   module LOL
     module Model

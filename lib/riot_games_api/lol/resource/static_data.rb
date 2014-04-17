@@ -9,9 +9,9 @@ module RiotGamesApi
 
         def champion_all(key_by_id = false, data_version = nil)
           champions = if key_by_id
-                        get(resource_path_all('champion'), @version, champData: 'all', dataById: true, version: data_version)
+                        get(resource_path('champion'), @version, champData: 'all', dataById: true, version: data_version)
                       else
-                        get(resource_path_all('champion'), @version, champData: 'all', dataById: false, version: data_version)
+                        get(resource_path('champion'), @version, champData: 'all', dataById: false, version: data_version)
                       end
           RiotGamesApi::LOL::Model::StaticData::ChampionList.new champions
         end
@@ -26,7 +26,7 @@ module RiotGamesApi
         end
 
         def item_all(data_version = nil)
-          items = get(resource_path_all('item'), @version, itemListData: 'all', version: data_version)
+          items = get(resource_path('item'), @version, itemListData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::ItemList.new items
         end
 
@@ -36,7 +36,7 @@ module RiotGamesApi
         end
 
         def mastery_all(data_version = nil)
-          masteries = get(resource_path_all('mastery'), @version, masteryListData: 'all', version: data_version)
+          masteries = get(resource_path('mastery'), @version, masteryListData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::MasteryList.new masteries
         end
 
@@ -45,13 +45,18 @@ module RiotGamesApi
           RiotGamesApi::LOL::Model::StaticData::Mastery.new mastery
         end
 
+        def realm
+          realm = get(resource_path('realm'), @version)
+          RiotGamesApi::LOL::Model::StaticData::Realm.new realm
+        end
+
         private
 
         def api_endpoint(resource_path, api_version)
           "api/lol/static-data/#{@region}/#{api_version}/#{resource_path}"
         end
 
-        def resource_path_all(path)
+        def resource_path(path)
           "#{path}"
         end
 
