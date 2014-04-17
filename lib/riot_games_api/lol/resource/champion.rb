@@ -20,7 +20,7 @@ module RiotGamesApi
         end
 
         def by_champion_id(champion_id)
-          champion = get(resource_path_for_champion_id(champion_id), @version)
+          champion = get(resource_path_by_id(champion_id), @version)
           RiotGamesApi::LOL::Model::Champion::Champion.new champion
         end
 
@@ -30,7 +30,7 @@ module RiotGamesApi
           'champion'
         end
 
-        def resource_path_for_champion_id(champion_id)
+        def resource_path_by_id(champion_id)
           "champion/#{champion_id}"
         end
       end
