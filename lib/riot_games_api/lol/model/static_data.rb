@@ -20,6 +20,7 @@ require 'riot_games_api/lol/model/static_data/item_tree'
 require 'riot_games_api/lol/model/static_data/item'
 require 'riot_games_api/lol/model/static_data/group'
 require 'riot_games_api/lol/model/static_data/basic_data'
+require 'riot_games_api/lol/model/static_data/item_list'
 
 require 'riot_games_api/lol/model/static_data/mastery_tree_item'
 require 'riot_games_api/lol/model/static_data/mastery_tree_list'

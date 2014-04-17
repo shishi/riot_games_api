@@ -9,7 +9,7 @@ module RiotGamesApi
         @logger = params[:debug] ? :logger : :raise_error
         @locale = params[:locale] || 'en_US'
 
-        fail ArgumentError, 'you should need "Riot Games API Key" at leaet.' unless @api_key
+        fail ArgumentError, 'You should need "Riot Games API Key" at leaet.' unless @api_key
       end
 
       def connection
@@ -38,6 +38,10 @@ module RiotGamesApi
 
       def static_data
         RiotGamesApi::LOL::Resource::StaticData.new(connection, @region)
+      end
+
+      def stats
+        RiotGamesApi::LOL::Resource::Stats.new(connection, @region)
       end
     end
   end
