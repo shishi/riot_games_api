@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/summoner-spell/12?api_key=test_key&locale=en_US&spellData=all&version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 17 Apr 2014 19:08:16 GMT
+      Server:
+      - Jetty(9.1.1.v20140108)
+      Vary:
+      - Accept-Encoding, User-Agent
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"name\":\"Teleport\",\"description\":\"After channeling for 3.5 seconds,
+        teleports your champion to target allied minion, turret, or ward.\",\"sanitizedDescription\":\"After
+        channeling for 3.5 seconds, teleports your champion to target allied minion,
+        turret, or ward.\",\"tooltip\":\"After channeling for {{ f1 }} seconds, your
+        champion teleports to target turret, minion or ward. Teleporting to an allied
+        turret puts Teleport on a {{ f3 }} second cooldown instead.<br><br>You may
+        reactivate Teleport to cancel it, placing it on a {{ f3 }} second cooldown.\",\"sanitizedTooltip\":\"After
+        channeling for {{ f1 }} seconds, your champion teleports to target turret,
+        minion or ward. Teleporting to an allied turret puts Teleport on a {{ f3 }}
+        second cooldown instead. You may reactivate Teleport to cancel it, placing
+        it on a {{ f3 }} second cooldown.\",\"leveltip\":{\"label\":[\"\"],\"effect\":[\"\"]},\"image\":{\"full\":\"SummonerTeleport.png\",\"sprite\":\"spell0.png\",\"group\":\"spell\",\"x\":288,\"y\":48,\"w\":48,\"h\":48},\"resource\":\"No
+        Cost\",\"maxrank\":1,\"cost\":[0],\"costType\":\"NoCost\",\"costBurn\":\"0\",\"cooldown\":[300],\"cooldownBurn\":\"300\",\"vars\":[{\"key\":\"f1\",\"link\":\"@text\",\"coeff\":[4.0]}],\"range\":[25000],\"rangeBurn\":\"25000\",\"summonerLevel\":6,\"id\":12,\"key\":\"SummonerTeleport\",\"modes\":[\"CLASSIC\",\"TUTORIAL\"]}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 19:08:50 GMT
+recorded_with: VCR 2.9.0

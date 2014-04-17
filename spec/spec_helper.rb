@@ -19,5 +19,4 @@ VCR.configure do |c|
   c.filter_sensitive_data('test_key') { ENV['RIOT_GAMES_API_KEY'] }
   c.configure_rspec_metadata!
   c.allow_http_connections_when_no_cassette = true
-  c.ignore_hosts
 end

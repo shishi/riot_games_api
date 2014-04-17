@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/mastery/4113?api_key=test_key&locale=en_US&masteryData=all&version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 17 Apr 2014 19:08:10 GMT
+      Server:
+      - Jetty(9.1.1.v20140108)
+      Vary:
+      - Accept-Encoding, User-Agent
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":4113,\"name\":\"Sorcery\",\"description\":[\"+1.25% Cooldown
+        Reduction\",\"+2.5% Cooldown Reduction\",\"+3.75% Cooldown Reduction\",\"+5%
+        Cooldown Reduction\"],\"sanitizedDescription\":[\"+1.25% Cooldown Reduction\",\"+2.5%
+        Cooldown Reduction\",\"+3.75% Cooldown Reduction\",\"+5% Cooldown Reduction\"],\"ranks\":4,\"prereq\":\"0\",\"image\":{\"full\":\"4113.png\",\"sprite\":\"mastery0.png\",\"group\":\"gray_mastery\",\"x\":96,\"y\":0,\"w\":48,\"h\":48}}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 19:08:44 GMT
+recorded_with: VCR 2.9.0
