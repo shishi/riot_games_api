@@ -28,6 +28,9 @@ require 'riot_games_api/lol/model/static_data/mastery_list'
 
 require 'riot_games_api/lol/model/static_data/realm'
 
+require 'riot_games_api/lol/model/static_data/rune'
+require 'riot_games_api/lol/model/static_data/rune_list'
+
 module RiotGamesApi
   module LOL
     module Model

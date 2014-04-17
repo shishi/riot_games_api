@@ -8,12 +8,12 @@ module RiotGamesApi
         end
 
         def champion_all(key_by_id = false, data_version = nil)
-          champions = if key_by_id
+          champion_list = if key_by_id
                         get(resource_path('champion'), @version, champData: 'all', dataById: true, version: data_version)
                       else
                         get(resource_path('champion'), @version, champData: 'all', dataById: false, version: data_version)
                       end
-          RiotGamesApi::LOL::Model::StaticData::ChampionList.new champions
+          RiotGamesApi::LOL::Model::StaticData::ChampionList.new champion_list
         end
 
         def champion_by_id(champion_id, key_by_id = false, data_version = nil)
@@ -26,8 +26,8 @@ module RiotGamesApi
         end
 
         def item_all(data_version = nil)
-          items = get(resource_path('item'), @version, itemListData: 'all', version: data_version)
-          RiotGamesApi::LOL::Model::StaticData::ItemList.new items
+          item_list = get(resource_path('item'), @version, itemListData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::ItemList.new item_list
         end
 
         def item_by_id(item_id, data_version = nil)
@@ -36,8 +36,8 @@ module RiotGamesApi
         end
 
         def mastery_all(data_version = nil)
-          masteries = get(resource_path('mastery'), @version, masteryListData: 'all', version: data_version)
-          RiotGamesApi::LOL::Model::StaticData::MasteryList.new masteries
+          mastery_list = get(resource_path('mastery'), @version, masteryListData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::MasteryList.new mastery_list
         end
 
         def mastery_by_id(mastery_id, data_version = nil)
@@ -48,6 +48,16 @@ module RiotGamesApi
         def realm
           realm = get(resource_path('realm'), @version)
           RiotGamesApi::LOL::Model::StaticData::Realm.new realm
+        end
+
+        def rune_all(data_version = nil)
+          rune_list = get(resource_path('rune'), @version, runeListData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::RuneList.new rune_list
+        end
+
+        def rune_by_id(rune_id, data_version = nil)
+          rune = get(resource_path_by_id('rune', rune_id), @version, runeData: 'all', version: data_version)
+          RiotGamesApi::LOL::Model::StaticData::Rune.new rune
         end
 
         private
