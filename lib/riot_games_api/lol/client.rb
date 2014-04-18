@@ -43,6 +43,10 @@ module RiotGamesApi
       def stats
         RiotGamesApi::LOL::Resource::Stats.new(connection, @region)
       end
+
+      def summoner
+        RiotGamesApi::LOL::Resource::Summoner.new(connection, @region)
+      end
     end
   end
 end

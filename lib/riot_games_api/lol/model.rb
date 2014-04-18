@@ -3,6 +3,7 @@ require 'riot_games_api/lol/model/game'
 require 'riot_games_api/lol/model/league'
 require 'riot_games_api/lol/model/static_data'
 require 'riot_games_api/lol/model/stats'
+require 'riot_games_api/lol/model/summoner'
 
 module RiotGamesApi
   module LOL
