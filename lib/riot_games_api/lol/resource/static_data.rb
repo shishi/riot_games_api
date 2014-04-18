@@ -8,11 +8,11 @@ module RiotGamesApi
         end
 
         def champion_all(key_by_id = false, data_version = nil)
+          champion_list = get(resource_path('champion'), @version, champData: 'all', dataById: key_by_id, version: data_version)
+
           if key_by_id
-            champion_list = get(resource_path('champion'), @version, champData: 'all', dataById: true, version: data_version)
             RiotGamesApi::LOL::Model::StaticData::ChampionListDataById.new champion_list
           else
-            champion_list = get(resource_path('champion'), @version, champData: 'all', dataById: false, version: data_version)
             RiotGamesApi::LOL::Model::StaticData::ChampionList.new champion_list
           end
         end
@@ -58,11 +58,11 @@ module RiotGamesApi
         end
 
         def summoner_spell_all(key_by_id = false, data_version = nil)
+          summoner_spell_list = get(resource_path('summoner-spell'), @version, spellData: 'all', dataById: key_by_id, version: data_version)
+
           if key_by_id
-            summoner_spell_list = get(resource_path('summoner-spell'), @version, spellData: 'all', dataById: true, version: data_version)
             RiotGamesApi::LOL::Model::StaticData::SummonerSpellListDataById.new summoner_spell_list
           else
-            summoner_spell_list = get(resource_path('summoner-spell'), @version, spellData: 'all', dataById: false, version: data_version)
             RiotGamesApi::LOL::Model::StaticData::SummonerSpellList.new summoner_spell_list
           end
         end
