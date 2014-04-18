@@ -12,6 +12,11 @@ module RiotGamesApi
           RiotGamesApi::LOL::Model::Stats::RankedStats.new stats
         end
 
+        def summary(summoner_id, season = nil) # e.g. season = 'SEASON3'
+          stats = get(resource_path('summary', summoner_id), @version, season: season)
+          RiotGamesApi::LOL::Model::Stats::PlayerStatsSummaryList.new stats
+        end
+
         private
 
         def resource_path(path, summoner_id)
