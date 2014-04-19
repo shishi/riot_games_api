@@ -8,7 +8,7 @@ module RiotGamesApi
         end
 
         def by_summoner_id(summoner_id)
-          get(resource_path(summoner_or_team_id, true), @version).map do |team|
+          get(resource_path(summoner_id, true), @version).map do |team|
             RiotGamesApi::LOL::Model::Team::Team.new team
           end
         end
