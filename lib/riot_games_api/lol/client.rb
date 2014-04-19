@@ -21,6 +21,7 @@ module RiotGamesApi
           faraday.adapter @adapter
           faraday.params[:api_key] = @api_key
           faraday.params[:locale] = @locale
+          faraday.headers['User-Agent'] = 'RiotGamesApi gem v#{RiotGamesApi::VERSION}"'
         end
       end
 
