@@ -57,7 +57,9 @@ describe RiotGamesApi::LOL::Resource::Summoner, :vcr do
   describe '#name' do
     let(:name) { client.summoner.name summoner_id }
 
-    it { name.values.first.should eq summoner_name }
+    it 'should have summoner name' do
+      name.values.first.should eq summoner_name
+    end
   end
 
   describe '#runes' do

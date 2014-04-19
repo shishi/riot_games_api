@@ -27,18 +27,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 18 Apr 2014 18:23:45 GMT
+      - Sat, 19 Apr 2014 02:05:10 GMT
       Server:
       - Jetty(9.1.1.v20140108)
       Vary:
       - Accept-Encoding, User-Agent
-      Content-Length:
-      - '40'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "{\"42139310\":\"shishisn\"}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 18:24:21 GMT
+  recorded_at: Sat, 19 Apr 2014 02:05:09 GMT
 recorded_with: VCR 2.9.0
