@@ -6,7 +6,7 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
 
   describe 'champion' do
     let(:shaco_id) { 35 }
-    let(:shaco_key) { :shaco }
+    let(:shaco_key) { 'shaco' }
     let(:shaco_name) { 'Shaco' }
 
     # very heavy spec cause test data is too huge
@@ -167,7 +167,7 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
 
   describe 'summoner_spell' do
     let(:teleport_id) { 12 }
-    let(:teleport_key) { :summoner_teleport }
+    let(:teleport_key) { 'summoner_teleport' }
     let(:teleport_name) { 'Teleport' }
 
     describe '#summoner_spell_all' do

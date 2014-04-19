@@ -1,5 +1,3 @@
-require 'virtus'
-
 module RiotGamesApi
   module LOL
     module Model
