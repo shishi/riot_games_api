@@ -7,7 +7,7 @@ module RiotGamesApi
         class RunePageList
           include Virtus.model
 
-          attribute :pages, Array[RiotGamesApi::LOL::Model::Summoner::RunePage]
+          attribute :pages, Set[RiotGamesApi::LOL::Model::Summoner::RunePage]
           attribute :summoner_id, Integer
         end
       end
