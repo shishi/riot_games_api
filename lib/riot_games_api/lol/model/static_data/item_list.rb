@@ -1,4 +1,3 @@
-
 module RiotGamesApi
   module LOL
     module Model
