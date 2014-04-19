@@ -47,6 +47,10 @@ module RiotGamesApi
       def summoner
         RiotGamesApi::LOL::Resource::Summoner.new(connection, @region)
       end
+
+      def team
+        RiotGamesApi::LOL::Resource::Team.new(connection, @region)
+      end
     end
   end
 end
