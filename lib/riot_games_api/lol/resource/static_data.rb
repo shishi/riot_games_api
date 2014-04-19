@@ -18,7 +18,7 @@ module RiotGamesApi
         end
 
         def champion_by_id(champion_id, data_version = nil)
-          champion = get(resource_path_by_id('champion', champion_id), @version, champData: 'all', version: data_version)
+          champion = get(resource_path('champion', champion_id), @version, champData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::Champion.new champion
         end
 
@@ -28,7 +28,7 @@ module RiotGamesApi
         end
 
         def item_by_id(item_id, data_version = nil)
-          item = get(resource_path_by_id('item', item_id), @version, itemData: 'all', version: data_version)
+          item = get(resource_path('item', item_id), @version, itemData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::Item.new item
         end
 
@@ -38,7 +38,7 @@ module RiotGamesApi
         end
 
         def mastery_by_id(mastery_id, data_version = nil)
-          mastery = get(resource_path_by_id('mastery', mastery_id), @version, masteryData: 'all', version: data_version)
+          mastery = get(resource_path('mastery', mastery_id), @version, masteryData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::Mastery.new mastery
         end
 
@@ -53,7 +53,7 @@ module RiotGamesApi
         end
 
         def rune_by_id(rune_id, data_version = nil)
-          rune = get(resource_path_by_id('rune', rune_id), @version, runeData: 'all', version: data_version)
+          rune = get(resource_path('rune', rune_id), @version, runeData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::Rune.new rune
         end
 
@@ -68,7 +68,7 @@ module RiotGamesApi
         end
 
         def summoner_spell_by_id(summoner_spell_id, data_version = nil)
-          summoner_spell = get(resource_path_by_id('summoner-spell', summoner_spell_id), @version, spellData: 'all', version: data_version)
+          summoner_spell = get(resource_path('summoner-spell', summoner_spell_id), @version, spellData: 'all', version: data_version)
           RiotGamesApi::LOL::Model::StaticData::SummonerSpell.new summoner_spell
         end
 
@@ -78,12 +78,12 @@ module RiotGamesApi
           "api/lol/static-data/#{@region}/#{api_version}/#{resource_path}"
         end
 
-        def resource_path(path)
-          "#{path}"
-        end
-
-        def resource_path_by_id(path, target_id)
-          "#{path}/#{target_id}"
+        def resource_path(path, target_id = nil)
+          if target_id
+            "#{path}/#{target_id}"
+          else
+            "#{path}"
+          end
         end
       end
     end

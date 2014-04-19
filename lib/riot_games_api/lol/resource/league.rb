@@ -8,25 +8,25 @@ module RiotGamesApi
         end
 
         def by_summoner_id(summoner_id)
-          get(resource_path_by_id('by-summoner', summoner_id), @version).map do |league|
+          get(resource_path('by-summoner', summoner_id), @version).map do |league|
             RiotGamesApi::LOL::Model::League::League.new league
           end
         end
 
         def by_summoner_id_only_own_entry(summoner_id)
-          get(resource_path_by_id_only_own_entry('by-summoner', summoner_id), @version).map do |league_item|
+          get(resource_path('by-summoner', summoner_id, true), @version).map do |league_item|
             RiotGamesApi::LOL::Model::League::LeagueItem.new league_item
           end
         end
 
         def by_team_id(team_id)
-          get(resource_path_by_id('by-team', team_id), @version).map do |league|
+          get(resource_path('by-team', team_id), @version).map do |league|
             RiotGamesApi::LOL::Model::League::League.new league
           end
         end
 
         def by_team_id_only_own_entry(team_id)
-          get(resource_path_by_id_only_own_entry('by-team', team_id), @version).map do |league_item|
+          get(resource_path('by-team', team_id, true), @version).map do |league_item|
             RiotGamesApi::LOL::Model::League::LeagueItem.new league_item
           end
         end
@@ -48,12 +48,12 @@ module RiotGamesApi
 
         private
 
-        def resource_path_by_id(path, target_id)
-          "league/#{path}/#{target_id}"
-        end
-
-        def resource_path_by_id_only_own_entry(path, target_id)
-          "league/#{path}/#{target_id}/entry"
+        def resource_path(path, target_id, entry = false)
+          if entry
+            "league/#{path}/#{target_id}/entry"
+          else
+            "league/#{path}/#{target_id}"
+          end
         end
 
         def resource_path_by_challenger
