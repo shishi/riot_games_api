@@ -9,7 +9,7 @@ module RiotGamesApi
           attribute :id, Integer
           attribute :name, String
           attribute :profile_icon_id, Integer
-          attribute :revision_date, Integer
+          attribute :revision_date, RiotGamesApi::LOL::Model::Corecion::Time
           attribute :summoner_level, Integer
         end
       end

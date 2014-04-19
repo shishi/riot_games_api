@@ -7,7 +7,7 @@ module RiotGamesApi
           include Virtus.model
 
           attribute :champions, Array[RiotGamesApi::LOL::Model::Stats::ChampionStats]
-          attribute :modify_date, Integer
+          attribute :modify_date, RiotGamesApi::LOL::Model::Corecion::Time
           attribute :summoner_id, Integer
         end
       end

@@ -6,7 +6,7 @@ module RiotGamesApi
           include Virtus.model
 
           attribute :champion_id, Integer
-          attribute :create_date, Integer
+          attribute :create_date, RiotGamesApi::LOL::Model::Corecion::Time
           attribute :fellow_players, Array[RiotGamesApi::LOL::Model::Game::Player]
           attribute :game_id, Integer
           attribute :game_mode, String

@@ -8,9 +8,10 @@ describe RiotGamesApi::LOL::Resource::Stats, :vcr do
   describe '#ranked' do
     context 'season3' do
       let(:ranked_stats) { client.stats.ranked summoner_id, season3 }
-      let(:last_modified) { 1378635320000 }
+      let(:last_modified) { Time.at(1378635320) }
 
       it 'should have modify_data which unixtime milliseconds' do
+        p ranked_stats.modify_date
         ranked_stats.modify_date.should eq last_modified
       end
 
