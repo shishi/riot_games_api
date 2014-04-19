@@ -7,7 +7,7 @@ module RiotGamesApi
         class ChampionList
           include Virtus.model
 
-          attribute :data, Hash[Symbol => RiotGamesApi::LOL::Model::StaticData::Champion]
+          attribute :data, Hash[String => RiotGamesApi::LOL::Model::StaticData::Champion]
           attribute :format, String
           attribute :keys, Hash[Integer => String]
           attribute :type, String

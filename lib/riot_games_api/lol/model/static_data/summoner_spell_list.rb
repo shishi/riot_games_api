@@ -7,7 +7,7 @@ module RiotGamesApi
         class SummonerSpellList
           include Virtus.model
 
-          attribute :data, Hash[Symbol => RiotGamesApi::LOL::Model::StaticData::SummonerSpell]
+          attribute :data, Hash[String => RiotGamesApi::LOL::Model::StaticData::SummonerSpell]
           attribute :type, String
           attribute :version, String
         end

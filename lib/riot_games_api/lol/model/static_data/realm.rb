@@ -12,7 +12,7 @@ module RiotGamesApi
           attribute :dd, String
           attribute :l, String
           attribute :lg, String
-          attribute :n, Hash[Symbol => String]
+          attribute :n, Hash[String => String]
           attribute :profileiconmax, Integer
           attribute :store, String
           attribute :v, String
