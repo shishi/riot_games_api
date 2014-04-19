@@ -1,4 +1,3 @@
-require 'virtus'
 require 'riot_games_api/lol/model/corecion/time'
 
 require 'riot_games_api/lol/model/champion'

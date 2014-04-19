@@ -3,6 +3,7 @@ $LOAD_PATH.unshift File.dirname(__FILE__)
 require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
 
+require 'bundler/setup'
 require 'riot_games_api'
 
 require 'rspec/autorun'

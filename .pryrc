@@ -1,6 +1,7 @@
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/lib'
 #$:.unshift File.dirname(__FILE__) + '/lib'
 
+require 'bundler/setup'
 require 'riot_games_api'
 
 SHISHISN = 42139310
