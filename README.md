@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/riot_games_api.svg)](http://badge.fury.io/rb/riot_games_api)
 [![Build Status](https://drone.io/github.com/shishi/riot_games_api/status.png)](https://drone.io/github.com/shishi/riot_games_api/latest)
 [![Build Status](https://travis-ci.org/shishi/riot_games_api.svg?branch=master)](https://travis-ci.org/shishi/riot_games_api)
 [![Code Climate](https://codeclimate.com/github/shishi/riot_games_api.png)](https://codeclimate.com/github/shishi/riot_games_api) [![Code Climate](https://codeclimate.com/github/shishi/riot_games_api/coverage.png
@@ -37,7 +38,7 @@ Very thanks to Riot for greatest game.
 https://developer.riotgames.com/
 
 ``` ruby
-  
+
 client = RiotGamesApi::LOL::Client.new api_key: 'your_api_key'
 # from summoner resource
 summoner = client.summoner.by_name 'shishisn'
@@ -73,17 +74,17 @@ url = realm.cdn
 dd_version = realm.dd
 
 image_url = url + dd_version + '/img/' + image_group + xin_image_filename
-  
+
 ```
 
 ### Public method list
 
-You may need to inspect return object to know what they have. 
+You may need to inspect return object to know what they have.
 
 返されるオブジェクトをインスペクトすると、どんなデータを持ってるのか分かりやすいです。
 
 ```
-There are some more options, you found in lib/riot_games_api/lol/resource 
+There are some more options, you found in lib/riot_games_api/lol/resource
 
 RiotGamesApi::LOL::Resource::Champion
   This resource for champion's status like active, free, enable or not in ranked
