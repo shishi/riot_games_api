@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Shigenobu Nishikawa"]
   spec.email         = ["shishi.s.n@gmail.com"]
   spec.summary       = %q{ Make access easy to Riot Games API. }
-  spec.description   = %q{ Access Riot Games API to get their game data like League of Legends. }
-  spec.homepage      = ""
+  spec.description   = %q{ Make access easy to access Riot Games API to get their game data like League of Legends. }
+  spec.homepage      = "https://github.com/shishi/riot_games_api"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
