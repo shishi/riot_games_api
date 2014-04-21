@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.9
+      - RiotGamesApi gem v0.0.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,18 +27,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 18 Apr 2014 14:29:20 GMT
+      - Mon, 21 Apr 2014 10:10:08 GMT
       Server:
       - Jetty(9.1.1.v20140108)
       Vary:
       - Accept-Encoding, User-Agent
-      Content-Length:
-      - '753'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "{\"summonerId\":42139310,\"modifyDate\":1378635320000,\"champions\":[{\"id\":111,\"stats\":{\"totalSessionsPlayed\":1,\"totalSessionsLost\":1,\"totalSessionsWon\":0,\"totalChampionKills\":1,\"totalDamageDealt\":50005,\"totalDamageTaken\":20883,\"mostChampionKillsPerSession\":1,\"totalMinionKills\":49,\"totalDoubleKills\":0,\"totalTripleKills\":0,\"totalQuadraKills\":0,\"totalPentaKills\":0,\"totalUnrealKills\":0,\"totalDeathsPerSession\":4,\"totalGoldEarned\":5645,\"mostSpellsCast\":0,\"totalTurretsKilled\":0,\"totalPhysicalDamageDealt\":13901,\"totalMagicDamageDealt\":30453,\"totalFirstBlood\":0,\"totalAssists\":6,\"maxChampionsKilled\":1,\"maxNumDeaths\":4}},{\"id\":5,\"stats\":{\"totalSessionsPlayed\":3,\"totalSessionsLost\":1,\"totalSessionsWon\":2,\"totalChampionKills\":7,\"totalDamageDealt\":99989,\"totalDamageTaken\":34273,\"mostChampionKillsPerSession\":3,\"totalMinionKills\":55,\"totalDoubleKills\":0,\"totalTripleKills\":0,\"totalQuadraKills\":0,\"totalPentaKills\":0,\"totalUnrealKills\":0,\"totalDeathsPerSession\":9,\"totalGoldEarned\":16223,\"mostSpellsCast\":0,\"totalTurretsKilled\":0,\"totalPhysicalDamageDealt\":56188,\"totalMagicDamageDealt\":30054,\"totalFirstBlood\":0,\"totalAssists\":15,\"maxChampionsKilled\":3,\"maxNumDeaths\":6}},{\"id\":154,\"stats\":{\"totalSessionsPlayed\":3,\"totalSessionsLost\":1,\"totalSessionsWon\":2,\"totalChampionKills\":5,\"totalDamageDealt\":179020,\"totalDamageTaken\":57800,\"mostChampionKillsPerSession\":4,\"totalMinionKills\":85,\"totalDoubleKills\":0,\"totalTripleKills\":0,\"totalQuadraKills\":0,\"totalPentaKills\":0,\"totalUnrealKills\":0,\"totalDeathsPerSession\":4,\"totalGoldEarned\":20819,\"mostSpellsCast\":0,\"totalTurretsKilled\":2,\"totalPhysicalDamageDealt\":47172,\"totalMagicDamageDealt\":111176,\"totalFirstBlood\":0,\"totalAssists\":25,\"maxChampionsKilled\":4,\"maxNumDeaths\":4}},{\"id\":113,\"stats\":{\"totalSessionsPlayed\":7,\"totalSessionsLost\":4,\"totalSessionsWon\":3,\"totalChampionKills\":20,\"totalDamageDealt\":538859,\"totalDamageTaken\":185344,\"mostChampionKillsPerSession\":8,\"totalMinionKills\":258,\"totalDoubleKills\":1,\"totalTripleKills\":0,\"totalQuadraKills\":0,\"totalPentaKills\":0,\"totalUnrealKills\":0,\"totalDeathsPerSession\":35,\"totalGoldEarned\":57002,\"mostSpellsCast\":0,\"totalTurretsKilled\":3,\"totalPhysicalDamageDealt\":109394,\"totalMagicDamageDealt\":383281,\"totalFirstBlood\":0,\"totalAssists\":75,\"maxChampionsKilled\":8,\"maxNumDeaths\":9}},{\"id\":254,\"stats\":{\"totalSessionsPlayed\":1,\"totalSessionsLost\":1,\"totalSessionsWon\":0,\"totalChampionKills\":0,\"totalDamageDealt\":47091,\"totalDamageTaken\":23991,\"mostChampionKillsPerSession\":0,\"totalMinionKills\":13,\"totalDoubleKills\":0,\"totalTripleKills\":0,\"totalQuadraKills\":0,\"totalPentaKills\":0,\"totalUnrealKills\":0,\"totalDeathsPerSession\":12,\"totalGoldEarned\":4585,\"mostSpellsCast\":0,\"totalTurretsKilled\":0,\"totalPhysicalDamageDealt\":40969,\"totalMagicDamageDealt\":1748,\"totalFirstBlood\":0,\"totalAssists\":3,\"maxChampionsKilled\":0,\"maxNumDeaths\":12}},{\"id\":0,\"stats\":{\"totalSessionsPlayed\":15,\"totalSessionsLost\":8,\"totalSessionsWon\":7,\"totalChampionKills\":33,\"killingSpree\":14,\"totalDamageDealt\":914964,\"totalDamageTaken\":322291,\"mostChampionKillsPerSession\":8,\"totalMinionKills\":460,\"totalDoubleKills\":1,\"totalTripleKills\":0,\"totalQuadraKills\":0,\"totalPentaKills\":0,\"totalUnrealKills\":0,\"totalDeathsPerSession\":64,\"totalGoldEarned\":104274,\"mostSpellsCast\":0,\"totalTurretsKilled\":5,\"totalPhysicalDamageDealt\":267624,\"totalMagicDamageDealt\":556712,\"totalNeutralMinionsKilled\":521,\"totalFirstBlood\":0,\"totalAssists\":124,\"totalHeal\":31010,\"maxLargestKillingSpree\":4,\"maxLargestCriticalStrike\":6,\"maxChampionsKilled\":8,\"maxNumDeaths\":12,\"maxTimePlayed\":3295,\"maxTimeSpentLiving\":1032,\"normalGamesPlayed\":0,\"rankedSoloGamesPlayed\":0,\"rankedPremadeGamesPlayed\":0,\"botGamesPlayed\":0}}]}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 14:29:56 GMT
+  recorded_at: Mon, 21 Apr 2014 10:10:12 GMT
 recorded_with: VCR 2.9.0

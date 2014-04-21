@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency 'json'
-  spec.add_runtime_dependency 'faraday', ['>= 0.7.4', '< 0.9']
+  spec.add_runtime_dependency 'faraday', ['>= 0.7.4', '< 0.10']
   spec.add_runtime_dependency 'faraday_middleware', '~> 0.9.0'
   spec.add_runtime_dependency 'rash', '~> 0.4.0'
   spec.add_runtime_dependency 'virtus', '~> 1.0.2'

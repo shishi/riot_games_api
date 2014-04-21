@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.9
+      - RiotGamesApi gem v0.0.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 17 Apr 2014 19:08:12 GMT
+      - Mon, 21 Apr 2014 10:11:55 GMT
       Server:
       - Jetty(9.1.1.v20140108)
       Vary:
@@ -729,5 +729,5 @@ http_interactions:
         Glyph of Ability Power\",\"description\":\"+1.19 ability power\",\"sanitizedDescription\":\"+1.19
         ability power\",\"tags\":[\"magic\",\"flat\",\"glyph\"],\"image\":{\"full\":\"b_3_3.png\",\"sprite\":\"rune0.png\",\"group\":\"rune\",\"x\":0,\"y\":192,\"w\":48,\"h\":48},\"stats\":{\"FlatMagicDamageMod\":1.19},\"rune\":{\"isRune\":true,\"tier\":\"3\",\"type\":\"blue\"}}},\"basic\":{\"id\":0,\"gold\":{\"base\":0,\"total\":0,\"sell\":0,\"purchasable\":false},\"consumed\":false,\"stacks\":1,\"depth\":1,\"consumeOnFull\":false,\"specialRecipe\":0,\"inStore\":true,\"hideFromAll\":false,\"maps\":{\"10\":true,\"1\":true,\"8\":true,\"12\":true},\"stats\":{\"rFlatArmorModPerLevel\":0.0,\"rFlatArmorPenetrationMod\":0.0,\"rFlatArmorPenetrationModPerLevel\":0.0,\"rFlatCritChanceModPerLevel\":0.0,\"rFlatCritDamageModPerLevel\":0.0,\"rFlatEnergyRegenModPerLevel\":0.0,\"rFlatDodgeMod\":0.0,\"rFlatDodgeModPerLevel\":0.0,\"rFlatGoldPer10Mod\":0.0,\"rFlatHPModPerLevel\":0.0,\"rFlatHPRegenModPerLevel\":0.0,\"rFlatMPRegenModPerLevel\":0.0,\"rFlatMagicDamageModPerLevel\":0.0,\"rFlatMagicPenetrationMod\":0.0,\"rFlatMagicPenetrationModPerLevel\":0.0,\"rFlatMPModPerLevel\":0.0,\"rFlatEnergyModPerLevel\":0.0,\"rFlatMovementSpeedModPerLevel\":0.0,\"rFlatPhysicalDamageModPerLevel\":0.0,\"rFlatSpellBlockModPerLevel\":0.0,\"rFlatTimeDeadMod\":0.0,\"rFlatTimeDeadModPerLevel\":0.0,\"rPercentArmorPenetrationMod\":0.0,\"rPercentArmorPenetrationModPerLevel\":0.0,\"rPercentAttackSpeedModPerLevel\":0.0,\"rPercentCooldownMod\":0.0,\"rPercentCooldownModPerLevel\":0.0,\"rPercentMagicPenetrationMod\":0.0,\"rPercentMagicPenetrationModPerLevel\":0.0,\"rPercentMovementSpeedModPerLevel\":0.0,\"rPercentTimeDeadMod\":0.0,\"rPercentTimeDeadModPerLevel\":0.0,\"FlatArmorMod\":0.0,\"FlatAttackSpeedMod\":0.0,\"FlatBlockMod\":0.0,\"FlatCritChanceMod\":0.0,\"FlatCritDamageMod\":0.0,\"FlatEnergyRegenMod\":0.0,\"FlatEnergyPoolMod\":0.0,\"FlatEXPBonus\":0.0,\"FlatHPPoolMod\":0.0,\"FlatHPRegenMod\":0.0,\"FlatMPPoolMod\":0.0,\"FlatMPRegenMod\":0.0,\"FlatMagicDamageMod\":0.0,\"FlatMovementSpeedMod\":0.0,\"FlatPhysicalDamageMod\":0.0,\"FlatSpellBlockMod\":0.0,\"PercentArmorMod\":0.0,\"PercentAttackSpeedMod\":0.0,\"PercentBlockMod\":0.0,\"PercentCritChanceMod\":0.0,\"PercentCritDamageMod\":0.0,\"PercentDodgeMod\":0.0,\"PercentEXPBonus\":0.0,\"PercentHPPoolMod\":0.0,\"PercentHPRegenMod\":0.0,\"PercentMPPoolMod\":0.0,\"PercentMPRegenMod\":0.0,\"PercentMagicDamageMod\":0.0,\"PercentMovementSpeedMod\":0.0,\"PercentPhysicalDamageMod\":0.0,\"PercentSpellBlockMod\":0.0,\"PercentSpellVampMod\":0.0,\"PercentLifeStealMod\":0.0},\"rune\":{\"isRune\":true,\"tier\":\"1\",\"type\":\"red\"}}}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 19:08:46 GMT
+  recorded_at: Mon, 21 Apr 2014 10:11:58 GMT
 recorded_with: VCR 2.9.0

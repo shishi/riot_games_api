@@ -11,7 +11,6 @@ describe RiotGamesApi::LOL::Resource::Stats, :vcr do
       let(:last_modified) { Time.at(1378635320) }
 
       it 'should have modify_data which unixtime milliseconds' do
-        p ranked_stats.modify_date
         ranked_stats.modify_date.should eq last_modified
       end
 

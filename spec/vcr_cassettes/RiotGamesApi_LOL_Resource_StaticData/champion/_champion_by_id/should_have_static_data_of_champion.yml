@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/champion/35?api_key=test_key&champData=all&locale=en_US&version
+    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/champion/35?api_key=test_key&champData=all&locale=en_US&version=
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.9
+      - RiotGamesApi gem v0.0.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 17 Apr 2014 19:35:41 GMT
+      - Mon, 21 Apr 2014 10:11:46 GMT
       Server:
       - Jetty(9.1.1.v20140108)
       Vary:
@@ -85,7 +85,7 @@ http_interactions:
         (normal critical strikes deal {{ e2 }}% damage).\",\"leveltip\":{\"label\":[\"Critical
         Strike Damage\",\"Mana Cost\"],\"effect\":[\"{{ e1 }}% -> {{ e1NL }}%\",\"{{
         cost }} -> {{ costnNL }}\"]},\"image\":{\"full\":\"Deceive.png\",\"sprite\":\"spell8.png\",\"group\":\"spell\",\"x\":240,\"y\":0,\"w\":48,\"h\":48},\"resource\":\"{{
-        cost }} Mana\",\"maxrank\":5,\"cost\":[90,80,70,60,50],\"costType\":\"Mana\",\"costBurn\":\"90/80/70/60/50\",\"cooldown\":[0,0,0,0,0],\"cooldownBurn\":\"0\",\"effect\":[[140,160,180,200,220],[200,200,200,200,200],[3,3,3,3,3],[6,6,6,6,6]],\"effectBurn\":[\"140/160/180/200/220\",\"200\",\"3.5\",\"6\"],\"range\":[400,400,400,400,400],\"rangeBurn\":\"400\",\"key\":\"Deceive\"},{\"name\":\"Jack
+        cost }} Mana\",\"maxrank\":5,\"cost\":[90,80,70,60,50],\"costType\":\"Mana\",\"costBurn\":\"90/80/70/60/50\",\"cooldown\":[0.0,0.0,0.0,0.0,0.0],\"cooldownBurn\":\"0\",\"effect\":[[140,160,180,200,220],[200,200,200,200,200],[3,3,3,3,3],[6,6,6,6,6]],\"effectBurn\":[\"140/160/180/200/220\",\"200\",\"3.5\",\"6\"],\"range\":[400,400,400,400,400],\"rangeBurn\":\"400\",\"key\":\"Deceive\"},{\"name\":\"Jack
         In The Box\",\"description\":\"Shaco creates an animated Jack-in-the-Box at
         target location, which will wait, invisible, to Fear nearby units and attack
         them when some come nearby. \",\"sanitizedDescription\":\"Shaco creates an
@@ -103,7 +103,7 @@ http_interactions:
         while firing.\",\"leveltip\":{\"label\":[\"Damage\",\"Fear Length\",\"Mana
         Cost\"],\"effect\":[\"{{ e1 }} -> {{ e1NL }}\",\"{{ e3 }} -> {{ e3NL }}\",\"{{
         cost }} -> {{ costnNL }}\"]},\"image\":{\"full\":\"JackInTheBox.png\",\"sprite\":\"spell8.png\",\"group\":\"spell\",\"x\":288,\"y\":0,\"w\":48,\"h\":48},\"resource\":\"{{
-        cost }} Mana\",\"maxrank\":5,\"cost\":[50,55,60,65,70],\"costType\":\"Mana\",\"costBurn\":\"50/55/60/65/70\",\"cooldown\":[0,0,0,0,0],\"cooldownBurn\":\"0\",\"effect\":[[35,50,65,80,95],[200,300,400,500,600],[0,0,1,1,1],[60,60,60,60,60]],\"effectBurn\":[\"35/50/65/80/95\",\"200/300/400/500/600\",\"0.5/0.75/1/1.25/1.5\",\"60\"],\"vars\":[{\"key\":\"a1\",\"link\":\"spelldamage\",\"coeff\":[0.2]}],\"range\":[425,425,425,425,425],\"rangeBurn\":\"425\",\"key\":\"JackInTheBox\"},{\"name\":\"Two-Shiv
+        cost }} Mana\",\"maxrank\":5,\"cost\":[50,55,60,65,70],\"costType\":\"Mana\",\"costBurn\":\"50/55/60/65/70\",\"cooldown\":[0.0,0.0,0.0,0.0,0.0],\"cooldownBurn\":\"0\",\"effect\":[[35,50,65,80,95],[200,300,400,500,600],[0,0,1,1,1],[60,60,60,60,60]],\"effectBurn\":[\"35/50/65/80/95\",\"200/300/400/500/600\",\"0.5/0.75/1/1.25/1.5\",\"60\"],\"vars\":[{\"key\":\"a1\",\"link\":\"spelldamage\",\"coeff\":[0.2]}],\"range\":[425,425,425,425,425],\"rangeBurn\":\"425\",\"key\":\"JackInTheBox\"},{\"name\":\"Two-Shiv
         Poison\",\"description\":\"Shaco's Shivs passively poison targets on hit,
         slowing them and applying a miss chance to minions. He can throw his Shivs
         to deal damage and poison the target.\",\"sanitizedDescription\":\"Shaco's
@@ -124,7 +124,7 @@ http_interactions:
         Percent\",\"Miss Chance\",\"Mana Cost\"],\"effect\":[\"{{ e1 }} -> {{ e1NL
         }}\",\" {{ e2 }}% -> {{ e2NL }}%\",\"{{ e3 }} -> {{ e3NL }}%\",\"{{ cost }}
         -> {{ costnNL }}\"]},\"image\":{\"full\":\"TwoShivPoison.png\",\"sprite\":\"spell8.png\",\"group\":\"spell\",\"x\":336,\"y\":0,\"w\":48,\"h\":48},\"resource\":\"{{
-        cost }} Mana\",\"maxrank\":5,\"cost\":[50,55,60,65,70],\"costType\":\"Mana\",\"costBurn\":\"50/55/60/65/70\",\"cooldown\":[8,8,8,8,8],\"cooldownBurn\":\"8\",\"effect\":[[50,90,130,170,210],[10,15,20,25,30],[20,22,25,27,30],[2,2,2,2,2],[3,3,3,3,3]],\"effectBurn\":[\"50/90/130/170/210\",\"10/15/20/25/30\",\"20/22.5/25/27.5/30\",\"2\",\"3\"],\"vars\":[{\"key\":\"f1\",\"link\":\"bonusattackdamage\",\"coeff\":[1.0]},{\"key\":\"a1\",\"link\":\"spelldamage\",\"coeff\":[1.0]}],\"range\":[625,625,625,625,625],\"rangeBurn\":\"625\",\"key\":\"TwoShivPoison\"},{\"name\":\"Hallucinate\",\"description\":\"Shaco
+        cost }} Mana\",\"maxrank\":5,\"cost\":[50,55,60,65,70],\"costType\":\"Mana\",\"costBurn\":\"50/55/60/65/70\",\"cooldown\":[8.0,8.0,8.0,8.0,8.0],\"cooldownBurn\":\"8\",\"effect\":[[50,90,130,170,210],[10,15,20,25,30],[20,22,25,27,30],[2,2,2,2,2],[3,3,3,3,3]],\"effectBurn\":[\"50/90/130/170/210\",\"10/15/20/25/30\",\"20/22.5/25/27.5/30\",\"2\",\"3\"],\"vars\":[{\"key\":\"f1\",\"link\":\"bonusattackdamage\",\"coeff\":[1.0]},{\"key\":\"a1\",\"link\":\"spelldamage\",\"coeff\":[1.0]}],\"range\":[625,625,625,625,625],\"rangeBurn\":\"625\",\"key\":\"TwoShivPoison\"},{\"name\":\"Hallucinate\",\"description\":\"Shaco
         creates an illusion of himself near him, which can attack nearby enemies.
         (Deals half damage to turrets.)  Upon death, it explodes, dealing damage to
         nearby enemies. \",\"sanitizedDescription\":\"Shaco creates an illusion of
@@ -143,9 +143,9 @@ http_interactions:
         button or by reactivating this ability.\",\"leveltip\":{\"label\":[\"On Death
         Damage\",\"Cooldown\"],\"effect\":[\"{{ e1 }} -> {{ e1NL }}\",\"{{ cooldown
         }} -> {{ cooldownnNL }}\"]},\"image\":{\"full\":\"HallucinateFull.png\",\"sprite\":\"spell8.png\",\"group\":\"spell\",\"x\":384,\"y\":0,\"w\":48,\"h\":48},\"resource\":\"{{
-        cost }} Mana\",\"maxrank\":3,\"cost\":[100,100,100],\"costType\":\"Mana\",\"costBurn\":\"100\",\"cooldown\":[100,90,80],\"cooldownBurn\":\"100/90/80\",\"effect\":[[300,450,600],[50,50,50],[15,15,15]],\"effectBurn\":[\"300/450/600\",\"50\",\"15\"],\"vars\":[{\"key\":\"a1\",\"link\":\"spelldamage\",\"coeff\":[1.0]}],\"range\":\"self\",\"rangeBurn\":\"self\",\"key\":\"HallucinateFull\"}],\"passive\":{\"name\":\"Backstab\",\"description\":\"Shaco
+        cost }} Mana\",\"maxrank\":3,\"cost\":[100,100,100],\"costType\":\"Mana\",\"costBurn\":\"100\",\"cooldown\":[100.0,90.0,80.0],\"cooldownBurn\":\"100/90/80\",\"effect\":[[300,450,600],[50,50,50],[15,15,15]],\"effectBurn\":[\"300/450/600\",\"50\",\"15\"],\"vars\":[{\"key\":\"a1\",\"link\":\"spelldamage\",\"coeff\":[1.0]}],\"range\":\"self\",\"rangeBurn\":\"self\",\"key\":\"HallucinateFull\"}],\"passive\":{\"name\":\"Backstab\",\"description\":\"Shaco
         deals 20% bonus damage when striking a unit from behind.\",\"sanitizedDescription\":\"Shaco
         deals 20% bonus damage when striking a unit from behind.\",\"image\":{\"full\":\"Jester_CarefulStrikes.png\",\"sprite\":\"passive2.png\",\"group\":\"passive\",\"x\":336,\"y\":48,\"w\":48,\"h\":48}},\"recommended\":[{\"champion\":\"Shaco\",\"title\":\"Beginner\",\"type\":\"riot-beginner\",\"map\":\"1\",\"mode\":\"CLASSIC\",\"priority\":false,\"blocks\":[{\"type\":\"beginner_Starter\",\"items\":[{\"id\":1055,\"count\":1},{\"id\":2003,\"count\":1}]},{\"type\":\"beginner_Basic\",\"items\":[{\"id\":1054,\"count\":1}]},{\"type\":\"beginner_Advanced\",\"recMath\":true,\"items\":[{\"id\":1051,\"count\":1},{\"id\":3093,\"count\":1}]},{\"type\":\"beginner_MovementSpeed\",\"recMath\":true,\"items\":[{\"id\":1001,\"count\":1},{\"id\":1042,\"count\":1},{\"id\":3006,\"count\":1}]},{\"type\":\"beginner_LegendaryItem\",\"recMath\":true,\"items\":[{\"id\":3093,\"count\":1},{\"id\":3086,\"count\":1},{\"id\":3087,\"count\":1}]},{\"type\":\"beginner_MoreLegendaryItems\",\"items\":[{\"id\":3072,\"count\":1},{\"id\":3022,\"count\":1},{\"id\":3031,\"count\":1},{\"id\":3102,\"count\":1}]}]},{\"champion\":\"Shaco\",\"title\":\"ShacoHA\",\"type\":\"riot\",\"map\":\"12\",\"mode\":\"ARAM\",\"priority\":false,\"blocks\":[{\"type\":\"starting\",\"items\":[{\"id\":1001,\"count\":1},{\"id\":2003,\"count\":2},{\"id\":1056,\"count\":2}]},{\"type\":\"essential\",\"items\":[{\"id\":3020,\"count\":1},{\"id\":3089,\"count\":1},{\"id\":3128,\"count\":1}]},{\"type\":\"offensive\",\"items\":[{\"id\":3100,\"count\":1},{\"id\":3135,\"count\":1},{\"id\":3151,\"count\":1}]},{\"type\":\"defensive\",\"items\":[{\"id\":3001,\"count\":1},{\"id\":3157,\"count\":1},{\"id\":3023,\"count\":1}]},{\"type\":\"Consumables\",\"items\":[{\"id\":2003,\"count\":1},{\"id\":2004,\"count\":1}]}]},{\"champion\":\"Shaco\",\"title\":\"ShacoDM\",\"type\":\"riot\",\"map\":\"8\",\"mode\":\"ODIN\",\"priority\":false,\"blocks\":[{\"type\":\"starting\",\"items\":[{\"id\":1001,\"count\":1},{\"id\":1052,\"count\":2},{\"id\":2003,\"count\":3}]},{\"type\":\"essential\",\"items\":[{\"id\":3090,\"count\":1},{\"id\":3117,\"count\":1},{\"id\":3187,\"count\":1}]},{\"type\":\"offensive\",\"items\":[{\"id\":3135,\"count\":1},{\"id\":3188,\"count\":1},{\"id\":3100,\"count\":1}]},{\"type\":\"defensive\",\"items\":[{\"id\":3001,\"count\":1},{\"id\":3290,\"count\":1}]},{\"type\":\"Consumables\",\"items\":[{\"id\":2003,\"count\":1},{\"id\":2004,\"count\":1}]}]},{\"champion\":\"Shaco\",\"title\":\"ShacoFIRSTBLOOD\",\"type\":\"riot\",\"map\":\"12\",\"mode\":\"FIRSTBLOOD\",\"priority\":false,\"blocks\":[{\"type\":\"starting\",\"items\":[{\"id\":1074,\"count\":1},{\"id\":2003,\"count\":1},{\"id\":3342,\"count\":1}]},{\"type\":\"essential\",\"items\":[{\"id\":3006,\"count\":1},{\"id\":3093,\"count\":1},{\"id\":3044,\"count\":1}]},{\"type\":\"offensive\",\"items\":[{\"id\":3142,\"count\":1},{\"id\":3031,\"count\":1},{\"id\":3078,\"count\":1}]},{\"type\":\"defensive\",\"items\":[{\"id\":3091,\"count\":1},{\"id\":3022,\"count\":1},{\"id\":3026,\"count\":1}]},{\"type\":\"Consumables\",\"items\":[{\"id\":2003,\"count\":1},{\"id\":2044,\"count\":1}]}]},{\"champion\":\"Shaco\",\"title\":\"ShacoSR\",\"type\":\"riot\",\"map\":\"1\",\"mode\":\"CLASSIC\",\"priority\":false,\"blocks\":[{\"type\":\"starting\",\"items\":[{\"id\":1039,\"count\":1},{\"id\":2003,\"count\":5},{\"id\":3342,\"count\":1}]},{\"type\":\"essential\",\"items\":[{\"id\":3006,\"count\":1},{\"id\":3154,\"count\":1},{\"id\":3093,\"count\":1}]},{\"type\":\"offensive\",\"items\":[{\"id\":3142,\"count\":1},{\"id\":3031,\"count\":1},{\"id\":3087,\"count\":1}]},{\"type\":\"defensive\",\"items\":[{\"id\":3091,\"count\":1},{\"id\":3022,\"count\":1},{\"id\":3026,\"count\":1}]},{\"type\":\"Consumables\",\"items\":[{\"id\":2003,\"count\":1},{\"id\":2044,\"count\":1}]}]},{\"champion\":\"Shaco\",\"title\":\"ShacoTT\",\"type\":\"riot\",\"map\":\"10\",\"mode\":\"CLASSIC\",\"priority\":false,\"blocks\":[{\"type\":\"starting\",\"items\":[{\"id\":1001,\"count\":1},{\"id\":1052,\"count\":1},{\"id\":2003,\"count\":1}]},{\"type\":\"essential\",\"items\":[{\"id\":3020,\"count\":1},{\"id\":3090,\"count\":1},{\"id\":3187,\"count\":1}]},{\"type\":\"offensive\",\"items\":[{\"id\":3135,\"count\":1},{\"id\":3188,\"count\":1},{\"id\":3100,\"count\":1}]},{\"type\":\"defensive\",\"items\":[{\"id\":3001,\"count\":1},{\"id\":3069,\"count\":1}]},{\"type\":\"Consumables\",\"items\":[{\"id\":2003,\"count\":1},{\"id\":2004,\"count\":1}]}]}]}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 19:36:15 GMT
+  recorded_at: Mon, 21 Apr 2014 10:11:50 GMT
 recorded_with: VCR 2.9.0

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.9
+      - RiotGamesApi gem v0.0.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 17 Apr 2014 19:08:09 GMT
+      - Mon, 21 Apr 2014 10:11:52 GMT
       Server:
       - Jetty(9.1.1.v20140108)
       Vary:
@@ -236,5 +236,5 @@ http_interactions:
         damage taken by 4% from Area of Effect magic damage\"],\"sanitizedDescription\":[\"Reduces
         damage taken by 4% from Area of Effect magic damage\"],\"ranks\":1,\"prereq\":\"4234\",\"image\":{\"full\":\"4244.png\",\"sprite\":\"mastery0.png\",\"group\":\"gray_mastery\",\"x\":192,\"y\":144,\"w\":48,\"h\":48}}},\"tree\":{\"Defense\":[{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4211},{\"prereq\":\"0\",\"masteryId\":4212},{\"prereq\":\"0\",\"masteryId\":4213},{\"prereq\":\"0\",\"masteryId\":4214}]},{\"masteryTreeItems\":[{\"prereq\":\"4211\",\"masteryId\":4221},{\"prereq\":\"0\",\"masteryId\":4222},{\"prereq\":\"4214\",\"masteryId\":4224}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4231},{\"prereq\":\"4222\",\"masteryId\":4232},{\"prereq\":\"0\",\"masteryId\":4233},{\"prereq\":\"0\",\"masteryId\":4234}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4241},{\"prereq\":\"0\",\"masteryId\":4242},{\"prereq\":\"4233\",\"masteryId\":4243},{\"prereq\":\"4234\",\"masteryId\":4244}]},{\"masteryTreeItems\":[{\"prereq\":\"4241\",\"masteryId\":4251},{\"prereq\":\"0\",\"masteryId\":4252},{\"prereq\":\"0\",\"masteryId\":4253}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4262}]}],\"Offense\":[{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4111},{\"prereq\":\"0\",\"masteryId\":4112},{\"prereq\":\"0\",\"masteryId\":4113},{\"prereq\":\"0\",\"masteryId\":4114}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4121},{\"prereq\":\"0\",\"masteryId\":4122},{\"prereq\":\"0\",\"masteryId\":4123},{\"prereq\":\"4114\",\"masteryId\":4124}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4131},{\"prereq\":\"4122\",\"masteryId\":4132},{\"prereq\":\"4123\",\"masteryId\":4133},{\"prereq\":\"0\",\"masteryId\":4134}]},{\"masteryTreeItems\":[{\"prereq\":\"4131\",\"masteryId\":4141},{\"prereq\":\"0\",\"masteryId\":4142},{\"prereq\":\"0\",\"masteryId\":4143},{\"prereq\":\"4134\",\"masteryId\":4144}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4151},{\"prereq\":\"0\",\"masteryId\":4152},{\"prereq\":\"0\",\"masteryId\":4154}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4162}]}],\"Utility\":[{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4311},{\"prereq\":\"0\",\"masteryId\":4312},{\"prereq\":\"0\",\"masteryId\":4313},{\"prereq\":\"0\",\"masteryId\":4314}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4322},{\"prereq\":\"4313\",\"masteryId\":4323},{\"prereq\":\"0\",\"masteryId\":4324}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4331},{\"prereq\":\"0\",\"masteryId\":4332},{\"prereq\":\"0\",\"masteryId\":4333},{\"prereq\":\"4324\",\"masteryId\":4334}]},{\"masteryTreeItems\":[{\"prereq\":\"4331\",\"masteryId\":4341},{\"prereq\":\"0\",\"masteryId\":4342},{\"prereq\":\"0\",\"masteryId\":4343},{\"prereq\":\"0\",\"masteryId\":4344}]},{\"masteryTreeItems\":[{\"prereq\":\"4342\",\"masteryId\":4352},{\"prereq\":\"0\",\"masteryId\":4353}]},{\"masteryTreeItems\":[{\"prereq\":\"0\",\"masteryId\":4362}]}]}}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 19:08:44 GMT
+  recorded_at: Mon, 21 Apr 2014 10:11:56 GMT
 recorded_with: VCR 2.9.0
