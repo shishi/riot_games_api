@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = RiotGamesApi::VERSION
   spec.authors       = ["Shigenobu Nishikawa"]
   spec.email         = ["shishi.s.n@gmail.com"]
-  spec.summary       = %q{ Make access easy to Riot Games API. }
-  spec.description   = %q{ Make access easy to access Riot Games API to get their game data like League of Legends. }
+  spec.summary       = %q{ Make easy to access Riot Games API. }
+  spec.description   = %q{ Make easy to access Riot Games API to get their game data like League of Legends. }
   spec.homepage      = "https://github.com/shishi/riot_games_api"
   spec.license       = "MIT"
 
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'json'
   spec.add_runtime_dependency 'faraday', ['>= 0.7.4', '< 0.10']
-  spec.add_runtime_dependency 'faraday_middleware', '~> 0.9.0'
+  spec.add_runtime_dependency 'faraday_middleware', '~> 0.9.1'
   spec.add_runtime_dependency 'rash', '~> 0.4.0'
   spec.add_runtime_dependency 'virtus', '~> 1.0.2'
 
