@@ -1,5 +1,10 @@
 module RiotGamesApi
   module LOL
+    # how to generate list
+    # add :wukong by me
+    # client.static_data.champion_all.data.each do |key, value|
+    #   p "#{key}: #{value[:id]}"
+    # end
     CHAMPIONS = {
                  aatrox: 266,
                  ahri: 103,
@@ -11,6 +16,7 @@ module RiotGamesApi
                  ashe: 22,
                  blitzcrank: 53,
                  brand: 63,
+                 braum: 201,
                  caitlyn: 51,
                  cassiopeia: 69,
                  chogath: 31,
