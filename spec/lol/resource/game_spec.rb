@@ -34,7 +34,7 @@ describe RiotGamesApi::LOL::Resource::Game, :vcr do
     end
 
     it 'should first game is win' do
-      recent_games.games.first.stats.win.should be_true
+      recent_games.games.first.stats.win.should eq true
     end
   end
 end
