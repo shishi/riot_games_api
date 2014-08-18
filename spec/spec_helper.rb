@@ -4,12 +4,13 @@ CodeClimate::TestReporter.start
 require 'bundler/setup'
 require 'riot_games_api'
 
-require 'rspec/autorun'
 require 'webmock/rspec'
 require 'vcr'
 
-RSpec.configure do |c|
-  c.treat_symbols_as_metadata_keys_with_true_values = true
+RSpec.configure do |config|
+  config.expect_with :rspec do |c|
+    c.syntax = [:should, :expect]
+  end
 end
 
 VCR.configure do |c|
