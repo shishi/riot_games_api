@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/na/v2.3/league/by-team/TEAM-1991eb20-a33e-11e3-b439-782bcb4d1861/entry?api_key=test_key&locale=en_US
+    uri: http://na.api.pvp.net/api/lol/na/v2.3/league/by-team/TEAM-1991eb20-a33e-11e3-b439-782bcb4d1861/entry?api_key=test_key&locale=en_US
     body:
       encoding: US-ASCII
       string: ''
@@ -39,6 +39,6 @@ http_interactions:
       string: "[{\"playerOrTeamId\":\"TEAM-1991eb20-a33e-11e3-b439-782bcb4d1861\",\"playerOrTeamName\":\"FFGPractice\",\"leagueName\":\"Kayle's
         Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":185,\"wins\":42,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-1991eb20-a33e-11e3-b439-782bcb4d1861\",\"playerOrTeamName\":\"FFGPractice\",\"leagueName\":\"Malzahar's
         Captains\",\"queueType\":\"RANKED_TEAM_3x3\",\"tier\":\"PLATINUM\",\"rank\":\"I\",\"leaguePoints\":0,\"wins\":5,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1}]"
-    http_version: 
+    http_version:
   recorded_at: Sun, 13 Apr 2014 20:18:02 GMT
 recorded_with: VCR 2.9.0

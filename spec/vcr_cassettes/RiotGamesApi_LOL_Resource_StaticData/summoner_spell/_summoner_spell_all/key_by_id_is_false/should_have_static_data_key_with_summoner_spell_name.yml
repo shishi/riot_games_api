@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/summoner-spell?api_key=test_key&dataById=false&locale=en_US&spellData=all&version=4.5.4
+    uri: http://na.api.pvp.net/api/lol/static-data/na/v1.2/summoner-spell?api_key=test_key&dataById=false&locale=en_US&spellData=all&version=4.5.4
     body:
       encoding: US-ASCII
       string: ''
@@ -151,6 +151,6 @@ http_interactions:
         Turret: Grants massive regeneration for 8 seconds. Enemy Turret: Reduces damage
         dealt by 80% for 8 seconds.\",\"leveltip\":{\"label\":[\"\"],\"effect\":[\"\"]},\"image\":{\"full\":\"SummonerOdinGarrison.png\",\"sprite\":\"spell0.png\",\"group\":\"spell\",\"x\":48,\"y\":48,\"w\":48,\"h\":48},\"resource\":\"No
         Cost\",\"maxrank\":1,\"cost\":[0],\"costType\":\"NoCost\",\"costBurn\":\"0\",\"cooldown\":[210.0],\"cooldownBurn\":\"210\",\"range\":[1250],\"rangeBurn\":\"1250\",\"summonerLevel\":1,\"id\":17,\"key\":\"SummonerOdinGarrison\",\"modes\":[\"ODIN\"]}}}"
-    http_version: 
+    http_version:
   recorded_at: Mon, 21 Apr 2014 10:12:01 GMT
 recorded_with: VCR 2.9.0

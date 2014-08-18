@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=test_key&champData=all&dataById=false&locale=en_US&version=4.5.4
+    uri: http://na.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=test_key&champData=all&dataById=false&locale=en_US&version=4.5.4
     body:
       encoding: US-ASCII
       string: ''
@@ -38100,6 +38100,6 @@ http_interactions:
         IjE0MyI6Ilp5cmEiLCI0OCI6IlRydW5kbGUiLCI0NSI6IlZlaWdhciIsIjQ0
         IjoiVGFyaWMiLCI1MSI6IkNhaXRseW4iLCI1MyI6IkJsaXR6Y3JhbmsiLCI1
         NCI6Ik1hbHBoaXRlIiwiMjU0IjoiVmkiLCI1MCI6IlN3YWluIn19
-    http_version: 
+    http_version:
   recorded_at: Mon, 21 Apr 2014 10:10:27 GMT
 recorded_with: VCR 2.9.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/na/v2.2/team/TEAM-e4651800-bec9-11e1-a3be-782bcb4d0bb2?api_key=test_key&locale=en_US
+    uri: http://na.api.pvp.net/api/lol/na/v2.2/team/TEAM-e4651800-bec9-11e1-a3be-782bcb4d0bb2?api_key=test_key&locale=en_US
     body:
       encoding: US-ASCII
       string: ''
@@ -160,6 +160,6 @@ http_interactions:
         OjEzOTczMTIxNzgwMDAsInRoaXJkTGFzdEpvaW5EYXRlIjoxMzk3MzEyMTcz
         MDAwLCJsYXN0R2FtZURhdGUiOjEzOTczMTU1MDEwMDAsImxhc3RKb2luZWRS
         YW5rZWRUZWFtUXVldWVEYXRlIjoxMzk3MzEyMjc2MDAwfX0=
-    http_version: 
+    http_version:
   recorded_at: Sat, 19 Apr 2014 07:31:52 GMT
 recorded_with: VCR 2.9.0

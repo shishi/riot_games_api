@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/na/v2.3/league/challenger?api_key=test_key&locale=en_US&type=RANKED_SOLO_5x5
+    uri: http://na.api.pvp.net/api/lol/na/v2.3/league/challenger?api_key=test_key&locale=en_US&type=RANKED_SOLO_5x5
     body:
       encoding: US-ASCII
       string: ''
@@ -1276,6 +1276,6 @@ http_interactions:
         cmFuayI6IkkiLCJsZWFndWVQb2ludHMiOjU5OSwid2lucyI6MTU2LCJpc0hv
         dFN0cmVhayI6ZmFsc2UsImlzVmV0ZXJhbiI6dHJ1ZSwiaXNGcmVzaEJsb29k
         IjpmYWxzZSwiaXNJbmFjdGl2ZSI6ZmFsc2UsImxhc3RQbGF5ZWQiOi0xfV19
-    http_version: 
+    http_version:
   recorded_at: Sun, 13 Apr 2014 20:18:03 GMT
 recorded_with: VCR 2.9.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/na/v2.3/league/challenger?api_key=test_key&locale=en_US&type=RANKED_TEAM_3x3
+    uri: http://na.api.pvp.net/api/lol/na/v2.3/league/challenger?api_key=test_key&locale=en_US&type=RANKED_TEAM_3x3
     body:
       encoding: US-ASCII
       string: ''
@@ -118,6 +118,6 @@ http_interactions:
         OjE5LCJpc0hvdFN0cmVhayI6dHJ1ZSwiaXNWZXRlcmFuIjpmYWxzZSwiaXNG
         cmVzaEJsb29kIjpmYWxzZSwiaXNJbmFjdGl2ZSI6ZmFsc2UsImxhc3RQbGF5
         ZWQiOi0xfV19
-    http_version: 
+    http_version:
   recorded_at: Sun, 13 Apr 2014 20:18:08 GMT
 recorded_with: VCR 2.9.0

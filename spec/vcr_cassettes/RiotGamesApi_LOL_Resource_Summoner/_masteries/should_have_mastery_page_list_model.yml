@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/na/v1.4/summoner/42139310/masteries?api_key=test_key&locale=en_US
+    uri: http://na.api.pvp.net/api/lol/na/v1.4/summoner/42139310/masteries?api_key=test_key&locale=en_US
     body:
       encoding: US-ASCII
       string: ''
@@ -47,6 +47,6 @@ http_interactions:
         Tanky\",\"current\":false,\"masteries\":[{\"id\":4212,\"rank\":2},{\"id\":4211,\"rank\":2},{\"id\":4121,\"rank\":1},{\"id\":4213,\"rank\":2},{\"id\":4241,\"rank\":2},{\"id\":4222,\"rank\":3},{\"id\":4113,\"rank\":4},{\"id\":4221,\"rank\":1},{\"id\":4122,\"rank\":3},{\"id\":4262,\"rank\":1},{\"id\":4252,\"rank\":3},{\"id\":4132,\"rank\":1},{\"id\":4232,\"rank\":1},{\"id\":4233,\"rank\":2},{\"id\":4234,\"rank\":2}]},{\"id\":35861264,\"name\":\"AP
         Tanky\",\"current\":false,\"masteries\":[{\"id\":4212,\"rank\":2},{\"id\":4211,\"rank\":2},{\"id\":4121,\"rank\":1},{\"id\":4213,\"rank\":2},{\"id\":4241,\"rank\":2},{\"id\":4222,\"rank\":3},{\"id\":4113,\"rank\":4},{\"id\":4221,\"rank\":1},{\"id\":4123,\"rank\":3},{\"id\":4262,\"rank\":1},{\"id\":4252,\"rank\":3},{\"id\":4133,\"rank\":1},{\"id\":4232,\"rank\":1},{\"id\":4233,\"rank\":2},{\"id\":4234,\"rank\":2}]},{\"id\":35861265,\"name\":\"AD/AP
         Full\",\"current\":false,\"masteries\":[{\"id\":4134,\"rank\":3},{\"id\":4154,\"rank\":1},{\"id\":4113,\"rank\":4},{\"id\":4312,\"rank\":1},{\"id\":4122,\"rank\":3},{\"id\":4152,\"rank\":3},{\"id\":4123,\"rank\":3},{\"id\":4313,\"rank\":3},{\"id\":4132,\"rank\":1},{\"id\":4133,\"rank\":1},{\"id\":4142,\"rank\":3},{\"id\":4143,\"rank\":3},{\"id\":4162,\"rank\":1}]}]}}"
-    http_version: 
+    http_version:
   recorded_at: Fri, 18 Apr 2014 18:24:21 GMT
 recorded_with: VCR 2.9.0

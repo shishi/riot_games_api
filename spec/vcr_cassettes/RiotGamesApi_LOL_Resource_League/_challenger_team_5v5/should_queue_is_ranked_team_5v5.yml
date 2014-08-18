@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/na/v2.3/league/challenger?api_key=test_key&locale=en_US&type=RANKED_TEAM_5x5
+    uri: http://na.api.pvp.net/api/lol/na/v2.3/league/challenger?api_key=test_key&locale=en_US&type=RANKED_TEAM_5x5
     body:
       encoding: US-ASCII
       string: ''
@@ -56,6 +56,6 @@ http_interactions:
         Practice\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":145,\"wins\":57,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-36463ca0-7bfa-11e3-a96e-782bcb4d0bb2\",\"playerOrTeamName\":\"SJSU
         Sergios Dream\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":14,\"wins\":35,\"isHotStreak\":false,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1},{\"playerOrTeamId\":\"TEAM-b9f72bb0-7658-11e3-9091-782bcb4d1861\",\"playerOrTeamName\":\"UNRANKED9
         GAMING\",\"leagueName\":\"Kayle's Tricksters\",\"queueType\":\"RANKED_TEAM_5x5\",\"tier\":\"CHALLENGER\",\"rank\":\"I\",\"leaguePoints\":95,\"wins\":71,\"isHotStreak\":true,\"isVeteran\":false,\"isFreshBlood\":false,\"isInactive\":false,\"lastPlayed\":-1}]}"
-    http_version: 
+    http_version:
   recorded_at: Sun, 13 Apr 2014 20:18:07 GMT
 recorded_with: VCR 2.9.0

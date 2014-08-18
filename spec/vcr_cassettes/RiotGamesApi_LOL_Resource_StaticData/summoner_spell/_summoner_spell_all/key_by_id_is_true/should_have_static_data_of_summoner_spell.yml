@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/summoner-spell?api_key=test_key&dataById=true&locale=en_US&spellData=all&version=
+    uri: http://na.api.pvp.net/api/lol/static-data/na/v1.2/summoner-spell?api_key=test_key&dataById=true&locale=en_US&spellData=all&version=
     body:
       encoding: US-ASCII
       string: ''
@@ -151,6 +151,6 @@ http_interactions:
         your champion a short distance toward your cursor's location.\",\"sanitizedTooltip\":\"Teleports
         your champion a short distance toward your cursor's location.\",\"leveltip\":{\"label\":[\"\"],\"effect\":[\"\"]},\"image\":{\"full\":\"SummonerFlash.png\",\"sprite\":\"spell0.png\",\"group\":\"spell\",\"x\":288,\"y\":0,\"w\":48,\"h\":48},\"resource\":\"No
         Cost\",\"maxrank\":1,\"cost\":[0],\"costType\":\"NoCost\",\"costBurn\":\"0\",\"cooldown\":[0.0],\"cooldownBurn\":\"0\",\"range\":[425],\"rangeBurn\":\"425\",\"summonerLevel\":12,\"id\":4,\"key\":\"SummonerFlash\",\"modes\":[\"CLASSIC\",\"ODIN\",\"TUTORIAL\",\"ARAM\"]}}}"
-    http_version: 
+    http_version:
   recorded_at: Mon, 21 Apr 2014 10:12:02 GMT
 recorded_with: VCR 2.9.0

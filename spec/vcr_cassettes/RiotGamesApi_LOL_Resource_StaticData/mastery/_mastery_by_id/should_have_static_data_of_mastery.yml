@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/static-data/na/v1.2/mastery/4113?api_key=test_key&locale=en_US&masteryData=all&version=
+    uri: http://na.api.pvp.net/api/lol/static-data/na/v1.2/mastery/4113?api_key=test_key&locale=en_US&masteryData=all&version=
     body:
       encoding: US-ASCII
       string: ''
@@ -42,6 +42,6 @@ http_interactions:
         Reduction\",\"+2.5% Cooldown Reduction\",\"+3.75% Cooldown Reduction\",\"+5%
         Cooldown Reduction\"],\"sanitizedDescription\":[\"+1.25% Cooldown Reduction\",\"+2.5%
         Cooldown Reduction\",\"+3.75% Cooldown Reduction\",\"+5% Cooldown Reduction\"],\"ranks\":4,\"prereq\":\"0\",\"image\":{\"full\":\"4113.png\",\"sprite\":\"mastery0.png\",\"group\":\"gray_mastery\",\"x\":96,\"y\":0,\"w\":48,\"h\":48}}"
-    http_version: 
+    http_version:
   recorded_at: Mon, 21 Apr 2014 10:11:56 GMT
 recorded_with: VCR 2.9.0

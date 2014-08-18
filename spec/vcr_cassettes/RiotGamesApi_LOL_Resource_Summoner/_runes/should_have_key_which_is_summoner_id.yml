@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://prod.api.pvp.net/api/lol/na/v1.4/summoner/42139310/runes?api_key=test_key&locale=en_US
+    uri: http://na.api.pvp.net/api/lol/na/v1.4/summoner/42139310/runes?api_key=test_key&locale=en_US
     body:
       encoding: US-ASCII
       string: ''
@@ -51,6 +51,6 @@ http_interactions:
         Page 11\",\"current\":false},{\"id\":67617293,\"name\":\"Rune Page 12\",\"current\":false},{\"id\":67617294,\"name\":\"Rune
         Page 13\",\"current\":false},{\"id\":67617295,\"name\":\"Rune Page 14\",\"current\":false},{\"id\":67617296,\"name\":\"Rune
         Page 15\",\"current\":false},{\"id\":67617297,\"name\":\"Rune Page 16\",\"current\":false}]}}"
-    http_version: 
+    http_version:
   recorded_at: Fri, 18 Apr 2014 18:24:43 GMT
 recorded_with: VCR 2.9.0
