@@ -46,11 +46,11 @@ summoner = client.summoner.by_name 'shishisn'
 teams = client.team.by_summoner_id summoner.id
 
 # English
-# You can use champions and items id list (created 4/20/2014)
+# You can use champions and items id list (created 2014/11/23)
 # You can see and edit lists in lib/riot_games_api/lol/constant/
 
 # Japnese
-# チャンピオンとアイテムのIDのリストを作ってあります (2014/4/20 時点)
+# チャンピオンとアイテムのIDのリストを作ってあります (2014/11/23 作成)
 # lib/riot_games_api/lol/constant/ にファイルがあるので編集もできます
 
 # from static_data resource

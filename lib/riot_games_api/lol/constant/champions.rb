@@ -1,10 +1,16 @@
 module RiotGamesApi
   module LOL
     # how to generate list
-    # add :wukong by me
-    # client.static_data.champion_all.data.each do |key, value|
-    #   p "#{key}: #{value[:id]}"
+    # client.static_data.champion_all.data.each do |champion|
+    #   p "#{champion[1].name}: #{champion[1].id}"
     # end
+    #
+    # remove all double quotes
+    # remove all single quotes
+    # remove all dots
+    # replace all letters to lower case
+    # replace space with underscore in champion names
+    # sort lines
     CHAMPIONS = {
                  aatrox: 266,
                  ahri: 103,
@@ -14,6 +20,7 @@ module RiotGamesApi
                  anivia: 34,
                  annie: 1,
                  ashe: 22,
+                 azir: 268,
                  blitzcrank: 53,
                  brand: 63,
                  braum: 201,
@@ -28,12 +35,13 @@ module RiotGamesApi
                  elise: 60,
                  evelynn: 28,
                  ezreal: 81,
-                 fiddle_sticks: 9,
+                 fiddlesticks: 9,
                  fiora: 114,
                  fizz: 105,
                  galio: 3,
                  gangplank: 41,
                  garen: 86,
+                 gnar: 150,
                  gragas: 79,
                  graves: 104,
                  hecarim: 120,
@@ -44,6 +52,7 @@ module RiotGamesApi
                  jax: 24,
                  jayce: 126,
                  jinx: 222,
+                 kalista: 429,
                  karma: 43,
                  karthus: 30,
                  kassadin: 38,
@@ -51,7 +60,7 @@ module RiotGamesApi
                  kayle: 10,
                  kennen: 85,
                  khazix: 121,
-                 kog_maw: 96,
+                 kogmaw: 96,
                  leblanc: 7,
                  lee_sin: 64,
                  leona: 89,
@@ -64,7 +73,6 @@ module RiotGamesApi
                  maokai: 57,
                  master_yi: 11,
                  miss_fortune: 21,
-                 monkey_king: 62, # wukong, riot use this name for wukong
                  mordekaiser: 82,
                  morgana: 25,
                  nami: 267,
@@ -116,7 +124,7 @@ module RiotGamesApi
                  vladimir: 8,
                  volibear: 106,
                  warwick: 19,
-                 wukong: 62, # alias for monkey_king
+                 wukong: 62,
                  xerath: 101,
                  xin_zhao: 5,
                  yasuo: 157,
