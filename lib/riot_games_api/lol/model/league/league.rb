@@ -5,9 +5,9 @@ module RiotGamesApi
         class League
           include Virtus.model
 
-          attribute :entries, Array[RiotGamesApi::LOL::Model::League::LeagueItem]
+          attribute :entries, Array[RiotGamesApi::LOL::Model::League::LeagueEntry]
           attribute :name, String
-          attribute :participant_id, Integer
+          attribute :participant_id, String
           attribute :queue, String
           attribute :tier, String
         end

@@ -1,6 +1,7 @@
 require 'riot_games_api/lol/model/league/mini_series'
-require 'riot_games_api/lol/model/league/league_item'
+require 'riot_games_api/lol/model/league/league_entry'
 require 'riot_games_api/lol/model/league/league'
+require 'riot_games_api/lol/model/league/league_list'
 
 module RiotGamesApi
   module LOL

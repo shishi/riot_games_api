@@ -2,92 +2,92 @@ require 'spec_helper'
 
 describe RiotGamesApi::LOL::Resource::League, :vcr do
   let(:client) { RiotGamesApi::LOL::Client.new }
-  let(:phantoml0ad) { 19347723 } # famous player
-  let(:ojarusang) { 34682697 } # my friend
-  let(:rascal_jester) { 'TEAM-a3641570-5f29-11e3-bf0e-782bcb4d0bb2' } # japanese pro LoL team
-  let(:ffg_practice) { 'TEAM-1991eb20-a33e-11e3-b439-782bcb4d1861' } # team in challenger
+  let(:phantoml0ad) { 19347723 }
+  let(:hello_im_shishi) { 64878685 }
+  let(:detfm) { 'TEAM-e4651800-bec9-11e1-a3be-782bcb4d0bb2' } # japanese pro LoL team
+  let(:ftc_esports) { 'TEAM-d9b35f00-5284-11e5-8e3e-c81f66ddabda' } # team in challenger
 
   describe '#by_summoner_id' do
-    let(:league_first) { client.leagues.by_summoner_id(phantoml0ad).first }
+    let(:pl) { client.leagues.by_summoner_id([phantoml0ad]).first }
 
-    it "should phantoml0ad is in league which name is Nasus's Agents" do
-      league_first.name.should eq "Nasus's Agents"
+    it "should phantoml0ad is in league which name is Udyr's Duelists" do
+      pl.leagues.first.name.should eq "Udyr's Duelists"
     end
 
-    it 'should have league item entries' do
-      league_first.entries.first.class.should eq RiotGamesApi::LOL::Model::League::LeagueItem
+    it 'should have league entries' do
+      pl.leagues.first.entries.first.class.should eq RiotGamesApi::LOL::Model::League::LeagueEntry
     end
   end
 
   describe '#by_summoner_id_only_own_entry' do
-    let(:league_first) { client.leagues.by_summoner_id_only_own_entry(ojarusang).first }
+    let(:me) { client.leagues.by_summoner_id_only_own_entry([hello_im_shishi]).first }
 
-    it "should ojarusang's tier is platinum" do
-      league_first.tier.should eq 'PLATINUM'
+    it "should hello im shishi's tier is gold" do
+      me.leagues.first.tier.should eq 'GOLD'
     end
 
-    it 'should ojarusang is in series' do
-      league_first.mini_series.should_not nil
+    it 'should hello im shishi is not in series' do
+      me.leagues.first.entries.first.mini_series.should nil
     end
   end
 
   describe '#by_team_id' do
-    let(:league_first) { client.leagues.by_team_id(rascal_jester).first }
+    let(:dfm) { client.leagues.by_team_id([detfm]).first }
 
-    it "should rascal jester is in league which name is Nunu's Outriders" do
-      league_first.name.should eq "Nunu's Outriders"
+    it "should detfm is in league which name is Dr. Mundo's Spellslingers" do
+      dfm.leagues.first.name.should eq "Dr. Mundo's Spellslingers"
     end
 
-    it 'should have league item entries' do
-      league_first.entries.first.class.should eq RiotGamesApi::LOL::Model::League::LeagueItem
+    it 'should have league entries' do
+      dfm.leagues.first.entries.first.class.should eq RiotGamesApi::LOL::Model::League::LeagueEntry
     end
   end
 
   describe '#by_team_id_only_own_entry' do
-    let(:league_first) { client.leagues.by_team_id_only_own_entry(ffg_practice).first }
+    let(:ftc) { client.leagues.by_team_id_only_own_entry([ftc_esports]).first }
 
-    it 'should ffg practice tier is challenger' do
-      league_first.tier.should eq 'CHALLENGER'
+    it 'should ftc_esports tier is challenger' do
+      ftc.leagues.first.tier.should eq 'CHALLENGER'
     end
 
-    it 'should ffg practice is not in series' do
-      league_first.mini_series.should nil
+    it 'should ftc_esports is not in series' do
+      ftc.leagues.first.entries.first.mini_series.should nil
     end
   end
 
   describe '#challenger_solo_5v5' do
-    let(:player_in_challenger) { client.leagues.challenger_solo_5v5.entries.sample }
+    let(:player_in_challenger) { client.leagues.challenger_solo_5v5 }
 
     it 'should tier is challenger' do
       player_in_challenger.tier.should eq 'CHALLENGER'
     end
 
     it 'should queue is ranked solo 5v5' do
-      player_in_challenger.queue_type.should eq 'RANKED_SOLO_5x5'
+      player_in_challenger.queue.should eq 'RANKED_SOLO_5x5'
     end
   end
 
   describe '#challenger_team_5v5' do
-    let(:team_in_challenger) { client.leagues.challenger_team_5v5.entries.sample }
+    let(:team_in_challenger) { client.leagues.challenger_team_5v5 }
 
     it 'should tier is challenger' do
       team_in_challenger.tier.should eq 'CHALLENGER'
     end
 
     it 'should queue is ranked team 5v5' do
-      team_in_challenger.queue_type.should eq 'RANKED_TEAM_5x5'
+      team_in_challenger.queue.should eq 'RANKED_TEAM_5x5'
     end
   end
 
   describe '#challenger_team_3v3' do
-    let(:team_in_challenger) { client.leagues.challenger_team_3v3.entries.sample }
+    let(:team_in_challenger) { client.leagues.challenger_team_3v3 }
 
     it 'should tier is challenger' do
       team_in_challenger.tier.should eq 'CHALLENGER'
     end
 
     it 'should queue is ranked team 3v3' do
-      team_in_challenger.queue_type.should eq 'RANKED_TEAM_3x3'
+      team_in_challenger.queue.should eq 'RANKED_TEAM_3x3'
     end
   end
 end

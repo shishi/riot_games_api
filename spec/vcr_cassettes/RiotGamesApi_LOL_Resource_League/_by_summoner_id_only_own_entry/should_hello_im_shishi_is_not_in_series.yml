@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/na/v2.5/league/by-summoner/64878685/entry?api_key=test_key&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RiotGamesApi gem v0.0.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 15 Nov 2015 17:52:19 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      Vary:
+      - Accept-Encoding
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVZSBwAGVkYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsMPR4NVgMDQ1I9SQFBHkMRDA9YX1IUOB5NQBcLDg1eB0orXEtJbhwAVxVDGBNKI3NjSERPCB0ASFFMBwECVVUDAQZUSk5THEBZAAoIDVEBVlwCV1YFBFJUFTw=
+      Content-Length:
+      - '229'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"64878685":[{"name":"Taric''s Mercenaries","tier":"GOLD","queue":"RANKED_SOLO_5x5","entries":[{"playerOrTeamId":"64878685","playerOrTeamName":"hello
+        im shishi","division":"V","leaguePoints":0,"wins":74,"losses":80,"isHotStreak":true,"isVeteran":false,"isFreshBlood":false,"isInactive":false}]}]}'
+    http_version: 
+  recorded_at: Sun, 15 Nov 2015 17:52:19 GMT
+recorded_with: VCR 3.0.0
