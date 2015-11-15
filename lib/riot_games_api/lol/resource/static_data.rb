@@ -22,7 +22,7 @@ module RiotGamesApi
         end
 
         # Return a champion static data by id
-        # @param [String, Integer] champion id
+        # @param [String, Integer] champion_id
         # @param [String] data_version
         # @return [Champion]
         def champion_by_id(champion_id, data_version = nil)
@@ -69,7 +69,7 @@ module RiotGamesApi
         end
 
         # Return a mastery static data by id
-        # @param [String, Integer] masery id
+        # @param [String, Integer] mastery_id
         # @param [String] data_version
         # @return [Mastery]
         def mastery_by_id(mastery_id, data_version = nil)
@@ -93,7 +93,7 @@ module RiotGamesApi
         end
 
         # Return a rune static data by id
-        # @param [String, Integer] rune id
+        # @param [String, Integer] rune_id
         # @param [String] data_version
         # @return [SummonerSpellList]
         def rune_by_id(rune_id, data_version = nil)
@@ -115,7 +115,7 @@ module RiotGamesApi
         end
 
         # Return a summoner spell static data by id
-        # @param [String, Integer] summoner spell id
+        # @param [String, Integer] summoner_spell_id
         # @param [String] data_version
         # @return [SummonerSpell]
         def summoner_spell_by_id(summoner_spell_id, data_version = nil)

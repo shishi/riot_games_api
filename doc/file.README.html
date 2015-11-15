@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!file.README.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'>
+<p><a href="http://badge.fury.io/rb/riot_games_api"><img
+src="https://badge.fury.io/rb/riot_games_api.svg"></a> <a
+href="https://drone.io/github.com/shishi/riot_games_api/latest"><img
+src="https://drone.io/github.com/shishi/riot_games_api/status.png"></a> <a
+href="https://travis-ci.org/shishi/riot_games_api"><img
+src="https://travis-ci.org/shishi/riot_games_api.svg?branch=master"></a> <a
+href="https://codeclimate.com/github/shishi/riot_games_api"><img
+src="https://codeclimate.com/github/shishi/riot_games_api.png"></a> <a
+href="https://codeclimate.com/github/shishi/riot_games_api"><img
+src="https://codeclimate.com/github/shishi/riot_games_api/coverage.png"></a>
+<a href="https://gemnasium.com/shishi/riot_games_api"><img
+src="https://gemnasium.com/shishi/riot_games_api.svg"></a></p>
+
+<h1 id="label-RiotGamesApi">RiotGamesApi</h1>
+
+<p>Make access easy to access Riot Games API to get their game data like
+League of Legends.</p>
+
+<h2 id="label-Installation">Installation</h2>
+
+<p>Add this line to your application&#39;s Gemfile:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>riot_games_api</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre class="code ruby"><code class="ruby">$ bundle</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre class="code ruby"><code class="ruby">$ gem install riot_games_api</code></pre>
+
+<h2 id="label-Usage">Usage</h2>
+
+<p><strong>First, You should love to play, watch, or do something with League
+of Legends.</strong></p>
+
+<p>Very thanks to Riot for greatest game.</p>
+<ul><li>
+<p>English</p>
+</li><li>
+<p>You need to get your RIOT Games API key. You may need to register your app.
+Defaul key for development is too restricted to use.</p>
+</li><li>
+<p>Japanese</p>
+</li><li>
+<p>RIOT Games API
+キーを取得してきて下さい。アプリケーションを登録してキーをもらったほうが良いかもしれません。デフォルトの開発用キーは普通に使うには制限が強すぎます。</p>
+</li></ul>
+
+<p><a href="https://developer.riotgames.com">developer.riotgames.com</a>/</p>
+
+<pre class="code ruby"><code class="ruby">
+client = RiotGamesApi::LOL::Client.new api_key: &#39;your_api_key&#39; # or ENV[&#39;RIOT_GAMES_API_KEY&#39;]
+
+* English
+avalable parameters when initialize client
+
+* Japanese
+クライアント初期化の際に使えるパラメータ
+</code></pre>
+
+<p>api_key default: none or <a href="'RIOT_GAMES_API_KEY'">ENV</a> region
+default: &#39;na&#39; adapter default: Faraday.default_adapter debug
+logging default: false locale default: &#39;en_US&#39; “`</p>
+
+<h1 id="label-from+summoner+resource">from summoner resource</h1>
+
+<p>summoner = client.summoner.by_name [&#39;hello im shishi&#39;].first</p>
+
+<h1 id="label-from+team+resource">from team resource</h1>
+
+<p>teams = client.team.by_summoner_id [summoner.id]</p>
+
+<h1 id="label-English">English</h1>
+
+<h1 id="label-You+can+use+champions+and+items+id+list+-28created+2014-2F11-2F23-29">You can use champions and items id list (created 2014/11/23)</h1>
+
+<h1 id="label-You+can+see+and+edit+lists+in+lib-2Friot_games_api-2Flol-2Fconstant-2F">You can see and edit lists in lib/riot_games_api/lol/constant/</h1>
+
+<h1 id="label-Japnese">Japnese</h1>
+
+<h1 id="label-E3-83-81-E3-83-A3-E3-83-B3-E3-83-94-E3-82-AA-E3-83-B3-E3-81-A8-E3-82-A2-E3-82-A4-E3-83-86-E3-83-A0-E3-81-AEID-E3-81-AE-E3-83-AA-E3-82-B9-E3-83-88-E3-82-92-E4-BD-9C-E3-81-A3-E3-81-A6-E3-81-82-E3-82-8A-E3-81-BE-E3-81-99+-282014-2F11-2F23+-E4-BD-9C-E6-88-90-29">チャンピオンとアイテムのIDのリストを作ってあります (2014/11/23 作成)</h1>
+
+<h1 id="label-lib-2Friot_games_api-2Flol-2Fconstant-2F+-E3-81-AB-E3-83-95-E3-82-A1-E3-82-A4-E3-83-AB-E3-81-8C-E3-81-82-E3-82-8B-E3-81-AE-E3-81-A7-E7-B7-A8-E9-9B-86-E3-82-82-E3-81-A7-E3-81-8D-E3-81-BE-E3-81-99">lib/riot_games_api/lol/constant/ にファイルがあるので編集もできます</h1>
+
+<h1 id="label-from+static_data+resource">from static_data resource</h1>
+
+<p>jinx = client.static_data.champion_by_id <a
+href=":jinx">RiotGamesApi::LOL::CHAMPIONS</a> jinx_lore = jinx.lore
+b_f_sword = client.static_data.item_by_id <a
+href=":b_f_sword">RiotGamesApi::LOL::ITEMS</a> b_f_sword_stats =
+b_f_sword.stats</p>
+
+<h1 id="label-English">English</h1>
+
+<h1 id="label-Now-2C+Riot+Games+API+do+not+support+image+file+directly-2C+but+you+can+get+url+for+images+their+official+data.+Almost+same+for+items-2C+etc.">Now, Riot Games API do not support image file directly, but you can get url for images their official data. Almost same for items, etc.</h1>
+
+<h1 id="label-Japanese">Japanese</h1>
+
+<h1 id="label-E7-8F-BE-E5-9C-A8+Riot+Games+API+-E3-81-AF-E7-94-BB-E5-83-8F-E3-82-92-E7-9B-B4-E6-8E-A5-E3-82-B5-E3-83-9D-E3-83-BC-E3-83-88-E3-81-97-E3-81-A6-E3-81-84-E3-81-BE-E3-81-9B-E3-82-93-E3-81-8C-E3-80-81-E3-81-93-E3-81-86-E3-81-99-E3-82-8B-E3-81-A8CDN-E3-81-AE-E5-85-AC-E5-BC-8F-E3-83-87-E3-83-BC-E3-82-BF-E3-82-92-E5-8F-96-E5-BE-97-E3-81-99-E3-82-8BURL-E3-82-92-E7-B5-84-E3-81-BF-E7-AB-8B-E3-81-A6-E3-82-8B-E3-81-93-E3-81-A8-E3-81-8C-E5-87-BA-E6-9D-A5-E3-81-BE-E3-81-99-E3-80-82-E3-82-A2-E3-82-A4-E3-83-86-E3-83-A0-E3-81-A8-E3-81-8B-E3-81-A7-E3-82-82-E5-A4-A7-E4-BD-93-E5-90-8C-E3-81-98-E3-82-88-E3-81-86-E3-81-AB-E3-81-A7-E3-81-8D-E3-81-BE-E3-81-99-E3-80-82">現在 Riot Games API は画像を直接サポートしていませんが、こうするとCDNの公式データを取得するURLを組み立てることが出来ます。アイテムとかでも大体同じようにできます。</h1>
+
+<p>xin = client.static_data.champion_by_id <a
+href=":xin_zhao">RiotGamesApi::LOL::CHAMPIONS</a> xin_image_filename =
+xin.image.full image_group = xin.image.group</p>
+
+<p>realm = client.static_data.realm url = realm.cdn dd_version = realm.dd</p>
+
+<p>image_url = url + dd_version + &#39;/img/&#39; + image_group +
+xin_image_filename</p>
+
+<pre class="code ruby"><code class="ruby">
+<span class='comment'>### Public method list
+</span>
+<span class='const'>You</span> <span class='id identifier rubyid_may'>may</span> <span class='id identifier rubyid_need'>need</span> <span class='id identifier rubyid_to'>to</span> <span class='id identifier rubyid_inspect'>inspect</span> <span class='kw'>return</span> <span class='id identifier rubyid_object'>object</span> <span class='id identifier rubyid_to'>to</span> <span class='id identifier rubyid_know'>know</span> <span class='id identifier rubyid_what'>what</span> <span class='id identifier rubyid_they'>they</span> <span class='id identifier rubyid_have'>have</span><span class='period'>.</span>
+
+<span class='id identifier rubyid_返されるオブジェクトをインスペクトすると、どんなデータを持ってるのか分かりやすいです。'>返されるオブジェクトをインスペクトすると、どんなデータを持ってるのか分かりやすいです。</span></code></pre>
+
+<p>There are some more options, you found in lib/riot_games_api/lol/resource</p>
+
+<p>RiotGamesApi::LOL::Resource::Champion  This resource for champion&#39;s
+status like active, free, enable or not in ranked</p>
+
+<p>#all  return all champions  #free  return free champions  #by_champion_id 
+return a specified champion by champion id</p>
+
+<p>RiotGamesApi::LOL::Resource::Game This resource for recent game records</p>
+
+<p>#recent  return recent 10 game records by summoner id</p>
+
+<p>RiotGamesApi::LOL::Resource::League  This resource for league of legends
+league system records</p>
+
+<p>#by_summoner_id  return league data include entries by summoner id 
+#by_summoner_id_only_own_entry  return entry league data by summoner id 
+#by_team_id  return league data include entries by team id 
+#by_team_id_only_own_entry  return entry league data by team id 
+#challenger_solo_5v5  return league data include entries in challenger solo
+5v5  #challenger_team_5v5  return league data include entries in challenger
+team 5v5  #challenger_team_3v3  return league data include entries in
+challenger team 3v3</p>
+
+<p>RiotGamesApi::LOL::Resource::StaticData  This resource for static data like
+champion&#39; status, skill data</p>
+
+<p>champion  #champion_all  return all champion static data (very heavy) 
+#champion_by_id  return a specified champion static data by champion id 
+item  #item_all  return all item static data  #item_by_id  return a
+specified item static data by item id  mastery  #mastery_all  return all
+mastery static data  #mastery_by_id  return a specified mastery static data
+by mastery id  #realm  return realm data  rune  #rune_all  return all rune
+static data  #rune_by_id  return a specified rune static data by rune id 
+summoner_spell  #summoner_spell_all  return all summoner spell static data 
+#summoner_spell_by_id  return a specified summoner spell static data by
+summoner spell id</p>
+
+<p>RiotGamesApi::LOL::Resource::Stats  This resource for statistics of league
+of legends matches</p>
+
+<p>#ranked  return statistics of ranekd match by summoner id  #summary  return
+statistics of matches by summoner id</p>
+
+<p>RiotGamesApi::LOL::Resource::Summoner  This resource for summoner data</p>
+
+<p>#by_name  return a summoner data by summoner name  #by_id  return a
+summoner data by summoner id  #masteries  return summoner masteries data by
+summoner id  #name  retuen summoner name by summoner id  #runes  return
+summoner runes data by summoner id</p>
+
+<p>RiotGamesApi::LOL::Resource::Team  This resource for ranked team data</p>
+
+<p>#by_summoner_id  return team data by summoner id  #by_team_id  retuen team
+data by team id</p>
+
+<p>“`</p>
+
+<h2 id="label-Contributing">Contributing</h2>
+<ol><li>
+<p>Fork it ( <a
+href="http://github.com/<my-github-username>/riot_games_api/fork“>github.com/<my-github-username>/riot_games_api/fork</a>
+)</p>
+</li><li>
+<p>Create your feature branch (<code>git checkout -b my-new-feature</code>)</p>
+</li><li>
+<p>Commit your changes (<code>git commit -am &#39;Add some
+feature&#39;</code>)</p>
+</li><li>
+<p>Push to the branch (<code>git push origin my-new-feature</code>)</p>
+</li><li>
+<p>Create new Pull Request</p>
+</li></ol>
+</div></div>
+
+    <div id="footer">
+  Generated on Mon Nov 16 06:57:15 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.2.0).
+</div>
+
+  </body>
+</html>

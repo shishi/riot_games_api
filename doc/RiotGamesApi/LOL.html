@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: RiotGamesApi::LOL
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!RiotGamesApi/LOL.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (L)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../RiotGamesApi.html" title="RiotGamesApi (module)">RiotGamesApi</a></span></span>
+     &raquo; 
+    <span class="title">LOL</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: RiotGamesApi::LOL
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/riot_games_api/lol/model.rb<span class="defines">,<br />
+  lib/riot_games_api/lol/client.rb,<br /> lib/riot_games_api/lol/resource.rb,<br /> lib/riot_games_api/lol/model/team.rb,<br /> lib/riot_games_api/lol/model/game.rb,<br /> lib/riot_games_api/lol/model/stats.rb,<br /> lib/riot_games_api/lol/model/league.rb,<br /> lib/riot_games_api/lol/resource/team.rb,<br /> lib/riot_games_api/lol/resource/game.rb,<br /> lib/riot_games_api/lol/resource/base.rb,<br /> lib/riot_games_api/lol/model/champion.rb,<br /> lib/riot_games_api/lol/constant/items.rb,<br /> lib/riot_games_api/lol/model/summoner.rb,<br /> lib/riot_games_api/lol/resource/stats.rb,<br /> lib/riot_games_api/lol/model/team/team.rb,<br /> lib/riot_games_api/lol/model/game/game.rb,<br /> lib/riot_games_api/lol/resource/league.rb,<br /> lib/riot_games_api/lol/model/game/player.rb,<br /> lib/riot_games_api/lol/model/static_data.rb,<br /> lib/riot_games_api/lol/model/team/roster.rb,<br /> lib/riot_games_api/lol/resource/summoner.rb,<br /> lib/riot_games_api/lol/resource/champion.rb,<br /> lib/riot_games_api/lol/constant/champions.rb,<br /> lib/riot_games_api/lol/model/corecion/time.rb,<br /> lib/riot_games_api/lol/model/league/league.rb,<br /> lib/riot_games_api/lol/model/summoner/name.rb,<br /> lib/riot_games_api/lol/model/team/team_list.rb,<br /> lib/riot_games_api/lol/model/game/raw_stats.rb,<br /> lib/riot_games_api/lol/resource/static_data.rb,<br /> lib/riot_games_api/lol/model/static_data/map.rb,<br /> lib/riot_games_api/lol/model/game/recent_game.rb,<br /> lib/riot_games_api/lol/model/static_data/item.rb,<br /> lib/riot_games_api/lol/model/summoner/mastery.rb,<br /> lib/riot_games_api/lol/model/static_data/info.rb,<br /> lib/riot_games_api/lol/model/static_data/gold.rb,<br /> lib/riot_games_api/lol/model/static_data/rune.rb,<br /> lib/riot_games_api/lol/model/static_data/skin.rb,<br /> lib/riot_games_api/lol/model/summoner/summoner.rb,<br /> lib/riot_games_api/lol/model/static_data/group.rb,<br /> lib/riot_games_api/lol/model/static_data/block.rb,<br /> lib/riot_games_api/lol/model/static_data/realm.rb,<br /> lib/riot_games_api/lol/model/champion/champion.rb,<br /> lib/riot_games_api/lol/model/static_data/stats.rb,<br /> lib/riot_games_api/lol/model/static_data/image.rb,<br /> lib/riot_games_api/lol/model/league/league_list.rb,<br /> lib/riot_games_api/lol/model/summoner/rune_slot.rb,<br /> lib/riot_games_api/lol/model/stats/ranked_stats.rb,<br /> lib/riot_games_api/lol/model/league/mini_series.rb,<br /> lib/riot_games_api/lol/model/summoner/rune_page.rb,<br /> lib/riot_games_api/lol/model/static_data/passive.rb,<br /> lib/riot_games_api/lol/model/static_data/mastery.rb,<br /> lib/riot_games_api/lol/model/league/league_entry.rb,<br /> lib/riot_games_api/lol/model/team/message_of_day.rb,<br /> lib/riot_games_api/lol/model/stats/champion_stats.rb,<br /> lib/riot_games_api/lol/model/static_data/champion.rb,<br /> lib/riot_games_api/lol/model/static_data/item_list.rb,<br /> lib/riot_games_api/lol/model/static_data/item_tree.rb,<br /> lib/riot_games_api/lol/model/static_data/meta_data.rb,<br /> lib/riot_games_api/lol/model/summoner/mastery_page.rb,<br /> lib/riot_games_api/lol/model/team/team_member_info.rb,<br /> lib/riot_games_api/lol/model/static_data/level_tip.rb,<br /> lib/riot_games_api/lol/model/team/team_stat_detail.rb,<br /> lib/riot_games_api/lol/model/static_data/rune_list.rb,<br /> lib/riot_games_api/lol/model/static_data/spell_vars.rb,<br /> lib/riot_games_api/lol/model/stats/aggregated_stats.rb,<br /> lib/riot_games_api/lol/model/static_data/basic_data.rb,<br /> lib/riot_games_api/lol/model/team/team_stat_summary.rb,<br /> lib/riot_games_api/lol/model/static_data/block_item.rb,<br /> lib/riot_games_api/lol/model/static_data/map_details.rb,<br /> lib/riot_games_api/lol/model/static_data/recommended.rb,<br /> lib/riot_games_api/lol/model/summoner/rune_page_list.rb,<br /> lib/riot_games_api/lol/model/static_data/mastery_list.rb,<br /> lib/riot_games_api/lol/model/static_data/mastery_tree.rb,<br /> lib/riot_games_api/lol/model/static_data/champion_list.rb,<br /> lib/riot_games_api/lol/model/team/match_history_summary.rb,<br /> lib/riot_games_api/lol/model/static_data/champion_spell.rb,<br /> lib/riot_games_api/lol/model/static_data/summoner_spell.rb,<br /> lib/riot_games_api/lol/model/stats/player_stats_summary.rb,<br /> lib/riot_games_api/lol/model/summoner/mastery_page_list.rb,<br /> lib/riot_games_api/lol/model/static_data/language_string.rb,<br /> lib/riot_games_api/lol/model/static_data/basic_data_stats.rb,<br /> lib/riot_games_api/lol/model/static_data/mastery_tree_list.rb,<br /> lib/riot_games_api/lol/model/static_data/mastery_tree_item.rb,<br /> lib/riot_games_api/lol/model/static_data/summoner_spell_list.rb,<br /> lib/riot_games_api/lol/model/stats/player_stats_summary_list.rb,<br /> lib/riot_games_api/lol/model/static_data/champion_list_data_by_id.rb,<br /> lib/riot_games_api/lol/model/static_data/summoner_spell_list_data_by_id.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="LOL/Model.html" title="RiotGamesApi::LOL::Model (module)">Model</a></span>, <span class='object_link'><a href="LOL/Resource.html" title="RiotGamesApi::LOL::Resource (module)">Resource</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="LOL/Client.html" title="RiotGamesApi::LOL::Client (class)">Client</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="ITEMS-constant" class="">ITEMS =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>how to generate list client.static_data.item_all.data.each do |item|</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_item'>item</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_item'>item</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<p>end</p>
+
+<p>remove all double quotes remove all single quotes remove all dots remove
+all “()” replace all letters to lower case replace &#39;enchantment: _&#39;
+with &#39;enchantment_&#39; replace space with underscore in item names
+replace all “-” with “_” sort lines</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbrace'>{</span>
+ <span class='label'>abyssal_scepter:</span> <span class='int'>3001</span><span class='comma'>,</span>
+ <span class='label'>aegis_of_the_legion:</span> <span class='int'>3105</span><span class='comma'>,</span>
+ <span class='label'>aether_wisp:</span> <span class='int'>3113</span><span class='comma'>,</span>
+ <span class='label'>amplifying_tome:</span> <span class='int'>1052</span><span class='comma'>,</span>
+ <span class='label'>ancient_coin:</span> <span class='int'>3301</span><span class='comma'>,</span>
+ <span class='label'>archangels_staff:</span> <span class='int'>3003</span><span class='comma'>,</span>
+ <span class='label'>archangels_staff_crystal_scar:</span> <span class='int'>3007</span><span class='comma'>,</span>
+ <span class='label'>ardent_censer:</span> <span class='int'>3504</span><span class='comma'>,</span>
+ <span class='label'>athenes_unholy_grail:</span> <span class='int'>3174</span><span class='comma'>,</span>
+ <span class='label'>b_f_sword:</span> <span class='int'>1038</span><span class='comma'>,</span>
+ <span class='label'>bamis_cinder:</span> <span class='int'>3751</span><span class='comma'>,</span>
+ <span class='label'>banner_of_command:</span> <span class='int'>3060</span><span class='comma'>,</span>
+ <span class='label'>banshees_veil:</span> <span class='int'>3102</span><span class='comma'>,</span>
+ <span class='label'>berserkers_greaves:</span> <span class='int'>3006</span><span class='comma'>,</span>
+ <span class='label'>berserkers_greaves_enchantment_alacrity:</span> <span class='int'>1301</span><span class='comma'>,</span>
+ <span class='label'>berserkers_greaves_enchantment_captain:</span> <span class='int'>1302</span><span class='comma'>,</span>
+ <span class='label'>berserkers_greaves_enchantment_distortion:</span> <span class='int'>1303</span><span class='comma'>,</span>
+ <span class='label'>berserkers_greaves_enchantment_furor:</span> <span class='int'>1300</span><span class='comma'>,</span>
+ <span class='label'>berserkers_greaves_enchantment_homeguard:</span> <span class='int'>1304</span><span class='comma'>,</span>
+ <span class='label'>bilgewater_cutlass:</span> <span class='int'>3144</span><span class='comma'>,</span>
+ <span class='label'>blade_of_the_ruined_king:</span> <span class='int'>3153</span><span class='comma'>,</span>
+ <span class='label'>blasting_wand:</span> <span class='int'>1026</span><span class='comma'>,</span>
+ <span class='label'>boots_of_mobility:</span> <span class='int'>3117</span><span class='comma'>,</span>
+ <span class='label'>boots_of_mobility_enchantment_alacrity:</span> <span class='int'>1326</span><span class='comma'>,</span>
+ <span class='label'>boots_of_mobility_enchantment_captain:</span> <span class='int'>1327</span><span class='comma'>,</span>
+ <span class='label'>boots_of_mobility_enchantment_distortion:</span> <span class='int'>1328</span><span class='comma'>,</span>
+ <span class='label'>boots_of_mobility_enchantment_furor:</span> <span class='int'>1325</span><span class='comma'>,</span>
+ <span class='label'>boots_of_mobility_enchantment_homeguard:</span> <span class='int'>1329</span><span class='comma'>,</span>
+ <span class='label'>boots_of_speed:</span> <span class='int'>1001</span><span class='comma'>,</span>
+ <span class='label'>boots_of_swiftness:</span> <span class='int'>3009</span><span class='comma'>,</span>
+ <span class='label'>boots_of_swiftness_enchantment_alacrity:</span> <span class='int'>1306</span><span class='comma'>,</span>
+ <span class='label'>boots_of_swiftness_enchantment_captain:</span> <span class='int'>1307</span><span class='comma'>,</span>
+ <span class='label'>boots_of_swiftness_enchantment_distortion:</span> <span class='int'>1308</span><span class='comma'>,</span>
+ <span class='label'>boots_of_swiftness_enchantment_furor:</span> <span class='int'>1305</span><span class='comma'>,</span>
+ <span class='label'>boots_of_swiftness_enchantment_homeguard:</span> <span class='int'>1309</span><span class='comma'>,</span>
+ <span class='label'>brawlers_gloves:</span> <span class='int'>1051</span><span class='comma'>,</span>
+ <span class='label'>catalyst_the_protector:</span> <span class='int'>3010</span><span class='comma'>,</span>
+ <span class='label'>caulfields_warhammer:</span> <span class='int'>3133</span><span class='comma'>,</span>
+ <span class='label'>chain_vest:</span> <span class='int'>1031</span><span class='comma'>,</span>
+ <span class='label'>chalice_of_harmony:</span> <span class='int'>3028</span><span class='comma'>,</span>
+ <span class='label'>cloak_of_agility:</span> <span class='int'>1018</span><span class='comma'>,</span>
+ <span class='label'>cloth_armor:</span> <span class='int'>1029</span><span class='comma'>,</span>
+ <span class='label'>corrupting_potion:</span> <span class='int'>2033</span><span class='comma'>,</span>
+ <span class='label'>crystalline_bracer:</span> <span class='int'>3801</span><span class='comma'>,</span>
+ <span class='label'>cull:</span> <span class='int'>1083</span><span class='comma'>,</span>
+ <span class='label'>dagger:</span> <span class='int'>1042</span><span class='comma'>,</span>
+ <span class='label'>dead_mans_plate:</span> <span class='int'>3742</span><span class='comma'>,</span>
+ <span class='label'>deaths_dance:</span> <span class='int'>3812</span><span class='comma'>,</span>
+ <span class='label'>deaths_daughter:</span> <span class='int'>3902</span><span class='comma'>,</span>
+ <span class='label'>dervish_blade:</span> <span class='int'>3137</span><span class='comma'>,</span>
+ <span class='label'>diet_poro_snax:</span> <span class='int'>2054</span><span class='comma'>,</span>
+ <span class='label'>dorans_blade:</span> <span class='int'>1055</span><span class='comma'>,</span>
+ <span class='label'>dorans_blade_showdown:</span> <span class='int'>1075</span><span class='comma'>,</span>
+ <span class='label'>dorans_ring:</span> <span class='int'>1056</span><span class='comma'>,</span>
+ <span class='label'>dorans_ring_showdown:</span> <span class='int'>1076</span><span class='comma'>,</span>
+ <span class='label'>dorans_shield:</span> <span class='int'>1054</span><span class='comma'>,</span>
+ <span class='label'>dorans_shield_showdown:</span> <span class='int'>1074</span><span class='comma'>,</span>
+ <span class='label'>elixir_of_iron:</span> <span class='int'>2138</span><span class='comma'>,</span>
+ <span class='label'>elixir_of_sorcery:</span> <span class='int'>2139</span><span class='comma'>,</span>
+ <span class='label'>elixir_of_wrath:</span> <span class='int'>2140</span><span class='comma'>,</span>
+ <span class='label'>enchantment_alacrity:</span> <span class='int'>3241</span><span class='comma'>,</span>
+ <span class='label'>enchantment_captain:</span> <span class='int'>3242</span><span class='comma'>,</span>
+ <span class='label'>stalkers_blade_enchantment_cinderhulk:</span> <span class='int'>1401</span><span class='comma'>,</span>
+ <span class='label'>trackers_knife_enchantment_cinderhulk:</span> <span class='int'>1409</span><span class='comma'>,</span>
+ <span class='label'>skirmishers_sabre_enchantment_cinderhulk:</span> <span class='int'>1413</span><span class='comma'>,</span>
+ <span class='label'>enchantment_cinderhulk:</span> <span class='int'>3672</span><span class='comma'>,</span>
+ <span class='label'>stalkers_blade_enchantment_devourer:</span> <span class='int'>1403</span><span class='comma'>,</span>
+ <span class='label'>trackers_knife_enchantment_devourer:</span> <span class='int'>1411</span><span class='comma'>,</span>
+ <span class='label'>skirmishers_sabre_enchantment_devourer:</span> <span class='int'>1415</span><span class='comma'>,</span>
+ <span class='label'>enchantment_devourer:</span> <span class='int'>3674</span><span class='comma'>,</span>
+ <span class='label'>enchantment_distortion:</span> <span class='int'>3243</span><span class='comma'>,</span>
+ <span class='label'>enchantment_furor:</span> <span class='int'>3240</span><span class='comma'>,</span>
+ <span class='label'>enchantment_homeguard:</span> <span class='int'>3244</span><span class='comma'>,</span>
+ <span class='label'>stalkers_blade_enchantment_runeglaive:</span> <span class='int'>1402</span><span class='comma'>,</span>
+ <span class='label'>trackers_knife_enchantment_runeglaive:</span> <span class='int'>1410</span><span class='comma'>,</span>
+ <span class='label'>skirmishers_sabre_enchantment_runeglaive:</span> <span class='int'>1414</span><span class='comma'>,</span>
+ <span class='label'>enchantment_runeglaive:</span> <span class='int'>3673</span><span class='comma'>,</span>
+ <span class='label'>stalkers_blade_enchantment_sated_devourer:</span> <span class='int'>3930</span><span class='comma'>,</span>
+ <span class='label'>skirmishers_sabre_enchantment_sated_devourer:</span> <span class='int'>3931</span><span class='comma'>,</span>
+ <span class='label'>trackers_knife_enchantment_sated_devourer:</span> <span class='int'>3932</span><span class='comma'>,</span>
+ <span class='label'>stalkers_blade_enchantment_warrior:</span> <span class='int'>1400</span><span class='comma'>,</span>
+ <span class='label'>trackers_knife_enchantment_warrior:</span> <span class='int'>1408</span><span class='comma'>,</span>
+ <span class='label'>skirmishers_sabre_enchantment_warrior:</span> <span class='int'>1412</span><span class='comma'>,</span>
+ <span class='label'>enchantment_warrior:</span> <span class='int'>3671</span><span class='comma'>,</span>
+ <span class='label'>entropy:</span> <span class='int'>3184</span><span class='comma'>,</span>
+ <span class='label'>essence_reaver:</span> <span class='int'>3508</span><span class='comma'>,</span>
+ <span class='label'>executioners_calling:</span> <span class='int'>3123</span><span class='comma'>,</span>
+ <span class='label'>explorers_ward:</span> <span class='int'>2050</span><span class='comma'>,</span>
+ <span class='label'>eye_of_the_equinox:</span> <span class='int'>2303</span><span class='comma'>,</span>
+ <span class='label'>eye_of_the_oasis:</span> <span class='int'>2302</span><span class='comma'>,</span>
+ <span class='label'>eye_of_the_watchers:</span> <span class='int'>2301</span><span class='comma'>,</span>
+ <span class='label'>face_of_the_mountain:</span> <span class='int'>3401</span><span class='comma'>,</span>
+ <span class='label'>faerie_charm:</span> <span class='int'>1004</span><span class='comma'>,</span>
+ <span class='label'>farsight_alteration:</span> <span class='int'>3363</span><span class='comma'>,</span>
+ <span class='label'>fiendish_codex:</span> <span class='int'>3108</span><span class='comma'>,</span>
+ <span class='label'>fire_at_will:</span> <span class='int'>3901</span><span class='comma'>,</span>
+ <span class='label'>forbidden_idol:</span> <span class='int'>3114</span><span class='comma'>,</span>
+ <span class='label'>frost_queens_claim:</span> <span class='int'>3092</span><span class='comma'>,</span>
+ <span class='label'>frostfang:</span> <span class='int'>3098</span><span class='comma'>,</span>
+ <span class='label'>frozen_heart:</span> <span class='int'>3110</span><span class='comma'>,</span>
+ <span class='label'>frozen_mallet:</span> <span class='int'>3022</span><span class='comma'>,</span>
+ <span class='label'>giant_slayer:</span> <span class='int'>3034</span><span class='comma'>,</span>
+ <span class='label'>giants_belt:</span> <span class='int'>1011</span><span class='comma'>,</span>
+ <span class='label'>glacial_shroud:</span> <span class='int'>3024</span><span class='comma'>,</span>
+ <span class='label'>golden_transcendence:</span> <span class='int'>3460</span><span class='comma'>,</span>
+ <span class='label'>greater_stealth_totem_trinket:</span> <span class='int'>3361</span><span class='comma'>,</span>
+ <span class='label'>greater_vision_totem_trinket:</span> <span class='int'>3362</span><span class='comma'>,</span>
+ <span class='label'>grezs_spectral_lantern:</span> <span class='int'>3159</span><span class='comma'>,</span>
+ <span class='label'>guardian_angel:</span> <span class='int'>3026</span><span class='comma'>,</span>
+ <span class='label'>guardians_horn:</span> <span class='int'>2051</span><span class='comma'>,</span>
+ <span class='label'>guinsoos_rageblade:</span> <span class='int'>3124</span><span class='comma'>,</span>
+ <span class='label'>haunting_guise:</span> <span class='int'>3136</span><span class='comma'>,</span>
+ <span class='label'>health_potion:</span> <span class='int'>2003</span><span class='comma'>,</span>
+ <span class='label'>hexdrinker:</span> <span class='int'>3155</span><span class='comma'>,</span>
+ <span class='label'>hextech_gunblade:</span> <span class='int'>3146</span><span class='comma'>,</span>
+ <span class='label'>hextech_revolver:</span> <span class='int'>3145</span><span class='comma'>,</span>
+ <span class='label'>hextech_sweeper_crystal_scar:</span> <span class='int'>3187</span><span class='comma'>,</span>
+ <span class='label'>hextech_sweeper:</span> <span class='int'>3348</span><span class='comma'>,</span>
+ <span class='label'>hunters_machete:</span> <span class='int'>1041</span><span class='comma'>,</span>
+ <span class='label'>hunters_potion:</span> <span class='int'>2032</span><span class='comma'>,</span>
+ <span class='label'>hunters_talisman:</span> <span class='int'>1039</span><span class='comma'>,</span>
+ <span class='label'>iceborn_gauntlet:</span> <span class='int'>3025</span><span class='comma'>,</span>
+ <span class='label'>infinity_edge:</span> <span class='int'>3031</span><span class='comma'>,</span>
+ <span class='label'>ionian_boots_of_lucidity:</span> <span class='int'>3158</span><span class='comma'>,</span>
+ <span class='label'>ionian_boots_of_lucidity_enchantment_alacrity:</span> <span class='int'>1331</span><span class='comma'>,</span>
+ <span class='label'>ionian_boots_of_lucidity_enchantment_captain:</span> <span class='int'>1332</span><span class='comma'>,</span>
+ <span class='label'>ionian_boots_of_lucidity_enchantment_distortion:</span> <span class='int'>1333</span><span class='comma'>,</span>
+ <span class='label'>ionian_boots_of_lucidity_enchantment_furor:</span> <span class='int'>1330</span><span class='comma'>,</span>
+ <span class='label'>ionian_boots_of_lucidity_enchantment_homeguard:</span> <span class='int'>1334</span><span class='comma'>,</span>
+ <span class='label'>jaurims_fist:</span> <span class='int'>3052</span><span class='comma'>,</span>
+ <span class='label'>kindlegem:</span> <span class='int'>3067</span><span class='comma'>,</span>
+ <span class='label'>kircheis_shard:</span> <span class='int'>2015</span><span class='comma'>,</span>
+ <span class='label'>last_whisper:</span> <span class='int'>3035</span><span class='comma'>,</span>
+ <span class='label'>liandrys_torment:</span> <span class='int'>3151</span><span class='comma'>,</span>
+ <span class='label'>lich_bane:</span> <span class='int'>3100</span><span class='comma'>,</span>
+ <span class='label'>locket_of_the_iron_solari:</span> <span class='int'>3190</span><span class='comma'>,</span>
+ <span class='label'>long_sword:</span> <span class='int'>1036</span><span class='comma'>,</span>
+ <span class='label'>lord_dominiks_regards:</span> <span class='int'>3036</span><span class='comma'>,</span>
+ <span class='label'>lord_van_damms_pillager:</span> <span class='int'>3104</span><span class='comma'>,</span>
+ <span class='label'>ludens_echo:</span> <span class='int'>3285</span><span class='comma'>,</span>
+ <span class='label'>madreds_razors:</span> <span class='int'>3106</span><span class='comma'>,</span>
+ <span class='label'>manamune:</span> <span class='int'>3004</span><span class='comma'>,</span>
+ <span class='label'>manamune_crystal_scar:</span> <span class='int'>3008</span><span class='comma'>,</span>
+ <span class='label'>maw_of_malmortius:</span> <span class='int'>3156</span><span class='comma'>,</span>
+ <span class='label'>mejais_soulstealer:</span> <span class='int'>3041</span><span class='comma'>,</span>
+ <span class='label'>mercurial_scimitar:</span> <span class='int'>3139</span><span class='comma'>,</span>
+ <span class='label'>mercurys_treads:</span> <span class='int'>3111</span><span class='comma'>,</span>
+ <span class='label'>mercurys_treads_enchantment_alacrity:</span> <span class='int'>1321</span><span class='comma'>,</span>
+ <span class='label'>mercurys_treads_enchantment_captain:</span> <span class='int'>1322</span><span class='comma'>,</span>
+ <span class='label'>mercurys_treads_enchantment_distortion:</span> <span class='int'>1323</span><span class='comma'>,</span>
+ <span class='label'>mercurys_treads_enchantment_furor:</span> <span class='int'>1320</span><span class='comma'>,</span>
+ <span class='label'>mercurys_treads_enchantment_homeguard:</span> <span class='int'>1324</span><span class='comma'>,</span>
+ <span class='label'>mikaels_crucible:</span> <span class='int'>3222</span><span class='comma'>,</span>
+ <span class='label'>moonflair_spellblade:</span> <span class='int'>3170</span><span class='comma'>,</span>
+ <span class='label'>morellonomicon:</span> <span class='int'>3165</span><span class='comma'>,</span>
+ <span class='label'>mortal_reminder:</span> <span class='int'>3033</span><span class='comma'>,</span>
+ <span class='label'>muramana:</span> <span class='int'>3042</span><span class='comma'>,</span>
+ <span class='label'>muramana_crystal_scar:</span> <span class='int'>3043</span><span class='comma'>,</span>
+ <span class='label'>nashors_tooth:</span> <span class='int'>3115</span><span class='comma'>,</span>
+ <span class='label'>needlessly_large_rod:</span> <span class='int'>1058</span><span class='comma'>,</span>
+ <span class='label'>negatron_cloak:</span> <span class='int'>1057</span><span class='comma'>,</span>
+ <span class='label'>ninja_tabi:</span> <span class='int'>3047</span><span class='comma'>,</span>
+ <span class='label'>ninja_tabi_enchantment_alacrity:</span> <span class='int'>1316</span><span class='comma'>,</span>
+ <span class='label'>ninja_tabi_enchantment_captain:</span> <span class='int'>1317</span><span class='comma'>,</span>
+ <span class='label'>ninja_tabi_enchantment_distortion:</span> <span class='int'>1318</span><span class='comma'>,</span>
+ <span class='label'>ninja_tabi_enchantment_furor:</span> <span class='int'>1315</span><span class='comma'>,</span>
+ <span class='label'>ninja_tabi_enchantment_homeguard:</span> <span class='int'>1319</span><span class='comma'>,</span>
+ <span class='label'>nomads_medallion:</span> <span class='int'>3096</span><span class='comma'>,</span>
+ <span class='label'>null_magic_mantle:</span> <span class='int'>1033</span><span class='comma'>,</span>
+ <span class='label'>odyns_veil:</span> <span class='int'>3180</span><span class='comma'>,</span>
+ <span class='label'>ohmwrecker:</span> <span class='int'>3056</span><span class='comma'>,</span>
+ <span class='label'>oracle_alteration:</span> <span class='int'>3364</span><span class='comma'>,</span>
+ <span class='label'>oracles_extract:</span> <span class='int'>2047</span><span class='comma'>,</span>
+ <span class='label'>orb_of_winter:</span> <span class='int'>3112</span><span class='comma'>,</span>
+ <span class='label'>overlords_bloodmail:</span> <span class='int'>3084</span><span class='comma'>,</span>
+ <span class='label'>perfect_hex_core:</span> <span class='int'>3198</span><span class='comma'>,</span>
+ <span class='label'>phage:</span> <span class='int'>3044</span><span class='comma'>,</span>
+ <span class='label'>phantom_dancer:</span> <span class='int'>3046</span><span class='comma'>,</span>
+ <span class='label'>pickaxe:</span> <span class='int'>1037</span><span class='comma'>,</span>
+ <span class='label'>poro_snax:</span> <span class='int'>2052</span><span class='comma'>,</span>
+ <span class='label'>prospectors_blade:</span> <span class='int'>1062</span><span class='comma'>,</span>
+ <span class='label'>prospectors_ring:</span> <span class='int'>1063</span><span class='comma'>,</span>
+ <span class='label'>prototype_hex_core:</span> <span class='int'>3200</span><span class='comma'>,</span>
+ <span class='label'>quicksilver_sash:</span> <span class='int'>3140</span><span class='comma'>,</span>
+ <span class='label'>rabadons_deathcap:</span> <span class='int'>3089</span><span class='comma'>,</span>
+ <span class='label'>raise_morale:</span> <span class='int'>3903</span><span class='comma'>,</span>
+ <span class='label'>randuins_omen:</span> <span class='int'>3143</span><span class='comma'>,</span>
+ <span class='label'>rapid_firecannon:</span> <span class='int'>3094</span><span class='comma'>,</span>
+ <span class='label'>raptor_cloak:</span> <span class='int'>2053</span><span class='comma'>,</span>
+ <span class='label'>ravenous_hydra:</span> <span class='int'>3074</span><span class='comma'>,</span>
+ <span class='label'>recurve_bow:</span> <span class='int'>1043</span><span class='comma'>,</span>
+ <span class='label'>refillable_potion:</span> <span class='int'>2031</span><span class='comma'>,</span>
+ <span class='label'>rejuvenation_bead:</span> <span class='int'>1006</span><span class='comma'>,</span>
+ <span class='label'>relic_shield:</span> <span class='int'>3302</span><span class='comma'>,</span>
+ <span class='label'>righteous_glory:</span> <span class='int'>3800</span><span class='comma'>,</span>
+ <span class='label'>rod_of_ages:</span> <span class='int'>3027</span><span class='comma'>,</span>
+ <span class='label'>rod_of_ages_crystal_scar:</span> <span class='int'>3029</span><span class='comma'>,</span>
+ <span class='label'>ruby_crystal:</span> <span class='int'>1028</span><span class='comma'>,</span>
+ <span class='label'>ruby_sightstone:</span> <span class='int'>2045</span><span class='comma'>,</span>
+ <span class='label'>runaans_hurricane:</span> <span class='int'>3085</span><span class='comma'>,</span>
+ <span class='label'>rylais_crystal_scepter:</span> <span class='int'>3116</span><span class='comma'>,</span>
+ <span class='label'>sanguine_blade:</span> <span class='int'>3181</span><span class='comma'>,</span>
+ <span class='label'>sapphire_crystal:</span> <span class='int'>1027</span><span class='comma'>,</span>
+ <span class='label'>seekers_armguard:</span> <span class='int'>3191</span><span class='comma'>,</span>
+ <span class='label'>seraphs_embrace:</span> <span class='int'>3040</span><span class='comma'>,</span>
+ <span class='label'>seraphs_embrace_crystal_scar:</span> <span class='int'>3048</span><span class='comma'>,</span>
+ <span class='label'>serrated_dirk:</span> <span class='int'>3134</span><span class='comma'>,</span>
+ <span class='label'>sheen:</span> <span class='int'>3057</span><span class='comma'>,</span>
+ <span class='label'>sightstone:</span> <span class='int'>2049</span><span class='comma'>,</span>
+ <span class='label'>skirmishers_sabre:</span> <span class='int'>3715</span><span class='comma'>,</span>
+ <span class='label'>sorcerers_shoes:</span> <span class='int'>3020</span><span class='comma'>,</span>
+ <span class='label'>sorcerers_shoes_enchantment_alacrity:</span> <span class='int'>1311</span><span class='comma'>,</span>
+ <span class='label'>sorcerers_shoes_enchantment_captain:</span> <span class='int'>1312</span><span class='comma'>,</span>
+ <span class='label'>sorcerers_shoes_enchantment_distortion:</span> <span class='int'>1313</span><span class='comma'>,</span>
+ <span class='label'>sorcerers_shoes_enchantment_furor:</span> <span class='int'>1310</span><span class='comma'>,</span>
+ <span class='label'>sorcerers_shoes_enchantment_homeguard:</span> <span class='int'>1314</span><span class='comma'>,</span>
+ <span class='label'>soul_anchor_trinket:</span> <span class='int'>3345</span><span class='comma'>,</span>
+ <span class='label'>spectres_cowl:</span> <span class='int'>3211</span><span class='comma'>,</span>
+ <span class='label'>spellthiefs_edge:</span> <span class='int'>3303</span><span class='comma'>,</span>
+ <span class='label'>spirit_visage:</span> <span class='int'>3065</span><span class='comma'>,</span>
+ <span class='label'>staff_of_flowing_water:</span> <span class='int'>3744</span><span class='comma'>,</span>
+ <span class='label'>stalkers_blade:</span> <span class='int'>3706</span><span class='comma'>,</span>
+ <span class='label'>statikk_shiv:</span> <span class='int'>3087</span><span class='comma'>,</span>
+ <span class='label'>steraks_gage:</span> <span class='int'>3053</span><span class='comma'>,</span>
+ <span class='label'>stinger:</span> <span class='int'>3101</span><span class='comma'>,</span>
+ <span class='label'>sunfire_cape:</span> <span class='int'>3068</span><span class='comma'>,</span>
+ <span class='label'>sweeping_lens_trinket:</span> <span class='int'>3341</span><span class='comma'>,</span>
+ <span class='label'>talisman_of_ascension:</span> <span class='int'>3069</span><span class='comma'>,</span>
+ <span class='label'>targons_brace:</span> <span class='int'>3097</span><span class='comma'>,</span>
+ <span class='label'>tear_of_the_goddess:</span> <span class='int'>3070</span><span class='comma'>,</span>
+ <span class='label'>tear_of_the_goddess_crystal_scar:</span> <span class='int'>3073</span><span class='comma'>,</span>
+ <span class='label'>the_black_cleaver:</span> <span class='int'>3071</span><span class='comma'>,</span>
+ <span class='label'>the_black_spear:</span> <span class='int'>3599</span><span class='comma'>,</span>
+ <span class='label'>the_bloodthirster:</span> <span class='int'>3072</span><span class='comma'>,</span>
+ <span class='label'>the_dark_seal:</span> <span class='int'>1082</span><span class='comma'>,</span>
+ <span class='label'>the_hex_core_mk_1:</span> <span class='int'>3196</span><span class='comma'>,</span>
+ <span class='label'>the_hex_core_mk_2:</span> <span class='int'>3197</span><span class='comma'>,</span>
+ <span class='label'>the_lightbringer:</span> <span class='int'>3185</span><span class='comma'>,</span>
+ <span class='label'>thornmail:</span> <span class='int'>3075</span><span class='comma'>,</span>
+ <span class='label'>tiamat:</span> <span class='int'>3077</span><span class='comma'>,</span>
+ <span class='label'>titanic_hydra:</span> <span class='int'>3748</span><span class='comma'>,</span>
+ <span class='label'>total_biscuit_of_rejuvenation_post_3_14:</span> <span class='int'>2010</span><span class='comma'>,</span>
+ <span class='label'>total_biscuit_of_rejuvenation_pre_3_14:</span> <span class='int'>2009</span><span class='comma'>,</span>
+ <span class='label'>trackers_knife:</span> <span class='int'>3711</span><span class='comma'>,</span>
+ <span class='label'>trinity_force:</span> <span class='int'>3078</span><span class='comma'>,</span>
+ <span class='label'>vampiric_scepter:</span> <span class='int'>1053</span><span class='comma'>,</span>
+ <span class='label'>vision_ward:</span> <span class='int'>2043</span><span class='comma'>,</span>
+ <span class='label'>void_staff:</span> <span class='int'>3135</span><span class='comma'>,</span>
+ <span class='label'>wardens_mail:</span> <span class='int'>3082</span><span class='comma'>,</span>
+ <span class='label'>warding_totem_trinket:</span> <span class='int'>3340</span><span class='comma'>,</span>
+ <span class='label'>warmogs_armor:</span> <span class='int'>3083</span><span class='comma'>,</span>
+ <span class='label'>wicked_hatchet:</span> <span class='int'>3122</span><span class='comma'>,</span>
+ <span class='label'>will_of_the_ancients:</span> <span class='int'>3152</span><span class='comma'>,</span>
+ <span class='label'>wits_end:</span> <span class='int'>3091</span><span class='comma'>,</span>
+ <span class='label'>wooglets_witchcap:</span> <span class='int'>3090</span><span class='comma'>,</span>
+ <span class='label'>wriggles_lantern:</span> <span class='int'>3154</span><span class='comma'>,</span>
+ <span class='label'>youmuus_ghostblade:</span> <span class='int'>3142</span><span class='comma'>,</span>
+ <span class='label'>zeal:</span> <span class='int'>3086</span><span class='comma'>,</span>
+ <span class='label'>zekes_harbinger:</span> <span class='int'>3050</span><span class='comma'>,</span>
+ <span class='label'>zhonyas_hourglass:</span> <span class='int'>3157</span><span class='comma'>,</span>
+ <span class='label'>zzrot_portal:</span> <span class='int'>3512</span>
+<span class='rbrace'>}</span></pre></dd>
+      
+        <dt id="CHAMPIONS-constant" class="">CHAMPIONS =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>how to generate list client.static_data.champion_all.data.each do
+|champion|</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_champion'>champion</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_champion'>champion</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<p>end</p>
+
+<p>remove all double quotes remove all single quotes remove all dots replace
+all letters to lower case replace space with underscore in champion names
+sort lines</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbrace'>{</span>
+ <span class='label'>aatrox:</span> <span class='int'>266</span><span class='comma'>,</span>
+ <span class='label'>ahri:</span> <span class='int'>103</span><span class='comma'>,</span>
+ <span class='label'>akali:</span> <span class='int'>84</span><span class='comma'>,</span>
+ <span class='label'>alistar:</span> <span class='int'>12</span><span class='comma'>,</span>
+ <span class='label'>amumu:</span> <span class='int'>32</span><span class='comma'>,</span>
+ <span class='label'>anivia:</span> <span class='int'>34</span><span class='comma'>,</span>
+ <span class='label'>annie:</span> <span class='int'>1</span><span class='comma'>,</span>
+ <span class='label'>ashe:</span> <span class='int'>22</span><span class='comma'>,</span>
+ <span class='label'>azir:</span> <span class='int'>268</span><span class='comma'>,</span>
+ <span class='label'>bard:</span> <span class='int'>432</span><span class='comma'>,</span>
+ <span class='label'>blitzcrank:</span> <span class='int'>53</span><span class='comma'>,</span>
+ <span class='label'>brand:</span> <span class='int'>63</span><span class='comma'>,</span>
+ <span class='label'>braum:</span> <span class='int'>201</span><span class='comma'>,</span>
+ <span class='label'>caitlyn:</span> <span class='int'>51</span><span class='comma'>,</span>
+ <span class='label'>cassiopeia:</span> <span class='int'>69</span><span class='comma'>,</span>
+ <span class='label'>chogath:</span> <span class='int'>31</span><span class='comma'>,</span>
+ <span class='label'>corki:</span> <span class='int'>42</span><span class='comma'>,</span>
+ <span class='label'>darius:</span> <span class='int'>122</span><span class='comma'>,</span>
+ <span class='label'>diana:</span> <span class='int'>131</span><span class='comma'>,</span>
+ <span class='label'>dr_mundo:</span> <span class='int'>36</span><span class='comma'>,</span>
+ <span class='label'>draven:</span> <span class='int'>119</span><span class='comma'>,</span>
+ <span class='label'>ekko:</span> <span class='int'>245</span><span class='comma'>,</span>
+ <span class='label'>elise:</span> <span class='int'>60</span><span class='comma'>,</span>
+ <span class='label'>evelynn:</span> <span class='int'>28</span><span class='comma'>,</span>
+ <span class='label'>ezreal:</span> <span class='int'>81</span><span class='comma'>,</span>
+ <span class='label'>fiddlesticks:</span> <span class='int'>9</span><span class='comma'>,</span>
+ <span class='label'>fiora:</span> <span class='int'>114</span><span class='comma'>,</span>
+ <span class='label'>fizz:</span> <span class='int'>105</span><span class='comma'>,</span>
+ <span class='label'>galio:</span> <span class='int'>3</span><span class='comma'>,</span>
+ <span class='label'>gangplank:</span> <span class='int'>41</span><span class='comma'>,</span>
+ <span class='label'>garen:</span> <span class='int'>86</span><span class='comma'>,</span>
+ <span class='label'>gnar:</span> <span class='int'>150</span><span class='comma'>,</span>
+ <span class='label'>gragas:</span> <span class='int'>79</span><span class='comma'>,</span>
+ <span class='label'>graves:</span> <span class='int'>104</span><span class='comma'>,</span>
+ <span class='label'>hecarim:</span> <span class='int'>120</span><span class='comma'>,</span>
+ <span class='label'>heimerdinger:</span> <span class='int'>74</span><span class='comma'>,</span>
+ <span class='label'>irelia:</span> <span class='int'>39</span><span class='comma'>,</span>
+ <span class='label'>janna:</span> <span class='int'>40</span><span class='comma'>,</span>
+ <span class='label'>jarvan_iv:</span> <span class='int'>59</span><span class='comma'>,</span>
+ <span class='label'>jax:</span> <span class='int'>24</span><span class='comma'>,</span>
+ <span class='label'>jayce:</span> <span class='int'>126</span><span class='comma'>,</span>
+ <span class='label'>jinx:</span> <span class='int'>222</span><span class='comma'>,</span>
+ <span class='label'>kalista:</span> <span class='int'>429</span><span class='comma'>,</span>
+ <span class='label'>karma:</span> <span class='int'>43</span><span class='comma'>,</span>
+ <span class='label'>karthus:</span> <span class='int'>30</span><span class='comma'>,</span>
+ <span class='label'>kassadin:</span> <span class='int'>38</span><span class='comma'>,</span>
+ <span class='label'>katarina:</span> <span class='int'>55</span><span class='comma'>,</span>
+ <span class='label'>kayle:</span> <span class='int'>10</span><span class='comma'>,</span>
+ <span class='label'>kennen:</span> <span class='int'>85</span><span class='comma'>,</span>
+ <span class='label'>khazix:</span> <span class='int'>121</span><span class='comma'>,</span>
+ <span class='label'>kindred:</span> <span class='int'>203</span><span class='comma'>,</span>
+ <span class='label'>kogmaw:</span> <span class='int'>96</span><span class='comma'>,</span>
+ <span class='label'>leblanc:</span> <span class='int'>7</span><span class='comma'>,</span>
+ <span class='label'>lee_sin:</span> <span class='int'>64</span><span class='comma'>,</span>
+ <span class='label'>leona:</span> <span class='int'>89</span><span class='comma'>,</span>
+ <span class='label'>lissandra:</span> <span class='int'>127</span><span class='comma'>,</span>
+ <span class='label'>lucian:</span> <span class='int'>236</span><span class='comma'>,</span>
+ <span class='label'>lulu:</span> <span class='int'>117</span><span class='comma'>,</span>
+ <span class='label'>lux:</span> <span class='int'>99</span><span class='comma'>,</span>
+ <span class='label'>malphite:</span> <span class='int'>54</span><span class='comma'>,</span>
+ <span class='label'>malzahar:</span> <span class='int'>90</span><span class='comma'>,</span>
+ <span class='label'>maokai:</span> <span class='int'>57</span><span class='comma'>,</span>
+ <span class='label'>master_yi:</span> <span class='int'>11</span><span class='comma'>,</span>
+ <span class='label'>miss_fortune:</span> <span class='int'>21</span><span class='comma'>,</span>
+ <span class='label'>mordekaiser:</span> <span class='int'>82</span><span class='comma'>,</span>
+ <span class='label'>morgana:</span> <span class='int'>25</span><span class='comma'>,</span>
+ <span class='label'>nami:</span> <span class='int'>267</span><span class='comma'>,</span>
+ <span class='label'>nasus:</span> <span class='int'>75</span><span class='comma'>,</span>
+ <span class='label'>nautilus:</span> <span class='int'>111</span><span class='comma'>,</span>
+ <span class='label'>nidalee:</span> <span class='int'>76</span><span class='comma'>,</span>
+ <span class='label'>nocturne:</span> <span class='int'>56</span><span class='comma'>,</span>
+ <span class='label'>nunu:</span> <span class='int'>20</span><span class='comma'>,</span>
+ <span class='label'>olaf:</span> <span class='int'>2</span><span class='comma'>,</span>
+ <span class='label'>orianna:</span> <span class='int'>61</span><span class='comma'>,</span>
+ <span class='label'>pantheon:</span> <span class='int'>80</span><span class='comma'>,</span>
+ <span class='label'>poppy:</span> <span class='int'>78</span><span class='comma'>,</span>
+ <span class='label'>quinn:</span> <span class='int'>133</span><span class='comma'>,</span>
+ <span class='label'>rammus:</span> <span class='int'>33</span><span class='comma'>,</span>
+ <span class='label'>reksai:</span> <span class='int'>421</span><span class='comma'>,</span>
+ <span class='label'>renekton:</span> <span class='int'>58</span><span class='comma'>,</span>
+ <span class='label'>rengar:</span> <span class='int'>107</span><span class='comma'>,</span>
+ <span class='label'>riven:</span> <span class='int'>92</span><span class='comma'>,</span>
+ <span class='label'>rumble:</span> <span class='int'>68</span><span class='comma'>,</span>
+ <span class='label'>ryze:</span> <span class='int'>13</span><span class='comma'>,</span>
+ <span class='label'>sejuani:</span> <span class='int'>113</span><span class='comma'>,</span>
+ <span class='label'>shaco:</span> <span class='int'>35</span><span class='comma'>,</span>
+ <span class='label'>shen:</span> <span class='int'>98</span><span class='comma'>,</span>
+ <span class='label'>shyvana:</span> <span class='int'>102</span><span class='comma'>,</span>
+ <span class='label'>singed:</span> <span class='int'>27</span><span class='comma'>,</span>
+ <span class='label'>sion:</span> <span class='int'>14</span><span class='comma'>,</span>
+ <span class='label'>sivir:</span> <span class='int'>15</span><span class='comma'>,</span>
+ <span class='label'>skarner:</span> <span class='int'>72</span><span class='comma'>,</span>
+ <span class='label'>sona:</span> <span class='int'>37</span><span class='comma'>,</span>
+ <span class='label'>soraka:</span> <span class='int'>16</span><span class='comma'>,</span>
+ <span class='label'>swain:</span> <span class='int'>50</span><span class='comma'>,</span>
+ <span class='label'>syndra:</span> <span class='int'>134</span><span class='comma'>,</span>
+ <span class='label'>tahm_kench:</span> <span class='int'>223</span><span class='comma'>,</span>
+ <span class='label'>talon:</span> <span class='int'>91</span><span class='comma'>,</span>
+ <span class='label'>taric:</span> <span class='int'>44</span><span class='comma'>,</span>
+ <span class='label'>teemo:</span> <span class='int'>17</span><span class='comma'>,</span>
+ <span class='label'>thresh:</span> <span class='int'>412</span><span class='comma'>,</span>
+ <span class='label'>tristana:</span> <span class='int'>18</span><span class='comma'>,</span>
+ <span class='label'>trundle:</span> <span class='int'>48</span><span class='comma'>,</span>
+ <span class='label'>tryndamere:</span> <span class='int'>23</span><span class='comma'>,</span>
+ <span class='label'>twisted_fate:</span> <span class='int'>4</span><span class='comma'>,</span>
+ <span class='label'>twitch:</span> <span class='int'>29</span><span class='comma'>,</span>
+ <span class='label'>udyr:</span> <span class='int'>77</span><span class='comma'>,</span>
+ <span class='label'>urgot:</span> <span class='int'>6</span><span class='comma'>,</span>
+ <span class='label'>varus:</span> <span class='int'>110</span><span class='comma'>,</span>
+ <span class='label'>vayne:</span> <span class='int'>67</span><span class='comma'>,</span>
+ <span class='label'>veigar:</span> <span class='int'>45</span><span class='comma'>,</span>
+ <span class='label'>velkoz:</span> <span class='int'>161</span><span class='comma'>,</span>
+ <span class='label'>vi:</span> <span class='int'>254</span><span class='comma'>,</span>
+ <span class='label'>viktor:</span> <span class='int'>112</span><span class='comma'>,</span>
+ <span class='label'>vladimir:</span> <span class='int'>8</span><span class='comma'>,</span>
+ <span class='label'>volibear:</span> <span class='int'>106</span><span class='comma'>,</span>
+ <span class='label'>warwick:</span> <span class='int'>19</span><span class='comma'>,</span>
+ <span class='label'>wukong:</span> <span class='int'>62</span><span class='comma'>,</span>
+ <span class='label'>xerath:</span> <span class='int'>101</span><span class='comma'>,</span>
+ <span class='label'>xin_zhao:</span> <span class='int'>5</span><span class='comma'>,</span>
+ <span class='label'>yasuo:</span> <span class='int'>157</span><span class='comma'>,</span>
+ <span class='label'>yorick:</span> <span class='int'>83</span><span class='comma'>,</span>
+ <span class='label'>zac:</span> <span class='int'>154</span><span class='comma'>,</span>
+ <span class='label'>zed:</span> <span class='int'>238</span><span class='comma'>,</span>
+ <span class='label'>ziggs:</span> <span class='int'>115</span><span class='comma'>,</span>
+ <span class='label'>zilean:</span> <span class='int'>26</span><span class='comma'>,</span>
+ <span class='label'>zyra:</span> <span class='int'>143</span><span class='comma'>,</span>
+<span class='rbrace'>}</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Nov 16 06:57:15 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.2.0).
+</div>
+
+  </body>
+</html>

@@ -8,7 +8,7 @@ module RiotGamesApi
         end
 
         # Return team data by summoner id
-        # @param [Array] summoner ids
+        # @param [Array] summoner_ids
         # @return [TeamList]
         def by_summoner_id(summoner_ids)
           neated_param = neat_params(summoner_ids)
@@ -19,7 +19,7 @@ module RiotGamesApi
         end
 
         # Return team data by team id
-        # @param [Array] team ids
+        # @param [Array] team_ids
         # @return [Array] team id => Team in Array
         def by_team_id(team_ids)
           neated_param = neat_params(team_ids)

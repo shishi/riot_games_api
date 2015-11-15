@@ -1,0 +1,1613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: RiotGamesApi::LOL::Resource::StaticData
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../../';
+  framesUrl = "../../../frames.html#!RiotGamesApi/LOL/Resource/StaticData.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../../_index.html">Index (S)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../RiotGamesApi.html" title="RiotGamesApi (module)">RiotGamesApi</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../LOL.html" title="RiotGamesApi::LOL (module)">LOL</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Resource.html" title="RiotGamesApi::LOL::Resource (module)">Resource</a></span></span>
+     &raquo; 
+    <span class="title">StaticData</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: RiotGamesApi::LOL::Resource::StaticData
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="Base.html" title="RiotGamesApi::LOL::Resource::Base (class)">Base</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="Base.html" title="RiotGamesApi::LOL::Resource::Base (class)">Base</a></span></li>
+          
+            <li class="next">RiotGamesApi::LOL::Resource::StaticData</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/riot_games_api/lol/resource/static_data.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#champion_all-instance_method" title="#champion_all (instance method)">- (ChampionList) <strong>champion_all</strong>(key_by_id = false, data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all champion static data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#champion_by_id-instance_method" title="#champion_by_id (instance method)">- (Champion) <strong>champion_by_id</strong>(champion_id, data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a champion static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (StaticData) <strong>initialize</strong>(connection, region) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of StaticData.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#item_all-instance_method" title="#item_all (instance method)">- (ItemList) <strong>item_all</strong>(data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all item static data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#language_strings-instance_method" title="#language_strings (instance method)">- (LanguageString) <strong>language_strings</strong>(data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return launguage strings static data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#languages-instance_method" title="#languages (instance method)">- (Object) <strong>languages</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return launguage list.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#map-instance_method" title="#map (instance method)">- (Map) <strong>map</strong>(data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all map static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mastery_all-instance_method" title="#mastery_all (instance method)">- (MateryList) <strong>mastery_all</strong>(data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all mastery static data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mastery_by_id-instance_method" title="#mastery_by_id (instance method)">- (Mastery) <strong>mastery_by_id</strong>(mastery_id, data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a mastery static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#realm-instance_method" title="#realm (instance method)">- (Realm) <strong>realm</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return realm static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rune_all-instance_method" title="#rune_all (instance method)">- (RuneList) <strong>rune_all</strong>(data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all rune static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rune_by_id-instance_method" title="#rune_by_id (instance method)">- (SummonerSpellList) <strong>rune_by_id</strong>(rune_id, data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a rune static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#summoner_spell_all-instance_method" title="#summoner_spell_all (instance method)">- (Rune) <strong>summoner_spell_all</strong>(key_by_id = false, data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return all summoner spell static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#summoner_spell_by_id-instance_method" title="#summoner_spell_by_id (instance method)">- (SummonerSpell) <strong>summoner_spell_by_id</strong>(summoner_spell_id, data_version = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a summoner spell static data by id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#versions-instance_method" title="#versions (instance method)">- (Object) <strong>versions</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return version list.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="RiotGamesApi::LOL::Resource::StaticData (class)">StaticData</a></span></tt>) <strong>initialize</strong>(connection, region) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of StaticData</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+5
+6
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 5</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_connection'>connection</span><span class='comma'>,</span> <span class='id identifier rubyid_region'>region</span><span class='rparen'>)</span>
+  <span class='kw'>super</span>
+  <span class='ivar'>@version</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>v1.2</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="champion_all-instance_method">
+  
+    - (<tt>ChampionList</tt>) <strong>champion_all</strong>(key_by_id = false, data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all champion static data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>key_by_id</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>false</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Set true if you want data hash key is ID, not name.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ChampionList</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_champion_all'>champion_all</span><span class='lparen'>(</span><span class='id identifier rubyid_key_by_id'>key_by_id</span> <span class='op'>=</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_champion_list'>champion_list</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>champion</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>champData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>dataById:</span> <span class='id identifier rubyid_key_by_id'>key_by_id</span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_key_by_id'>key_by_id</span>
+    <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>ChampionListDataById</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_champion_list'>champion_list</span>
+  <span class='kw'>else</span>
+    <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>ChampionList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_champion_list'>champion_list</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="champion_by_id-instance_method">
+  
+    - (<tt><span class='object_link'><a href="Champion.html" title="RiotGamesApi::LOL::Resource::Champion (class)">Champion</a></span></tt>) <strong>champion_by_id</strong>(champion_id, data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a champion static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>champion_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Champion.html" title="RiotGamesApi::LOL::Resource::Champion (class)">Champion</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_champion_by_id'>champion_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_champion_id'>champion_id</span><span class='comma'>,</span> <span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_champion'>champion</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>champion</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_champion_id'>champion_id</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>champData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>Champion</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_champion'>champion</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="item_all-instance_method">
+  
+    - (<tt>ItemList</tt>) <strong>item_all</strong>(data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all item static data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ItemList</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_item_all'>item_all</span><span class='lparen'>(</span><span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_item_list'>item_list</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>item</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>itemListData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>ItemList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_item_list'>item_list</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="language_strings-instance_method">
+  
+    - (<tt>LanguageString</tt>) <strong>language_strings</strong>(data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return launguage strings static data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>LanguageString</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_language_strings'>language_strings</span><span class='lparen'>(</span><span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_language_string'>language_string</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>language-strings</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>LanguageString</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_language_string'>language_string</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="languages-instance_method">
+  
+    - (<tt>Object</tt>) <strong>languages</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return launguage list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>Array language list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 51</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_languages'>languages</span>
+  <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>languages</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="map-instance_method">
+  
+    - (<tt>Map</tt>) <strong>map</strong>(data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all map static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Map</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 58</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_map'>map</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>map</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>Map</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_map'>map</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mastery_all-instance_method">
+  
+    - (<tt>MateryList</tt>) <strong>mastery_all</strong>(data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all mastery static data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>MateryList</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68
+69</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mastery_all'>mastery_all</span><span class='lparen'>(</span><span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_mastery_list'>mastery_list</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mastery</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>masteryListData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>MasteryList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_mastery_list'>mastery_list</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mastery_by_id-instance_method">
+  
+    - (<tt>Mastery</tt>) <strong>mastery_by_id</strong>(mastery_id, data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a mastery static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mastery_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Mastery</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mastery_by_id'>mastery_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_mastery_id'>mastery_id</span><span class='comma'>,</span> <span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_mastery'>mastery</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mastery</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_mastery_id'>mastery_id</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>masteryData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>Mastery</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_mastery'>mastery</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="realm-instance_method">
+  
+    - (<tt>Realm</tt>) <strong>realm</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return realm static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Realm</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_realm'>realm</span>
+  <span class='id identifier rubyid_realm'>realm</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>realm</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>Realm</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_realm'>realm</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rune_all-instance_method">
+  
+    - (<tt>RuneList</tt>) <strong>rune_all</strong>(data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all rune static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>RuneList</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+90
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 90</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rune_all'>rune_all</span><span class='lparen'>(</span><span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_rune_list'>rune_list</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rune</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>runeListData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>RuneList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_rune_list'>rune_list</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rune_by_id-instance_method">
+  
+    - (<tt>SummonerSpellList</tt>) <strong>rune_by_id</strong>(rune_id, data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a rune static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>rune_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>SummonerSpellList</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+99
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 99</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_rune_by_id'>rune_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_rune_id'>rune_id</span><span class='comma'>,</span> <span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_rune'>rune</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rune</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_rune_id'>rune_id</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>runeData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>Rune</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_rune'>rune</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="summoner_spell_all-instance_method">
+  
+    - (<tt>Rune</tt>) <strong>summoner_spell_all</strong>(key_by_id = false, data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return all summoner spell static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Rune</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109
+110
+111
+112
+113
+114
+115</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 107</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_summoner_spell_all'>summoner_spell_all</span><span class='lparen'>(</span><span class='id identifier rubyid_key_by_id'>key_by_id</span> <span class='op'>=</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_summoner_spell_list'>summoner_spell_list</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>summoner-spell</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>spellData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>dataById:</span> <span class='id identifier rubyid_key_by_id'>key_by_id</span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_key_by_id'>key_by_id</span>
+    <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>SummonerSpellListDataById</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_summoner_spell_list'>summoner_spell_list</span>
+  <span class='kw'>else</span>
+    <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>SummonerSpellList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_summoner_spell_list'>summoner_spell_list</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="summoner_spell_by_id-instance_method">
+  
+    - (<tt>SummonerSpell</tt>) <strong>summoner_spell_by_id</strong>(summoner_spell_id, data_version = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return a summoner spell static data by id</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>summoner_spell_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>data_version</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>SummonerSpell</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+121
+122
+123
+124</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 121</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_summoner_spell_by_id'>summoner_spell_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_summoner_spell_id'>summoner_spell_id</span><span class='comma'>,</span> <span class='id identifier rubyid_data_version'>data_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_summoner_spell'>summoner_spell</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>summoner-spell</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_summoner_spell_id'>summoner_spell_id</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='comma'>,</span> <span class='label'>spellData:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>all</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>version:</span> <span class='id identifier rubyid_data_version'>data_version</span><span class='rparen'>)</span>
+  <span class='const'>RiotGamesApi</span><span class='op'>::</span><span class='const'>LOL</span><span class='op'>::</span><span class='const'>Model</span><span class='op'>::</span><span class='const'>StaticData</span><span class='op'>::</span><span class='const'>SummonerSpell</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_summoner_spell'>summoner_spell</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="versions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>versions</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return version list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>Array version list</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+128
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/riot_games_api/lol/resource/static_data.rb', line 128</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_versions'>versions</span>
+  <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>versions</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='ivar'>@version</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Nov 16 06:57:16 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.2.0).
+</div>
+
+  </body>
+</html>

@@ -8,7 +8,7 @@ module RiotGamesApi
         end
 
         # Return league data by summoner id
-        # @param [Array] summoner ids
+        # @param [Array] summoner_ids
         # @return [Array] LeagueList
         def by_summoner_id(summoner_ids)
           neated_param = neat_params(summoner_ids)
@@ -17,7 +17,7 @@ module RiotGamesApi
         end
 
         # Return league data by summoner id
-        # @param [Array] summoner ids
+        # @param [Array] summoner_ids
         # @return [Array] LeagueList
         def by_summoner_id_only_own_entry(summoner_ids)
           neated_param = neat_params(summoner_ids)
@@ -26,7 +26,7 @@ module RiotGamesApi
         end
 
         # Return league data by team id
-        # @param [Array] team ids
+        # @param [Array] team_ids
         # @return [Array] LeagueList
         def by_team_id(team_ids)
           neated_param = neat_params(team_ids)
@@ -35,7 +35,7 @@ module RiotGamesApi
         end
 
         # Return league data by summoner id
-        # @param [Array] summoner ids
+        # @param [Array] team_ids
         # @return [Array] LeagueList
         def by_team_id_only_own_entry(team_ids)
           neated_param = neat_params(team_ids)
