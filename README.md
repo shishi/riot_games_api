@@ -47,13 +47,11 @@ avalable parameters when initialize client
 * Japanese
 クライアント初期化の際に使えるパラメータ
 
-```
 api_key       default: none or ENV['RIOT_GAMES_API_KEY']
 region        default: 'na'
 adapter       default: Faraday.default_adapter
 debug logging default: false
 locale        default: 'en_US'
-```
 
 # from summoner resource
 summoner = client.summoner.by_name ['hello im shishi'].first
