@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe RiotGamesApi::LOL::Resource::Game, :vcr do
   let(:client) { RiotGamesApi::LOL::Client.new }
-  let(:summoner_id) { 42139310 }
-  let(:talon) { 91 }
+  let(:summoner_id) { 64878685 }
+  let(:master_yi) { 11 }
   let(:blue_team) { 100 }
 
   describe '#recent' do
@@ -13,8 +13,8 @@ describe RiotGamesApi::LOL::Resource::Game, :vcr do
       recent_games.summoner_id.should eq summoner_id
     end
 
-    it 'should champinons is Talon in first game record' do
-      recent_games.games.first.champion_id.should eq talon
+    it 'should champinons is Master Yi in first game record' do
+      recent_games.games.first.champion_id.should eq master_yi
     end
 
     it 'should game records count is 10' do
@@ -33,8 +33,8 @@ describe RiotGamesApi::LOL::Resource::Game, :vcr do
       recent_games.games.first.stats.class.should eq RiotGamesApi::LOL::Model::Game::RawStats
     end
 
-    it 'should first game is win' do
-      recent_games.games.first.stats.win.should eq true
+    it 'should first game is lose' do
+      recent_games.games.first.stats.win.should eq false
     end
   end
 end
