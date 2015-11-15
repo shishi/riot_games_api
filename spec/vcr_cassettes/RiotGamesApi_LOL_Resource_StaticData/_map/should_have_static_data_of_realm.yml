@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/static-data/na/v1.2/map?api_key=test_key&locale=en_US&version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RiotGamesApi gem v0.0.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 15 Nov 2015 20:38:29 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVlhTBAcHX0YdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMEUQDTAtbFVBTRwRlTl8Ab00SBxlTOkxVUkBGTVIZARtWSgEGC1JQUFsAVxRPCRQWAwMBD1FXWAsBVgNTBFAGXRFt
+      Content-Length:
+      - '250'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"map","version":"5.22.3","data":{"1":{"mapName":"SummonersRift","mapId":1,"image":{"full":"map1.png","sprite":"map0.png","group":"map","x":96,"y":0,"w":48,"h":48}},"10":{"mapName":"NewTwistedTreeline","mapId":10,"image":{"full":"map10.png","sprite":"map0.png","group":"map","x":0,"y":0,"w":48,"h":48}},"8":{"mapName":"CrystalScar","mapId":8,"image":{"full":"map8.png","sprite":"map0.png","group":"map","x":192,"y":0,"w":48,"h":48}},"11":{"mapName":"SummonersRiftNew","mapId":11,"image":{"full":"map11.png","sprite":"map0.png","group":"map","x":144,"y":0,"w":48,"h":48}},"12":{"mapName":"ProvingGroundsNew","mapId":12,"image":{"full":"map12.png","sprite":"map0.png","group":"map","x":48,"y":0,"w":48,"h":48}}}}'
+    http_version: 
+  recorded_at: Sun, 15 Nov 2015 20:38:29 GMT
+recorded_with: VCR 3.0.0
