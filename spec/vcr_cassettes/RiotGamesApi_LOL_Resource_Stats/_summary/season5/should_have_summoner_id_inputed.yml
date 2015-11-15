@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://na.api.pvp.net/api/lol/na/v1.3/stats/by-summoner/64878685/summary?api_key=test_key&locale=en_US&season
+    uri: https://na.api.pvp.net/api/lol/na/v1.3/stats/by-summoner/64878685/summary?api_key=test_key&locale=en_US&season=SEASON2015
     body:
       encoding: US-ASCII
       string: ''
@@ -27,13 +27,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 15 Nov 2015 20:57:37 GMT
+      - Sun, 15 Nov 2015 20:57:35 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding, User-Agent
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgduHBZNAEUSb00GTxoSEw5VXF4BEz4YQkILCV5YVhAvBz4fEU0PVVlGSxFJCU8BTQNMVAYFVVZXCAQCSExTGxNSXgYGBARUBFBbUVVeUV0BFm8=
+      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgduHBZNAEUSb00GTxoSEw5VXF4BEz4YQkILCV5YVhAvBz4fEU0PVVlGSxFJCU8BTQNMVAYFVVJaDAsGSExTGxMEXgIEBgNTVlNWCFZZBgFdFm8=
       Content-Length:
       - '582'
       Connection:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"summonerId":64878685,"playerStatSummaries":[{"playerStatSummaryType":"CoopVsAI","wins":7,"modifyDate":1421879006000,"aggregatedStats":{"totalChampionKills":31,"totalMinionKills":266,"totalTurretsKilled":15,"totalNeutralMinionsKilled":1,"totalAssists":59}},{"playerStatSummaryType":"CoopVsAI3x3","wins":298,"modifyDate":1421879006000,"aggregatedStats":{"totalChampionKills":986,"totalMinionKills":13542,"totalTurretsKilled":432,"totalNeutralMinionsKilled":12,"totalAssists":546}},{"playerStatSummaryType":"CounterPick","wins":1,"modifyDate":1433443306000,"aggregatedStats":{"totalChampionKills":4,"totalMinionKills":134,"totalTurretsKilled":0,"totalNeutralMinionsKilled":0,"totalAssists":15}},{"playerStatSummaryType":"RankedTeam3x3","wins":1,"losses":2,"modifyDate":1424271208000,"aggregatedStats":{"totalChampionKills":10,"totalMinionKills":310,"totalTurretsKilled":2,"totalNeutralMinionsKilled":0,"totalAssists":10}},{"playerStatSummaryType":"RankedTeam5x5","wins":6,"losses":6,"modifyDate":1422293911000,"aggregatedStats":{"totalChampionKills":31,"totalMinionKills":228,"totalTurretsKilled":1,"totalNeutralMinionsKilled":593,"totalAssists":75}},{"playerStatSummaryType":"URF","wins":2,"modifyDate":1436844271000,"aggregatedStats":{"totalChampionKills":33,"totalMinionKills":521,"totalTurretsKilled":7,"totalNeutralMinionsKilled":18,"totalAssists":63}},{"playerStatSummaryType":"Unranked3x3","wins":1,"modifyDate":1437456553000,"aggregatedStats":{"totalChampionKills":10,"totalMinionKills":477,"totalTurretsKilled":0,"totalNeutralMinionsKilled":4,"totalAssists":17}},{"playerStatSummaryType":"AramUnranked5x5","wins":26,"modifyDate":1442627817000,"aggregatedStats":{"totalChampionKills":461,"totalTurretsKilled":28,"totalAssists":1092}},{"playerStatSummaryType":"Bilgewater","wins":12,"modifyDate":1442627817000,"aggregatedStats":{"totalChampionKills":85,"totalMinionKills":1377,"totalTurretsKilled":7,"totalNeutralMinionsKilled":1281,"totalAssists":264}},{"playerStatSummaryType":"RankedSolo5x5","wins":74,"losses":80,"modifyDate":1445723344000,"aggregatedStats":{"totalChampionKills":539,"totalMinionKills":5417,"totalTurretsKilled":65,"totalNeutralMinionsKilled":6418,"totalAssists":1345}},{"playerStatSummaryType":"OneForAll5x5","wins":0,"modifyDate":1446825690000,"aggregatedStats":{"totalChampionKills":0,"totalMinionKills":49,"totalTurretsKilled":0,"totalNeutralMinionsKilled":4,"totalAssists":3}},{"playerStatSummaryType":"CAP5x5","wins":23,"modifyDate":1447247821000,"aggregatedStats":{"totalChampionKills":220,"totalMinionKills":5490,"totalTurretsKilled":31,"totalNeutralMinionsKilled":1234,"totalAssists":394}},{"playerStatSummaryType":"Unranked","wins":27,"modifyDate":1447247821000,"aggregatedStats":{"totalChampionKills":287,"totalMinionKills":7258,"totalTurretsKilled":47,"totalNeutralMinionsKilled":1880,"totalAssists":561}}]}'
     http_version: 
-  recorded_at: Sun, 15 Nov 2015 20:57:37 GMT
+  recorded_at: Sun, 15 Nov 2015 20:57:35 GMT
 recorded_with: VCR 3.0.0
