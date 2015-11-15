@@ -1,8 +1,6 @@
 language: ruby
 script: 'bundle exec rake spec'
 rvm:
-  - 2.1.0
-  - 1.9.3
-  - jruby-19mode
+  - 2.2.3
 env:
   - RIOT_GAMES_API_KEY="test_key" SPEC_OPTS="--color --format documentation" CODECLIMATE_REPO_TOKEN="81eb5c871ceafdf53bb05f2311220c146d7ffdb7d0e1854583902ed979fc8620"
