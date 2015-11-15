@@ -4,6 +4,7 @@ require 'riot_games_api/lol/model/summoner/rune_page_list'
 require 'riot_games_api/lol/model/summoner/mastery'
 require 'riot_games_api/lol/model/summoner/mastery_page'
 require 'riot_games_api/lol/model/summoner/mastery_page_list'
+require 'riot_games_api/lol/model/summoner/name'
 require 'riot_games_api/lol/model/summoner/summoner'
 
 module RiotGamesApi

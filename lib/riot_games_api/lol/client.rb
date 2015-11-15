@@ -4,7 +4,7 @@ module RiotGamesApi
       def initialize(params = {})
         @api_key = params[:api_key] || ENV['RIOT_GAMES_API_KEY']
         @region = params[:region] || 'na'
-        @base_url = params[:use_ssl] ? "https://na.api.pvp.net/" : "http://na.api.pvp.net/"
+        @base_url = "https://#{@region}.api.pvp.net/"
         @adapter = params[:adapter] || Faraday.default_adapter
         @logger = params[:debug] ? :logger : :raise_error
         @locale = params[:locale] || 'en_US'

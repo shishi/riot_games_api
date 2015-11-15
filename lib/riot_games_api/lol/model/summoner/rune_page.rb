@@ -8,7 +8,7 @@ module RiotGamesApi
           attribute :current, Boolean
           attribute :id, Integer
           attribute :name, String
-          attribute :slots, Set[RiotGamesApi::LOL::Model::Summoner::RuneSlot]
+          attribute :slots, Array[RiotGamesApi::LOL::Model::Summoner::RuneSlot]
         end
       end
     end

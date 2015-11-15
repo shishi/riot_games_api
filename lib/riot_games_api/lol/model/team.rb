@@ -5,6 +5,7 @@ require 'riot_games_api/lol/model/team/roster'
 require 'riot_games_api/lol/model/team/message_of_day'
 require 'riot_games_api/lol/model/team/match_history_summary'
 require 'riot_games_api/lol/model/team/team'
+require 'riot_games_api/lol/model/team/team_list'
 
 module RiotGamesApi
   module LOL

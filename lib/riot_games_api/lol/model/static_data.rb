@@ -22,6 +22,11 @@ require 'riot_games_api/lol/model/static_data/group'
 require 'riot_games_api/lol/model/static_data/basic_data'
 require 'riot_games_api/lol/model/static_data/item_list'
 
+require 'riot_games_api/lol/model/static_data/language_string'
+
+require 'riot_games_api/lol/model/static_data/map_details'
+require 'riot_games_api/lol/model/static_data/map'
+
 require 'riot_games_api/lol/model/static_data/mastery_tree_item'
 require 'riot_games_api/lol/model/static_data/mastery_tree_list'
 require 'riot_games_api/lol/model/static_data/mastery_tree'

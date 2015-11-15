@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://na.api.pvp.net/api/lol/static-data/na/v1.2/realm?api_key=test_key&locale=en_US
+    uri: https://na.api.pvp.net/api/lol/static-data/na/v1.2/realm?api_key=test_key&locale=en_US
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - RiotGamesApi gem v0.0.2
+      - RiotGamesApi gem v0.0.7
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,18 +27,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 21 Apr 2014 10:11:53 GMT
+      - Sun, 15 Nov 2015 21:52:26 GMT
       Server:
-      - Jetty(9.1.1.v20140108)
+      - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding, User-Agent
-      Transfer-Encoding:
-      - chunked
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVlhTBAcHX0YdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMEUQDTAtbFVBTRwRlTl8Ab00SBxlTOkxKVlEIDEAbARlWSAEYA1JXVFYEUABaFBUFHhFcAVACUwdXXFQHV1BWWVUHRjw=
+      Content-Length:
+      - '161'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "{\"css\":\"0.152.55\",\"dd\":\"4.2.6\",\"l\":\"en_US\",\"n\":{\"item\":\"4.5.4\",\"rune\":\"4.5.4\",\"mastery\":\"4.5.4\",\"summoner\":\"4.5.4\",\"champion\":\"4.5.4\",\"profileicon\":\"4.5.4\",\"language\":\"4.5.4\"},\"profileiconmax\":28,\"v\":\"4.5.4\",\"lg\":\"0.152.55\",\"cdn\":\"http://ddragon.leagueoflegends.com/cdn\"}"
-    http_version:
-  recorded_at: Mon, 21 Apr 2014 10:11:56 GMT
-recorded_with: VCR 2.9.0
+      encoding: ASCII-8BIT
+      string: '{"css":"5.22.3","dd":"5.22.3","l":"en_US","n":{"item":"5.22.3","rune":"5.22.3","mastery":"5.22.3","summoner":"5.22.3","champion":"5.22.3","profileicon":"5.22.3","map":"5.22.3","language":"5.22.3"},"profileiconmax":28,"v":"5.22.3","lg":"5.22.3","cdn":"http://ddragon.leagueoflegends.com/cdn"}'
+    http_version: 
+  recorded_at: Sun, 15 Nov 2015 21:52:26 GMT
+recorded_with: VCR 3.0.0

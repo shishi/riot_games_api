@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
   let(:client) { RiotGamesApi::LOL::Client.new }
-  let(:data_version){ '4.5.4' }
+  let(:data_version){ '5.22.3' }
 
   describe 'champion' do
     let(:shaco_id) { 35 }
@@ -12,7 +12,7 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
     # very heavy spec cause test data is too huge
     describe '#champion_all' do
       context 'key_by_id is false' do
-        let(:champion_list) { client.static_data.champion_all false, data_version }
+        let(:champion_list) { client.static_data.champion_all false }
 
         it 'should have static data of champions' do
           champion_list.data.values.first.class.should eq RiotGamesApi::LOL::Model::StaticData::Champion
@@ -55,10 +55,10 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
 
   describe 'item' do
     let(:biscuit_name) { 'Total Biscuit of Rejuvenation' }
-    let(:biscuit_id) { 2009 }
+    let(:biscuit_id) { 2010 }
 
     describe '#item_all' do
-      let(:item_list) { client.static_data.item_all data_version }
+      let(:item_list) { client.static_data.item_all }
 
       it 'should have static data with item name' do
         item_list.data[biscuit_id].name.should eq biscuit_name
@@ -72,33 +72,49 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
         item_list.version.should eq data_version
       end
     end
+  end
 
-    describe '#item_by_id' do
-      let(:biscuit) { client.static_data.item_by_id biscuit_id }
+  describe '#language_strings' do
+    let(:language_strings) { client.static_data.language_strings }
 
-      it 'should have static data of item' do
-        biscuit.class.should eq RiotGamesApi::LOL::Model::StaticData::Item
-      end
+    it 'should have static data of language_strings' do
+      language_strings.class.should eq RiotGamesApi::LOL::Model::StaticData::LanguageString
+    end
+  end
 
-      it 'should have data name is biscuit' do
-        biscuit.name.should eq biscuit_name
-      end
+  describe '#languages' do
+    let(:languages) { client.static_data.languages }
+
+    it 'should have static data' do
+      languages.class.should eq Array
+    end
+  end
+
+  describe '#map' do
+    let(:map) { client.static_data.map }
+
+    it 'should have static data of realm' do
+      map.class.should eq RiotGamesApi::LOL::Model::StaticData::Map
+    end
+
+    it 'should have MapDetails class' do
+      map.data.values.first.class.should eq RiotGamesApi::LOL::Model::StaticData::MapDetails
     end
   end
 
   describe 'mastery' do
-    let(:sorcery_name) { 'Sorcery' }
-    let(:sorcery_id) { 4113 }
+    let(:feast_name) { 'Feast' }
+    let(:feast_id) { 6122 }
 
     describe '#mastery_all' do
-      let(:mastery_list) { client.static_data.mastery_all data_version }
+      let(:mastery_list) { client.static_data.mastery_all }
 
       it 'should have static data of masterys' do
         mastery_list.data.values.first.class.should eq RiotGamesApi::LOL::Model::StaticData::Mastery
       end
 
       it 'should have static data with mastery name' do
-        mastery_list.data[sorcery_id].name.should eq sorcery_name
+        mastery_list.data[feast_id].name.should eq feast_name
       end
 
       it 'should have inputed data version' do
@@ -107,14 +123,14 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
     end
 
     describe '#mastery_by_id' do
-      let(:sorcery) { client.static_data.mastery_by_id sorcery_id }
+      let(:feast) { client.static_data.mastery_by_id feast_id }
 
       it 'should have static data of mastery' do
-        sorcery.class.should eq RiotGamesApi::LOL::Model::StaticData::Mastery
+        feast.class.should eq RiotGamesApi::LOL::Model::StaticData::Mastery
       end
 
       it 'should have data name is sorcery' do
-        sorcery.name.should eq sorcery_name
+        feast.name.should eq feast_name
       end
     end
   end
@@ -137,7 +153,7 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
     let(:rune_id) { 5235 }
 
     describe '#rune_all' do
-      let(:rune_list) { client.static_data.rune_all data_version }
+      let(:rune_list) { client.static_data.rune_all }
 
       it 'should have static data of runes' do
         rune_list.data.values.first.class.should eq RiotGamesApi::LOL::Model::StaticData::Rune
@@ -172,7 +188,7 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
 
     describe '#summoner_spell_all' do
       context 'key_by_id is false' do
-        let(:summoner_spell_list) { client.static_data.summoner_spell_all false, data_version }
+        let(:summoner_spell_list) { client.static_data.summoner_spell_all false }
 
         it 'should have static data of summoner spell' do
           summoner_spell_list.data.values.first.class.should eq RiotGamesApi::LOL::Model::StaticData::SummonerSpell
@@ -211,5 +227,14 @@ describe RiotGamesApi::LOL::Resource::StaticData, :vcr do
         teleport.name.should eq teleport_name
       end
     end
+
+    describe '#versions' do
+    let(:versions) { client.static_data.versions }
+
+    it 'should have static data' do
+      versions.class.should eq Array
+    end
+  end
+
   end
 end

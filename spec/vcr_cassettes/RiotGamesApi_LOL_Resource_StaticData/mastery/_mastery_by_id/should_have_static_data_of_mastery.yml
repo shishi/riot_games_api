@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://na.api.pvp.net/api/lol/static-data/na/v1.2/mastery/4113?api_key=test_key&locale=en_US&masteryData=all&version=
+    uri: https://na.api.pvp.net/api/lol/static-data/na/v1.2/mastery/6122?api_key=test_key&locale=en_US&masteryData=all&version
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - RiotGamesApi gem v0.0.2
+      - RiotGamesApi gem v0.0.7
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,21 +27,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 21 Apr 2014 10:11:52 GMT
+      - Sun, 15 Nov 2015 21:52:25 GMT
       Server:
-      - Jetty(9.1.1.v20140108)
+      - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding, User-Agent
-      Transfer-Encoding:
-      - chunked
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVlhTBAcHX0YdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMEUQDTAtbFVBTRwRlTl8Ab00SBxlTOkxVUkMQBBBObRgPABMaA0xWT1IeUghXCwEHBQRXFUwATREGUlIEUANUXFEAVQBbBFBRRDk=
+      Content-Length:
+      - '220'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "{\"id\":4113,\"name\":\"Sorcery\",\"description\":[\"+1.25% Cooldown
-        Reduction\",\"+2.5% Cooldown Reduction\",\"+3.75% Cooldown Reduction\",\"+5%
-        Cooldown Reduction\"],\"sanitizedDescription\":[\"+1.25% Cooldown Reduction\",\"+2.5%
-        Cooldown Reduction\",\"+3.75% Cooldown Reduction\",\"+5% Cooldown Reduction\"],\"ranks\":4,\"prereq\":\"0\",\"image\":{\"full\":\"4113.png\",\"sprite\":\"mastery0.png\",\"group\":\"gray_mastery\",\"x\":96,\"y\":0,\"w\":48,\"h\":48}}"
-    http_version:
-  recorded_at: Mon, 21 Apr 2014 10:11:56 GMT
-recorded_with: VCR 2.9.0
+      encoding: ASCII-8BIT
+      string: '{"id":6122,"name":"Feast","description":["Killing a unit restores 20
+        Health (20 second cooldown)."],"sanitizedDescription":["Killing a unit restores
+        20 Health (20 second cooldown)."],"ranks":1,"prereq":"0","image":{"full":"6122.png","sprite":"mastery0.png","group":"gray_mastery","x":288,"y":384,"w":48,"h":48},"masteryTree":"Ferocity"}'
+    http_version: 
+  recorded_at: Sun, 15 Nov 2015 21:52:25 GMT
+recorded_with: VCR 3.0.0
