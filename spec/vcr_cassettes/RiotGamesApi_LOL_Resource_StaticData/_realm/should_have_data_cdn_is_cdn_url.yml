@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://na.api.pvp.net/api/lol/static-data/na/v1.2/realm?api_key=test_key&locale=en_US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RiotGamesApi gem v0.0.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 15 Nov 2015 21:52:27 GMT
+      Server:
+      - Jetty(9.1.5.v20140505)
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVlhTBAcHX0YdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMEUQDTAtbFVBTRwRlTl8Ab00SBxlTOkxKVlEIDEAbARlWSAEYA1JVVVQCUQpWFBUFHhFVCFlQVgUHAVUPBFUHDAEGRjw=
+      Content-Length:
+      - '161'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"css":"5.22.3","dd":"5.22.3","l":"en_US","n":{"item":"5.22.3","rune":"5.22.3","mastery":"5.22.3","summoner":"5.22.3","champion":"5.22.3","profileicon":"5.22.3","map":"5.22.3","language":"5.22.3"},"profileiconmax":28,"v":"5.22.3","lg":"5.22.3","cdn":"http://ddragon.leagueoflegends.com/cdn"}'
+    http_version: 
+  recorded_at: Sun, 15 Nov 2015 21:52:27 GMT
+recorded_with: VCR 3.0.0
