@@ -39,11 +39,26 @@ https://developer.riotgames.com/
 
 ``` ruby
 
-client = RiotGamesApi::LOL::Client.new api_key: 'your_api_key'
+client = RiotGamesApi::LOL::Client.new api_key: 'your_api_key' # or ENV['RIOT_GAMES_API_KEY']
+
+* English
+avalable parameters when initialize client
+
+* Japanese
+クライアント初期化の際に使えるパラメータ
+
+```
+api_key       default: none or ENV['RIOT_GAMES_API_KEY']
+region        default: 'na'
+adapter       default: Faraday.default_adapter
+debug logging default: false
+locale        default: 'en_US'
+```
+
 # from summoner resource
-summoner = client.summoner.by_name 'shishisn'
+summoner = client.summoner.by_name ['hello im shishi'].first
 # from team resource
-teams = client.team.by_summoner_id summoner.id
+teams = client.team.by_summoner_id [summoner.id]
 
 # English
 # You can use champions and items id list (created 2014/11/23)

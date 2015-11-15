@@ -16,6 +16,10 @@ module RiotGamesApi
         def api_endpoint(resource_path, api_version)
           "api/lol/#{@region}/#{api_version}/#{resource_path}"
         end
+
+        def neat_params(params)
+          params.join(',').gsub(/\s/, '')
+        end
       end
     end
   end

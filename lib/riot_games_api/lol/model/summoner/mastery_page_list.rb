@@ -5,7 +5,7 @@ module RiotGamesApi
         class MasteryPageList
           include Virtus.model
 
-          attribute :pages, Set[RiotGamesApi::LOL::Model::Summoner::MasteryPage]
+          attribute :pages, Array[RiotGamesApi::LOL::Model::Summoner::MasteryPage]
           attribute :summoner_id, Integer
         end
       end
