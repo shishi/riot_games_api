@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://na.api.pvp.net/api/lol/na/v1.4/summoner/42139310/name?api_key=test_key&locale=en_US
+    uri: https://na.api.pvp.net/api/lol/na/v1.4/summoner/64878685/name?api_key=test_key&locale=en_US
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.8.9
+      - RiotGamesApi gem v0.0.7
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,18 +27,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 19 Apr 2014 02:05:10 GMT
+      - Sun, 15 Nov 2015 14:27:51 GMT
       Server:
-      - Jetty(9.1.1.v20140108)
+      - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding, User-Agent
-      Transfer-Encoding:
-      - chunked
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVdUBAgAVkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMDFE+FxQJFgBuHBZMDFwOXQcWahgSEw5VXF4BEytTQmtJClBbVkBKU0wATghMCAgGBgtcC1cDTR5TSBQBVgMFDQoJVARaBgRWX1MBFG4=
+      Content-Length:
+      - '48'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "{\"42139310\":\"shishisn\"}"
-    http_version:
-  recorded_at: Sat, 19 Apr 2014 02:05:09 GMT
-recorded_with: VCR 2.9.0
+      encoding: ASCII-8BIT
+      string: '{"64878685":"hello im shishi"}'
+    http_version: 
+  recorded_at: Sun, 15 Nov 2015 14:27:51 GMT
+recorded_with: VCR 3.0.0
