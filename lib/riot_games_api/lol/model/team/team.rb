@@ -11,7 +11,6 @@ module RiotGamesApi
           attribute :last_join_date, RiotGamesApi::LOL::Model::Corecion::Time
           attribute :last_joined_ranked_team_queue_date, RiotGamesApi::LOL::Model::Corecion::Time
           attribute :match_history, Array[RiotGamesApi::LOL::Model::Team::MatchHistorySummary]
-          attribute :message_of_day, RiotGamesApi::LOL::Model::Team::MessageOfDay
           attribute :modify_date, RiotGamesApi::LOL::Model::Corecion::Time
           attribute :name, String
           attribute :roster, RiotGamesApi::LOL::Model::Team::Roster

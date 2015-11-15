@@ -4,19 +4,30 @@ module RiotGamesApi
       class Team < Base
         def initialize(connection, region)
           super
-          @version = 'v2.2'
+          @version = 'v2.4'
         end
 
-        def by_summoner_id(summoner_id)
-          get(resource_path(summoner_id, true), @version).map do |team|
-            RiotGamesApi::LOL::Model::Team::Team.new team
+        # Return team data by summoner id
+        # @param [Array] summoner ids
+        # @return [TeamList]
+        def by_summoner_id(summoner_ids)
+          neated_param = neat_params(summoner_ids)
+          teams_by_player = get(resource_path(neated_param, true), @version)
+          teams_by_player.map do |team|
+            RiotGamesApi::LOL::Model::Team::TeamList.new(id: team.first, teams: team.last)
           end
         end
 
-        def by_team_id(team_id)
-          team = get(resource_path(team_id), @version)
-          team_key = team.keys.first.gsub(/team/, 'TEAM').gsub(/_/, '-') # undo rashify
-          { team_key => RiotGamesApi::LOL::Model::Team::Team.new(team.values.first) }
+        # Return team data by team id
+        # @param [Array] team ids
+        # @return [Array] team id => Team in Array
+        def by_team_id(team_ids)
+          neated_param = neat_params(team_ids)
+          teams = get(resource_path(neated_param), @version)
+          # team_key = team.keys.first.gsub(/team/, 'TEAM').gsub(/_/, '-') # undo rashify
+          teams.map do |team|
+            { team.first =>  RiotGamesApi::LOL::Model::Team::Team.new(team.last) }
+          end
         end
 
         private

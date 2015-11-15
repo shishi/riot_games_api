@@ -27,15 +27,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 15 Nov 2015 21:45:06 GMT
+      - Sun, 15 Nov 2015 21:48:29 GMT
       Server:
       - Jetty(9.1.5.v20140505)
       Vary:
       - Accept-Encoding
       X-Newrelic-App-Data:
-      - PxQFWFFSDwQTVVZSBwAGVkYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsNPR4VVgMJahgDH05LRl0JDgxSQ2tJH0JDXg8JDQdCK1wRRRgcdXYxEEMdUR1SSAYZUVZQDgUCU1FaGxwGSkZUVAUDUlIEUlVZUwxcBQoER2Q=
-      Transfer-Encoding:
-      - chunked
+      - PxQFWFFSDwQTVVZSBwAGVkYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOA0dYa0kIXlpvTR0RB1cLVwxFZBtEAUsNPR4VVgMJahgDH05LRl0JDgxSQ2tJH0JDXg8JDQdCK1wRRRgcdXYxEEMdUR1SSAYZUVNaCgIEXFVXGxwGSkYDVwFaVVIGVlIJAQEADQYLR2Q=
+      Content-Length:
+      - '3023'
       Connection:
       - keep-alive
     body:
@@ -376,5 +376,5 @@ http_interactions:
         RGF0ZSI6MTQzNjk4MTU1MjAwMCwibGFzdEpvaW5lZFJhbmtlZFRlYW1RdWV1
         ZURhdGUiOjE0MzY5Nzg3OTgwMDB9XX0=
     http_version: 
-  recorded_at: Sun, 15 Nov 2015 21:45:06 GMT
+  recorded_at: Sun, 15 Nov 2015 21:48:30 GMT
 recorded_with: VCR 3.0.0

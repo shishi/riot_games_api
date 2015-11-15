@@ -11,7 +11,7 @@ module RiotGamesApi
         # @param [Array] summoner ids
         # @return [Array] LeagueList
         def by_summoner_id(summoner_ids)
-          neated_param = summoner_ids.join(',').gsub(/\s/, '')
+          neated_param = neat_params(summoner_ids)
           leagues_by_player = get(resource_path('by-summoner', neated_param), @version)
           make_array_league_list(leagues_by_player)
         end
@@ -20,7 +20,7 @@ module RiotGamesApi
         # @param [Array] summoner ids
         # @return [Array] LeagueList
         def by_summoner_id_only_own_entry(summoner_ids)
-          neated_param = summoner_ids.join(',').gsub(/\s/, '')
+          neated_param = neat_params(summoner_ids)
           leagues_by_player = get(resource_path('by-summoner', neated_param, true), @version)
           make_array_league_list(leagues_by_player)
         end
@@ -29,7 +29,7 @@ module RiotGamesApi
         # @param [Array] team ids
         # @return [Array] LeagueList
         def by_team_id(team_ids)
-          neated_param = team_ids.join(',').gsub(/\s/, '')
+          neated_param = neat_params(team_ids)
           leagues_by_team = get(resource_path('by-team', neated_param), @version)
           make_array_league_list(leagues_by_team)
         end
@@ -38,7 +38,7 @@ module RiotGamesApi
         # @param [Array] summoner ids
         # @return [Array] LeagueList
         def by_team_id_only_own_entry(team_ids)
-          neated_param = team_ids.join(',').gsub(/\s/, '')
+          neated_param = neat_params(team_ids)
           leagues_by_team = get(resource_path('by-team', neated_param, true), @version)
           make_array_league_list(leagues_by_team)
         end

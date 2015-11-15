@@ -11,7 +11,7 @@ module RiotGamesApi
         # @param [Array] summoner_names summoner names in array
         # @return [Array] Summoner models in Array
         def by_name(summoner_names)
-          neated_param = summoner_names.join(',').gsub(/\s/, '')
+          neated_param = neat_params(summoner_names)
           summoners = get(resource_path_by_name(neated_param), @version)
           summoners.map do |summoner|
             RiotGamesApi::LOL::Model::Summoner::Summoner.new(summoner.last)
