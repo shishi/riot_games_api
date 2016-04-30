@@ -5,9 +5,13 @@
 )](https://codeclimate.com/github/shishi/riot_games_api)
 [![Dependency Status](https://gemnasium.com/shishi/riot_games_api.svg)](https://gemnasium.com/shishi/riot_games_api)
 
+I had plan to update this gem, but Riot released irregular, not friendly endpoint for champion mastery. Due to this, I decide I will not maintenance after now.
+
+So this gem support for champion, game, league, static-data, stats, summoner, team api. I think this gem is useful yet for collecting static-data.
+
 # RiotGamesApi
 
-Make access easy to access Riot Games API to get their game data like League of Legends.
+Make access easy to access Riot Games API to get their game data for League of Legends.
 
 ## Installation
 
@@ -41,19 +45,17 @@ https://developer.riotgames.com/
 
 client = RiotGamesApi::LOL::Client.new api_key: 'your_api_key' # or ENV['RIOT_GAMES_API_KEY']
 
-* English
-avalable parameters when initialize client
+# * English
+# avalable parameters when initialize client
 
-* Japanese
-クライアント初期化の際に使えるパラメータ
+# * Japanese
+# クライアント初期化の際に使えるパラメータ
 
-```
-api_key       default: none or ENV['RIOT_GAMES_API_KEY']
-region        default: 'na'
-adapter       default: Faraday.default_adapter
-debug logging default: false
-locale        default: 'en_US'
-```
+# api_key       default: none or ENV['RIOT_GAMES_API_KEY']
+# region        default: 'na'
+# adapter       default: Faraday.default_adapter
+# debug logging default: false
+# locale        default: 'en_US'
 
 # from summoner resource
 summoner = client.summoner.by_name ['hello im shishi'].first
